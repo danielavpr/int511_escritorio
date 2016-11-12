@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PpalAdministrativos));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbPrincipalA = new System.Windows.Forms.TableLayoutPanel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbCitas = new System.Windows.Forms.TabPage();
             this.tblCitas = new System.Windows.Forms.TableLayoutPanel();
@@ -82,21 +82,15 @@
             this.tblRegEmpleados = new System.Windows.Forms.TableLayoutPanel();
             this.grpAutomovil = new System.Windows.Forms.GroupBox();
             this.grpPersona = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.imgLogo = new System.Windows.Forms.PictureBox();
-            this.lblBienvenido = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label14 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -113,6 +107,8 @@
             this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tbMedicamentos = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
@@ -133,7 +129,11 @@
             this.label34 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnRealizar = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imgLogo = new System.Windows.Forms.PictureBox();
+            this.lblBienvenido = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.tbPrincipalA.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tbCitas.SuspendLayout();
             this.tblCitas.SuspendLayout();
@@ -146,42 +146,42 @@
             this.tabPage1.SuspendLayout();
             this.tblRegEmpleados.SuspendLayout();
             this.grpPersona.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.tbMedicamentos.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nCantidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // tbPrincipalA
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.tabControl1, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.imgLogo, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblBienvenido, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblUsuario, 2, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1234, 553);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tbPrincipalA.ColumnCount = 3;
+            this.tbPrincipalA.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tbPrincipalA.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbPrincipalA.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbPrincipalA.Controls.Add(this.tabControl1, 0, 2);
+            this.tbPrincipalA.Controls.Add(this.imgLogo, 0, 0);
+            this.tbPrincipalA.Controls.Add(this.lblBienvenido, 2, 0);
+            this.tbPrincipalA.Controls.Add(this.lblUsuario, 2, 1);
+            this.tbPrincipalA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbPrincipalA.Location = new System.Drawing.Point(0, 0);
+            this.tbPrincipalA.Margin = new System.Windows.Forms.Padding(4);
+            this.tbPrincipalA.Name = "tbPrincipalA";
+            this.tbPrincipalA.RowCount = 3;
+            this.tbPrincipalA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tbPrincipalA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tbPrincipalA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tbPrincipalA.Size = new System.Drawing.Size(1234, 553);
+            this.tbPrincipalA.TabIndex = 0;
             // 
             // tabControl1
             // 
             this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.tableLayoutPanel1.SetColumnSpan(this.tabControl1, 3);
+            this.tbPrincipalA.SetColumnSpan(this.tabControl1, 3);
             this.tabControl1.Controls.Add(this.tbCitas);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -693,7 +693,7 @@
             "Femenino",
             "Masculino",
             "Otro"});
-            this.comboBox1.Location = new System.Drawing.Point(412, 160);
+            this.comboBox1.Location = new System.Drawing.Point(412, 158);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(148, 26);
             this.comboBox1.TabIndex = 22;
@@ -774,68 +774,6 @@
             this.grpPersona.TabIndex = 0;
             this.grpPersona.TabStop = false;
             this.grpPersona.Text = "Datos del empleado";
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tblRegEmpleados.SetColumnSpan(this.button1, 2);
-            this.button1.Location = new System.Drawing.Point(449, 377);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 35);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.tbMedicamentos);
-            this.tabPage4.Location = new System.Drawing.Point(199, 4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1023, 427);
-            this.tabPage4.TabIndex = 4;
-            this.tabPage4.Text = "Medic";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "heroes-and-villains-01.png");
-            this.imageList1.Images.SetKeyName(1, "heroes-and-villains-09.png");
-            this.imageList1.Images.SetKeyName(2, "heroes-and-villains-16.png");
-            // 
-            // imgLogo
-            // 
-            this.imgLogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.imgLogo.Location = new System.Drawing.Point(4, 4);
-            this.imgLogo.Margin = new System.Windows.Forms.Padding(4);
-            this.imgLogo.Name = "imgLogo";
-            this.tableLayoutPanel1.SetRowSpan(this.imgLogo, 2);
-            this.imgLogo.Size = new System.Drawing.Size(192, 102);
-            this.imgLogo.TabIndex = 1;
-            this.imgLogo.TabStop = false;
-            // 
-            // lblBienvenido
-            // 
-            this.lblBienvenido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblBienvenido.AutoSize = true;
-            this.lblBienvenido.Location = new System.Drawing.Point(1143, 37);
-            this.lblBienvenido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(87, 18);
-            this.lblBienvenido.TabIndex = 2;
-            this.lblBienvenido.Text = "¡ Bienvenido";
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(1150, 55);
-            this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(80, 18);
-            this.lblUsuario.TabIndex = 3;
-            this.lblUsuario.Text = "_usuario_ !";
             // 
             // tableLayoutPanel5
             // 
@@ -923,6 +861,16 @@
             this.label17.TabIndex = 4;
             this.label17.Text = "Fecha de nacimiento: ";
             // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(438, 108);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(50, 18);
+            this.label18.TabIndex = 9;
+            this.label18.Text = "Sexo: ";
+            // 
             // label19
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -952,16 +900,6 @@
             this.label21.Size = new System.Drawing.Size(78, 18);
             this.label21.TabIndex = 8;
             this.label21.Text = "Domicilio: ";
-            // 
-            // label18
-            // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(438, 108);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(50, 18);
-            this.label18.TabIndex = 9;
-            this.label18.Text = "Sexo: ";
             // 
             // label22
             // 
@@ -1072,7 +1010,7 @@
             "Femenino",
             "Masculino",
             "Otro"});
-            this.comboBox2.Location = new System.Drawing.Point(494, 104);
+            this.comboBox2.Location = new System.Drawing.Point(494, 107);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(207, 26);
             this.comboBox2.TabIndex = 27;
@@ -1106,7 +1044,7 @@
             "Licenciatura ",
             "Maestría",
             "Doctorado"});
-            this.comboBox3.Location = new System.Drawing.Point(143, 297);
+            this.comboBox3.Location = new System.Drawing.Point(143, 294);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(205, 26);
             this.comboBox3.TabIndex = 30;
@@ -1119,10 +1057,31 @@
             this.comboBox4.Items.AddRange(new object[] {
             "Administrativo ",
             "Médico"});
-            this.comboBox4.Location = new System.Drawing.Point(494, 297);
+            this.comboBox4.Location = new System.Drawing.Point(494, 294);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(207, 26);
             this.comboBox4.TabIndex = 31;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tblRegEmpleados.SetColumnSpan(this.button1, 2);
+            this.button1.Location = new System.Drawing.Point(449, 377);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(124, 35);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Registrar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.tbMedicamentos);
+            this.tabPage4.Location = new System.Drawing.Point(199, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1023, 427);
+            this.tabPage4.TabIndex = 4;
+            this.tabPage4.Text = "Medic";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tbMedicamentos
             // 
@@ -1136,7 +1095,7 @@
             this.tbMedicamentos.Name = "tbMedicamentos";
             this.tbMedicamentos.RowCount = 1;
             this.tbMedicamentos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tbMedicamentos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tbMedicamentos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 427F));
             this.tbMedicamentos.Size = new System.Drawing.Size(1023, 427);
             this.tbMedicamentos.TabIndex = 0;
             // 
@@ -1231,7 +1190,7 @@
             // nCantidad
             // 
             this.nCantidad.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.nCantidad.Location = new System.Drawing.Point(128, 9);
+            this.nCantidad.Location = new System.Drawing.Point(128, 7);
             this.nCantidad.Maximum = new decimal(new int[] {
             50,
             0,
@@ -1358,19 +1317,60 @@
             this.btnRealizar.Text = "Realizar pedido";
             this.btnRealizar.UseVisualStyleBackColor = true;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "heroes-and-villains-01.png");
+            this.imageList1.Images.SetKeyName(1, "heroes-and-villains-09.png");
+            this.imageList1.Images.SetKeyName(2, "heroes-and-villains-16.png");
+            // 
+            // imgLogo
+            // 
+            this.imgLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.imgLogo.Location = new System.Drawing.Point(4, 4);
+            this.imgLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.imgLogo.Name = "imgLogo";
+            this.tbPrincipalA.SetRowSpan(this.imgLogo, 2);
+            this.imgLogo.Size = new System.Drawing.Size(192, 102);
+            this.imgLogo.TabIndex = 1;
+            this.imgLogo.TabStop = false;
+            // 
+            // lblBienvenido
+            // 
+            this.lblBienvenido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBienvenido.AutoSize = true;
+            this.lblBienvenido.Location = new System.Drawing.Point(1143, 37);
+            this.lblBienvenido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBienvenido.Name = "lblBienvenido";
+            this.lblBienvenido.Size = new System.Drawing.Size(87, 18);
+            this.lblBienvenido.TabIndex = 2;
+            this.lblBienvenido.Text = "¡ Bienvenido";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(1150, 55);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(80, 18);
+            this.lblUsuario.TabIndex = 3;
+            this.lblUsuario.Text = "_usuario_ !";
+            // 
             // PpalAdministrativos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1234, 553);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tbPrincipalA);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PpalAdministrativos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.tbPrincipalA.ResumeLayout(false);
+            this.tbPrincipalA.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tbCitas.ResumeLayout(false);
             this.tblCitas.ResumeLayout(false);
@@ -1386,10 +1386,9 @@
             this.tabPage1.ResumeLayout(false);
             this.tblRegEmpleados.ResumeLayout(false);
             this.grpPersona.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
             this.tbMedicamentos.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
@@ -1397,13 +1396,14 @@
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nCantidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tbPrincipalA;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.PictureBox imgLogo;
