@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace e_Clinica
+namespace e_Clinica.Vista
 {
-    public partial class Form1 : Form
+    public partial class PpalMedicos : Form
     {
-        public Form1()
+        public PpalMedicos()
         {
             InitializeComponent();
         }
