@@ -32,15 +32,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PpalAdministrativos));
             this.tbPrincipalA = new System.Windows.Forms.TableLayoutPanel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tbCitas = new System.Windows.Forms.TabPage();
+            this.tpCitas = new System.Windows.Forms.TabPage();
             this.tblCitas = new System.Windows.Forms.TableLayoutPanel();
             this.grpCalendario = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.mcCalendario = new System.Windows.Forms.MonthCalendar();
             this.cmbHorarios = new System.Windows.Forms.ComboBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rbPrimera = new System.Windows.Forms.RadioButton();
+            this.rbSeguimiento = new System.Windows.Forms.RadioButton();
+            this.rbOtra = new System.Windows.Forms.RadioButton();
             this.grpDatos = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnLimpiar = new System.Windows.Forms.Button();
@@ -55,12 +55,12 @@
             this.lstMedicos = new System.Windows.Forms.ListBox();
             this.btnAgendar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tpRegPaciente = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtFechaNacPa = new System.Windows.Forms.MaskedTextBox();
+            this.txtSegApellidoPa = new System.Windows.Forms.TextBox();
+            this.txtPrApellidoPa = new System.Windows.Forms.TextBox();
+            this.txtNombrePa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -71,16 +71,15 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.txtCorreoPa = new System.Windows.Forms.TextBox();
+            this.txtDomicilioPa = new System.Windows.Forms.TextBox();
+            this.txtCURPPa = new System.Windows.Forms.MaskedTextBox();
+            this.cmbSexoPa = new System.Windows.Forms.ComboBox();
+            this.txtTelefonoPa = new System.Windows.Forms.MaskedTextBox();
+            this.txtRFCPa = new System.Windows.Forms.MaskedTextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tpRegPersonal = new System.Windows.Forms.TabPage();
             this.tblRegEmpleados = new System.Windows.Forms.TableLayoutPanel();
-            this.grpAutomovil = new System.Windows.Forms.GroupBox();
             this.grpPersona = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label14 = new System.Windows.Forms.Label();
@@ -95,24 +94,29 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.txtCURPPers = new System.Windows.Forms.MaskedTextBox();
+            this.txtRFCPer = new System.Windows.Forms.MaskedTextBox();
+            this.txtNombrePer = new System.Windows.Forms.TextBox();
+            this.txtPrApellidoPer = new System.Windows.Forms.TextBox();
+            this.txtSegApellidoPer = new System.Windows.Forms.TextBox();
+            this.txtDomicilioPers = new System.Windows.Forms.TextBox();
+            this.txtCorreoPers = new System.Windows.Forms.TextBox();
+            this.cmbSexoPer = new System.Windows.Forms.ComboBox();
+            this.txtTelefonoPer = new System.Windows.Forms.MaskedTextBox();
+            this.txtFechaNacPer = new System.Windows.Forms.MaskedTextBox();
+            this.cmbNivelEducativo = new System.Windows.Forms.ComboBox();
+            this.cmbPuesto = new System.Windows.Forms.ComboBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.txtClave = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.cbEstacionamiento = new System.Windows.Forms.CheckBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.tpMedicamentos = new System.Windows.Forms.TabPage();
             this.tbMedicamentos = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lstMedicamentos = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.lblNombreMed = new System.Windows.Forms.Label();
@@ -120,38 +124,34 @@
             this.Descripción = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.lblDescripcion = new System.Windows.Forms.Label();
-            this.lblCantidad = new System.Windows.Forms.Label();
-            this.lblUnitario = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.lblSubtotal = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnRealizar = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imgLogo = new System.Windows.Forms.PictureBox();
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.lblSubtotal = new System.Windows.Forms.Label();
+            this.lblUnitario = new System.Windows.Forms.Label();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.lblDescripcion = new System.Windows.Forms.Label();
             this.tbPrincipalA.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tbCitas.SuspendLayout();
+            this.tpCitas.SuspendLayout();
             this.tblCitas.SuspendLayout();
             this.grpCalendario.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.grpDatos.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.tpRegPaciente.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tpRegPersonal.SuspendLayout();
             this.tblRegEmpleados.SuspendLayout();
             this.grpPersona.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            this.tabPage4.SuspendLayout();
+            this.tpMedicamentos.SuspendLayout();
             this.tbMedicamentos.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
@@ -186,10 +186,10 @@
             // 
             this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
             this.tbPrincipalA.SetColumnSpan(this.tabControl1, 3);
-            this.tabControl1.Controls.Add(this.tbCitas);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tpCitas);
+            this.tabControl1.Controls.Add(this.tpRegPaciente);
+            this.tabControl1.Controls.Add(this.tpRegPersonal);
+            this.tabControl1.Controls.Add(this.tpMedicamentos);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.ImageList = this.imageList1;
             this.tabControl1.ItemSize = new System.Drawing.Size(100, 195);
@@ -201,17 +201,17 @@
             this.tabControl1.Size = new System.Drawing.Size(1226, 435);
             this.tabControl1.TabIndex = 0;
             // 
-            // tbCitas
+            // tpCitas
             // 
-            this.tbCitas.Controls.Add(this.tblCitas);
-            this.tbCitas.Location = new System.Drawing.Point(199, 4);
-            this.tbCitas.Margin = new System.Windows.Forms.Padding(4);
-            this.tbCitas.Name = "tbCitas";
-            this.tbCitas.Padding = new System.Windows.Forms.Padding(4);
-            this.tbCitas.Size = new System.Drawing.Size(1023, 427);
-            this.tbCitas.TabIndex = 0;
-            this.tbCitas.Text = "Citas";
-            this.tbCitas.UseVisualStyleBackColor = true;
+            this.tpCitas.Controls.Add(this.tblCitas);
+            this.tpCitas.Location = new System.Drawing.Point(199, 4);
+            this.tpCitas.Margin = new System.Windows.Forms.Padding(4);
+            this.tpCitas.Name = "tpCitas";
+            this.tpCitas.Padding = new System.Windows.Forms.Padding(4);
+            this.tpCitas.Size = new System.Drawing.Size(1023, 427);
+            this.tpCitas.TabIndex = 0;
+            this.tpCitas.Text = "Citas";
+            this.tpCitas.UseVisualStyleBackColor = true;
             // 
             // tblCitas
             // 
@@ -248,9 +248,9 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.Controls.Add(this.mcCalendario, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.cmbHorarios, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.radioButton1, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.radioButton2, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.radioButton3, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.rbPrimera, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.rbSeguimiento, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.rbOtra, 2, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 20);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -282,41 +282,41 @@
             this.cmbHorarios.Size = new System.Drawing.Size(240, 26);
             this.cmbHorarios.TabIndex = 1;
             // 
-            // radioButton1
+            // rbPrimera
             // 
-            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(13, 343);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(105, 22);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Primera vez";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbPrimera.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rbPrimera.AutoSize = true;
+            this.rbPrimera.Location = new System.Drawing.Point(13, 343);
+            this.rbPrimera.Name = "rbPrimera";
+            this.rbPrimera.Size = new System.Drawing.Size(105, 22);
+            this.rbPrimera.TabIndex = 2;
+            this.rbPrimera.TabStop = true;
+            this.rbPrimera.Text = "Primera vez";
+            this.rbPrimera.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbSeguimiento
             // 
-            this.radioButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(142, 343);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(108, 22);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Seguimiento";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbSeguimiento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rbSeguimiento.AutoSize = true;
+            this.rbSeguimiento.Location = new System.Drawing.Point(142, 343);
+            this.rbSeguimiento.Name = "rbSeguimiento";
+            this.rbSeguimiento.Size = new System.Drawing.Size(108, 22);
+            this.rbSeguimiento.TabIndex = 3;
+            this.rbSeguimiento.TabStop = true;
+            this.rbSeguimiento.Text = "Seguimiento";
+            this.rbSeguimiento.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbOtra
             // 
-            this.radioButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(300, 343);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(55, 22);
-            this.radioButton3.TabIndex = 4;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Otra";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbOtra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rbOtra.AutoSize = true;
+            this.rbOtra.Location = new System.Drawing.Point(300, 343);
+            this.rbOtra.Name = "rbOtra";
+            this.rbOtra.Size = new System.Drawing.Size(55, 22);
+            this.rbOtra.TabIndex = 4;
+            this.rbOtra.TabStop = true;
+            this.rbOtra.Text = "Otra";
+            this.rbOtra.UseVisualStyleBackColor = true;
             // 
             // grpDatos
             // 
@@ -475,25 +475,25 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tpRegPaciente
             // 
-            this.tabPage2.Controls.Add(this.tableLayoutPanel4);
-            this.tabPage2.Location = new System.Drawing.Point(199, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(1023, 427);
-            this.tabPage2.TabIndex = 5;
-            this.tabPage2.Text = "Reg Paciente";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tpRegPaciente.Controls.Add(this.tableLayoutPanel4);
+            this.tpRegPaciente.Location = new System.Drawing.Point(199, 4);
+            this.tpRegPaciente.Name = "tpRegPaciente";
+            this.tpRegPaciente.Size = new System.Drawing.Size(1023, 427);
+            this.tpRegPaciente.TabIndex = 5;
+            this.tpRegPaciente.Text = "Reg Paciente";
+            this.tpRegPaciente.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel4.Controls.Add(this.maskedTextBox4, 1, 3);
-            this.tableLayoutPanel4.Controls.Add(this.textBox6, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.textBox4, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.textBox3, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.txtFechaNacPa, 1, 3);
+            this.tableLayoutPanel4.Controls.Add(this.txtSegApellidoPa, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.txtPrApellidoPa, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.txtNombrePa, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label5, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label6, 0, 2);
@@ -504,12 +504,12 @@
             this.tableLayoutPanel4.Controls.Add(this.label11, 0, 7);
             this.tableLayoutPanel4.Controls.Add(this.label12, 0, 8);
             this.tableLayoutPanel4.Controls.Add(this.label13, 0, 9);
-            this.tableLayoutPanel4.Controls.Add(this.textBox1, 1, 8);
-            this.tableLayoutPanel4.Controls.Add(this.textBox2, 1, 7);
-            this.tableLayoutPanel4.Controls.Add(this.maskedTextBox2, 1, 5);
-            this.tableLayoutPanel4.Controls.Add(this.comboBox1, 1, 4);
-            this.tableLayoutPanel4.Controls.Add(this.maskedTextBox3, 1, 9);
-            this.tableLayoutPanel4.Controls.Add(this.maskedTextBox1, 1, 6);
+            this.tableLayoutPanel4.Controls.Add(this.txtCorreoPa, 1, 8);
+            this.tableLayoutPanel4.Controls.Add(this.txtDomicilioPa, 1, 7);
+            this.tableLayoutPanel4.Controls.Add(this.txtCURPPa, 1, 5);
+            this.tableLayoutPanel4.Controls.Add(this.cmbSexoPa, 1, 4);
+            this.tableLayoutPanel4.Controls.Add(this.txtTelefonoPa, 1, 9);
+            this.tableLayoutPanel4.Controls.Add(this.txtRFCPa, 1, 6);
             this.tableLayoutPanel4.Controls.Add(this.btnRegistrar, 1, 10);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
@@ -529,39 +529,39 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1023, 427);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
-            // maskedTextBox4
+            // txtFechaNacPa
             // 
-            this.maskedTextBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.maskedTextBox4.Location = new System.Drawing.Point(412, 121);
-            this.maskedTextBox4.Mask = "00/00/0000";
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(148, 24);
-            this.maskedTextBox4.TabIndex = 21;
-            this.maskedTextBox4.ValidatingType = typeof(System.DateTime);
+            this.txtFechaNacPa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtFechaNacPa.Location = new System.Drawing.Point(412, 121);
+            this.txtFechaNacPa.Mask = "00/00/0000";
+            this.txtFechaNacPa.Name = "txtFechaNacPa";
+            this.txtFechaNacPa.Size = new System.Drawing.Size(148, 24);
+            this.txtFechaNacPa.TabIndex = 21;
+            this.txtFechaNacPa.ValidatingType = typeof(System.DateTime);
             // 
-            // textBox6
+            // txtSegApellidoPa
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox6.Location = new System.Drawing.Point(412, 83);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(331, 24);
-            this.textBox6.TabIndex = 18;
+            this.txtSegApellidoPa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtSegApellidoPa.Location = new System.Drawing.Point(412, 83);
+            this.txtSegApellidoPa.Name = "txtSegApellidoPa";
+            this.txtSegApellidoPa.Size = new System.Drawing.Size(331, 24);
+            this.txtSegApellidoPa.TabIndex = 18;
             // 
-            // textBox4
+            // txtPrApellidoPa
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox4.Location = new System.Drawing.Point(412, 45);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(331, 24);
-            this.textBox4.TabIndex = 17;
+            this.txtPrApellidoPa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtPrApellidoPa.Location = new System.Drawing.Point(412, 45);
+            this.txtPrApellidoPa.Name = "txtPrApellidoPa";
+            this.txtPrApellidoPa.Size = new System.Drawing.Size(331, 24);
+            this.txtPrApellidoPa.TabIndex = 17;
             // 
-            // textBox3
+            // txtNombrePa
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox3.Location = new System.Drawing.Point(412, 7);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(331, 24);
-            this.textBox3.TabIndex = 16;
+            this.txtNombrePa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtNombrePa.Location = new System.Drawing.Point(412, 7);
+            this.txtNombrePa.Name = "txtNombrePa";
+            this.txtNombrePa.Size = new System.Drawing.Size(331, 24);
+            this.txtNombrePa.TabIndex = 16;
             // 
             // label4
             // 
@@ -663,62 +663,62 @@
             this.label13.TabIndex = 9;
             this.label13.Text = "Teléfono: ";
             // 
-            // textBox1
+            // txtCorreoPa
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.Location = new System.Drawing.Point(412, 311);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(331, 24);
-            this.textBox1.TabIndex = 11;
+            this.txtCorreoPa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtCorreoPa.Location = new System.Drawing.Point(412, 311);
+            this.txtCorreoPa.Name = "txtCorreoPa";
+            this.txtCorreoPa.Size = new System.Drawing.Size(331, 24);
+            this.txtCorreoPa.TabIndex = 11;
             // 
-            // textBox2
+            // txtDomicilioPa
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox2.Location = new System.Drawing.Point(412, 273);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(331, 24);
-            this.textBox2.TabIndex = 12;
+            this.txtDomicilioPa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtDomicilioPa.Location = new System.Drawing.Point(412, 273);
+            this.txtDomicilioPa.Name = "txtDomicilioPa";
+            this.txtDomicilioPa.Size = new System.Drawing.Size(331, 24);
+            this.txtDomicilioPa.TabIndex = 12;
             // 
-            // maskedTextBox2
+            // txtCURPPa
             // 
-            this.maskedTextBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.maskedTextBox2.Location = new System.Drawing.Point(412, 197);
-            this.maskedTextBox2.Mask = "AAAA000000AAAAA00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(148, 24);
-            this.maskedTextBox2.TabIndex = 19;
+            this.txtCURPPa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtCURPPa.Location = new System.Drawing.Point(412, 197);
+            this.txtCURPPa.Mask = "AAAA000000AAAAA00";
+            this.txtCURPPa.Name = "txtCURPPa";
+            this.txtCURPPa.Size = new System.Drawing.Size(148, 24);
+            this.txtCURPPa.TabIndex = 19;
             // 
-            // comboBox1
+            // cmbSexoPa
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbSexoPa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmbSexoPa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSexoPa.FormattingEnabled = true;
+            this.cmbSexoPa.Items.AddRange(new object[] {
             "Femenino",
             "Masculino",
             "Otro"});
-            this.comboBox1.Location = new System.Drawing.Point(412, 160);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(148, 26);
-            this.comboBox1.TabIndex = 22;
+            this.cmbSexoPa.Location = new System.Drawing.Point(412, 158);
+            this.cmbSexoPa.Name = "cmbSexoPa";
+            this.cmbSexoPa.Size = new System.Drawing.Size(148, 26);
+            this.cmbSexoPa.TabIndex = 22;
             // 
-            // maskedTextBox3
+            // txtTelefonoPa
             // 
-            this.maskedTextBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.maskedTextBox3.Location = new System.Drawing.Point(412, 349);
-            this.maskedTextBox3.Mask = "(999)000-0000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(148, 24);
-            this.maskedTextBox3.TabIndex = 20;
+            this.txtTelefonoPa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtTelefonoPa.Location = new System.Drawing.Point(412, 349);
+            this.txtTelefonoPa.Mask = "(999)000-0000";
+            this.txtTelefonoPa.Name = "txtTelefonoPa";
+            this.txtTelefonoPa.Size = new System.Drawing.Size(148, 24);
+            this.txtTelefonoPa.TabIndex = 20;
             // 
-            // maskedTextBox1
+            // txtRFCPa
             // 
-            this.maskedTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.maskedTextBox1.Location = new System.Drawing.Point(412, 235);
-            this.maskedTextBox1.Mask = "AAAA000000AAA";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(148, 24);
-            this.maskedTextBox1.TabIndex = 10;
+            this.txtRFCPa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtRFCPa.Location = new System.Drawing.Point(412, 235);
+            this.txtRFCPa.Mask = "AAAA000000AAA";
+            this.txtRFCPa.Name = "txtRFCPa";
+            this.txtRFCPa.Size = new System.Drawing.Size(148, 24);
+            this.txtRFCPa.TabIndex = 10;
             // 
             // btnRegistrar
             // 
@@ -730,43 +730,29 @@
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
             // 
-            // tabPage1
+            // tpRegPersonal
             // 
-            this.tabPage1.Controls.Add(this.tblRegEmpleados);
-            this.tabPage1.Location = new System.Drawing.Point(199, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage1.Size = new System.Drawing.Size(1023, 427);
-            this.tabPage1.TabIndex = 3;
-            this.tabPage1.Text = "Reg Personal";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tpRegPersonal.Controls.Add(this.tblRegEmpleados);
+            this.tpRegPersonal.Location = new System.Drawing.Point(199, 4);
+            this.tpRegPersonal.Name = "tpRegPersonal";
+            this.tpRegPersonal.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tpRegPersonal.Size = new System.Drawing.Size(1023, 427);
+            this.tpRegPersonal.TabIndex = 3;
+            this.tpRegPersonal.Text = "Reg Personal";
+            this.tpRegPersonal.UseVisualStyleBackColor = true;
             // 
             // tblRegEmpleados
             // 
-            this.tblRegEmpleados.ColumnCount = 2;
+            this.tblRegEmpleados.ColumnCount = 1;
             this.tblRegEmpleados.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tblRegEmpleados.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tblRegEmpleados.Controls.Add(this.grpAutomovil, 1, 0);
             this.tblRegEmpleados.Controls.Add(this.grpPersona, 0, 0);
-            this.tblRegEmpleados.Controls.Add(this.button1, 0, 1);
             this.tblRegEmpleados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblRegEmpleados.Location = new System.Drawing.Point(0, 0);
             this.tblRegEmpleados.Name = "tblRegEmpleados";
-            this.tblRegEmpleados.RowCount = 2;
+            this.tblRegEmpleados.RowCount = 1;
             this.tblRegEmpleados.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.tblRegEmpleados.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tblRegEmpleados.Size = new System.Drawing.Size(1023, 427);
             this.tblRegEmpleados.TabIndex = 0;
-            // 
-            // grpAutomovil
-            // 
-            this.grpAutomovil.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grpAutomovil.Location = new System.Drawing.Point(719, 3);
-            this.grpAutomovil.Name = "grpAutomovil";
-            this.grpAutomovil.Size = new System.Drawing.Size(301, 356);
-            this.grpAutomovil.TabIndex = 1;
-            this.grpAutomovil.TabStop = false;
-            this.grpAutomovil.Text = "Datos de su vehículo (opcional)";
             // 
             // grpPersona
             // 
@@ -774,7 +760,7 @@
             this.grpPersona.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpPersona.Location = new System.Drawing.Point(3, 3);
             this.grpPersona.Name = "grpPersona";
-            this.grpPersona.Size = new System.Drawing.Size(710, 356);
+            this.grpPersona.Size = new System.Drawing.Size(1017, 421);
             this.grpPersona.TabIndex = 0;
             this.grpPersona.TabStop = false;
             this.grpPersona.Text = "Datos del empleado";
@@ -786,8 +772,6 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel5.Controls.Add(this.textBox12, 0, 7);
-            this.tableLayoutPanel5.Controls.Add(this.label29, 0, 7);
             this.tableLayoutPanel5.Controls.Add(this.label14, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.label16, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.label15, 2, 1);
@@ -800,40 +784,45 @@
             this.tableLayoutPanel5.Controls.Add(this.label23, 2, 5);
             this.tableLayoutPanel5.Controls.Add(this.label24, 0, 6);
             this.tableLayoutPanel5.Controls.Add(this.label25, 2, 6);
-            this.tableLayoutPanel5.Controls.Add(this.maskedTextBox5, 1, 3);
-            this.tableLayoutPanel5.Controls.Add(this.maskedTextBox6, 3, 3);
-            this.tableLayoutPanel5.Controls.Add(this.textBox5, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.textBox7, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.textBox8, 3, 1);
-            this.tableLayoutPanel5.Controls.Add(this.textBox9, 1, 4);
-            this.tableLayoutPanel5.Controls.Add(this.textBox10, 1, 5);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox2, 3, 2);
-            this.tableLayoutPanel5.Controls.Add(this.maskedTextBox7, 3, 5);
-            this.tableLayoutPanel5.Controls.Add(this.maskedTextBox8, 1, 2);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox3, 1, 6);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox4, 3, 6);
+            this.tableLayoutPanel5.Controls.Add(this.txtCURPPers, 1, 3);
+            this.tableLayoutPanel5.Controls.Add(this.txtRFCPer, 3, 3);
+            this.tableLayoutPanel5.Controls.Add(this.txtNombrePer, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.txtPrApellidoPer, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.txtSegApellidoPer, 3, 1);
+            this.tableLayoutPanel5.Controls.Add(this.txtDomicilioPers, 1, 4);
+            this.tableLayoutPanel5.Controls.Add(this.txtCorreoPers, 1, 5);
+            this.tableLayoutPanel5.Controls.Add(this.cmbSexoPer, 3, 2);
+            this.tableLayoutPanel5.Controls.Add(this.txtTelefonoPer, 3, 5);
+            this.tableLayoutPanel5.Controls.Add(this.txtFechaNacPer, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.cmbNivelEducativo, 1, 6);
+            this.tableLayoutPanel5.Controls.Add(this.cmbPuesto, 3, 6);
             this.tableLayoutPanel5.Controls.Add(this.label30, 2, 7);
-            this.tableLayoutPanel5.Controls.Add(this.textBox11, 3, 7);
+            this.tableLayoutPanel5.Controls.Add(this.txtClave, 3, 7);
+            this.tableLayoutPanel5.Controls.Add(this.label31, 0, 7);
+            this.tableLayoutPanel5.Controls.Add(this.txtUsuario, 1, 7);
+            this.tableLayoutPanel5.Controls.Add(this.cbEstacionamiento, 0, 8);
+            this.tableLayoutPanel5.Controls.Add(this.btnGuardar, 3, 8);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 20);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 8;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(704, 333);
+            this.tableLayoutPanel5.RowCount = 9;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1011, 398);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // label14
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(67, 11);
+            this.label14.Location = new System.Drawing.Point(129, 13);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(70, 18);
             this.label14.TabIndex = 0;
@@ -843,7 +832,7 @@
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(23, 52);
+            this.label16.Location = new System.Drawing.Point(85, 57);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(114, 18);
             this.label16.TabIndex = 2;
@@ -853,7 +842,7 @@
             // 
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(359, 52);
+            this.label15.Location = new System.Drawing.Point(575, 57);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(129, 18);
             this.label15.TabIndex = 3;
@@ -863,9 +852,9 @@
             // 
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(49, 84);
+            this.label17.Location = new System.Drawing.Point(46, 101);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(88, 36);
+            this.label17.Size = new System.Drawing.Size(153, 18);
             this.label17.TabIndex = 4;
             this.label17.Text = "Fecha de nacimiento: ";
             // 
@@ -873,7 +862,7 @@
             // 
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(438, 93);
+            this.label18.Location = new System.Drawing.Point(654, 101);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(50, 18);
             this.label18.TabIndex = 9;
@@ -883,7 +872,7 @@
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(78, 134);
+            this.label19.Location = new System.Drawing.Point(140, 145);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(59, 18);
             this.label19.TabIndex = 6;
@@ -893,7 +882,7 @@
             // 
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(441, 134);
+            this.label20.Location = new System.Drawing.Point(657, 145);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(47, 18);
             this.label20.TabIndex = 7;
@@ -903,7 +892,7 @@
             // 
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(59, 175);
+            this.label21.Location = new System.Drawing.Point(121, 189);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(78, 18);
             this.label21.TabIndex = 8;
@@ -913,7 +902,7 @@
             // 
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(74, 216);
+            this.label22.Location = new System.Drawing.Point(136, 233);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(63, 18);
             this.label22.TabIndex = 10;
@@ -923,7 +912,7 @@
             // 
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(414, 216);
+            this.label23.Location = new System.Drawing.Point(630, 233);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(74, 18);
             this.label23.TabIndex = 11;
@@ -933,7 +922,7 @@
             // 
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(22, 257);
+            this.label24.Location = new System.Drawing.Point(84, 277);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(115, 18);
             this.label24.TabIndex = 12;
@@ -943,153 +932,202 @@
             // 
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(425, 257);
+            this.label25.Location = new System.Drawing.Point(641, 277);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(63, 18);
             this.label25.TabIndex = 13;
             this.label25.Text = "Puesto: ";
             // 
-            // maskedTextBox5
+            // txtCURPPers
             // 
-            this.maskedTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox5.Location = new System.Drawing.Point(143, 131);
-            this.maskedTextBox5.Mask = "AAAA000000AAAAA00";
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(205, 24);
-            this.maskedTextBox5.TabIndex = 20;
+            this.txtCURPPers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCURPPers.Location = new System.Drawing.Point(205, 142);
+            this.txtCURPPers.Mask = "AAAA000000AAAAA00";
+            this.txtCURPPers.Name = "txtCURPPers";
+            this.txtCURPPers.Size = new System.Drawing.Size(297, 24);
+            this.txtCURPPers.TabIndex = 20;
             // 
-            // maskedTextBox6
+            // txtRFCPer
             // 
-            this.maskedTextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox6.Location = new System.Drawing.Point(494, 131);
-            this.maskedTextBox6.Mask = "AAAA000000AAA";
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            this.maskedTextBox6.Size = new System.Drawing.Size(207, 24);
-            this.maskedTextBox6.TabIndex = 21;
+            this.txtRFCPer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRFCPer.Location = new System.Drawing.Point(710, 142);
+            this.txtRFCPer.Mask = "AAAA000000AAA";
+            this.txtRFCPer.Name = "txtRFCPer";
+            this.txtRFCPer.Size = new System.Drawing.Size(298, 24);
+            this.txtRFCPer.TabIndex = 21;
             // 
-            // textBox5
+            // txtNombrePer
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel5.SetColumnSpan(this.textBox5, 3);
-            this.textBox5.Location = new System.Drawing.Point(143, 8);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(558, 24);
-            this.textBox5.TabIndex = 22;
+            this.txtNombrePer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel5.SetColumnSpan(this.txtNombrePer, 3);
+            this.txtNombrePer.Location = new System.Drawing.Point(205, 10);
+            this.txtNombrePer.Name = "txtNombrePer";
+            this.txtNombrePer.Size = new System.Drawing.Size(803, 24);
+            this.txtNombrePer.TabIndex = 22;
             // 
-            // textBox7
+            // txtPrApellidoPer
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Location = new System.Drawing.Point(143, 49);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(205, 24);
-            this.textBox7.TabIndex = 23;
+            this.txtPrApellidoPer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPrApellidoPer.Location = new System.Drawing.Point(205, 54);
+            this.txtPrApellidoPer.Name = "txtPrApellidoPer";
+            this.txtPrApellidoPer.Size = new System.Drawing.Size(297, 24);
+            this.txtPrApellidoPer.TabIndex = 23;
             // 
-            // textBox8
+            // txtSegApellidoPer
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.Location = new System.Drawing.Point(494, 49);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(207, 24);
-            this.textBox8.TabIndex = 24;
+            this.txtSegApellidoPer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSegApellidoPer.Location = new System.Drawing.Point(710, 54);
+            this.txtSegApellidoPer.Name = "txtSegApellidoPer";
+            this.txtSegApellidoPer.Size = new System.Drawing.Size(298, 24);
+            this.txtSegApellidoPer.TabIndex = 24;
             // 
-            // textBox9
+            // txtDomicilioPers
             // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel5.SetColumnSpan(this.textBox9, 3);
-            this.textBox9.Location = new System.Drawing.Point(143, 172);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(558, 24);
-            this.textBox9.TabIndex = 25;
+            this.txtDomicilioPers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel5.SetColumnSpan(this.txtDomicilioPers, 3);
+            this.txtDomicilioPers.Location = new System.Drawing.Point(205, 186);
+            this.txtDomicilioPers.Name = "txtDomicilioPers";
+            this.txtDomicilioPers.Size = new System.Drawing.Size(803, 24);
+            this.txtDomicilioPers.TabIndex = 25;
             // 
-            // textBox10
+            // txtCorreoPers
             // 
-            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox10.Location = new System.Drawing.Point(143, 213);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(205, 24);
-            this.textBox10.TabIndex = 26;
+            this.txtCorreoPers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCorreoPers.Location = new System.Drawing.Point(205, 230);
+            this.txtCorreoPers.Name = "txtCorreoPers";
+            this.txtCorreoPers.Size = new System.Drawing.Size(297, 24);
+            this.txtCorreoPers.TabIndex = 26;
             // 
-            // comboBox2
+            // cmbSexoPer
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbSexoPer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbSexoPer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSexoPer.FormattingEnabled = true;
+            this.cmbSexoPer.Items.AddRange(new object[] {
             "Femenino",
             "Masculino",
             "Otro"});
-            this.comboBox2.Location = new System.Drawing.Point(494, 89);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(207, 26);
-            this.comboBox2.TabIndex = 27;
+            this.cmbSexoPer.Location = new System.Drawing.Point(710, 99);
+            this.cmbSexoPer.Name = "cmbSexoPer";
+            this.cmbSexoPer.Size = new System.Drawing.Size(298, 26);
+            this.cmbSexoPer.TabIndex = 27;
             // 
-            // maskedTextBox7
+            // txtTelefonoPer
             // 
-            this.maskedTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox7.Location = new System.Drawing.Point(494, 213);
-            this.maskedTextBox7.Mask = "(999)000-0000";
-            this.maskedTextBox7.Name = "maskedTextBox7";
-            this.maskedTextBox7.Size = new System.Drawing.Size(207, 24);
-            this.maskedTextBox7.TabIndex = 28;
+            this.txtTelefonoPer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTelefonoPer.Location = new System.Drawing.Point(710, 230);
+            this.txtTelefonoPer.Mask = "(999)000-0000";
+            this.txtTelefonoPer.Name = "txtTelefonoPer";
+            this.txtTelefonoPer.Size = new System.Drawing.Size(298, 24);
+            this.txtTelefonoPer.TabIndex = 28;
             // 
-            // maskedTextBox8
+            // txtFechaNacPer
             // 
-            this.maskedTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox8.Location = new System.Drawing.Point(143, 90);
-            this.maskedTextBox8.Mask = "00/00/0000";
-            this.maskedTextBox8.Name = "maskedTextBox8";
-            this.maskedTextBox8.Size = new System.Drawing.Size(205, 24);
-            this.maskedTextBox8.TabIndex = 29;
-            this.maskedTextBox8.ValidatingType = typeof(System.DateTime);
+            this.txtFechaNacPer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFechaNacPer.Location = new System.Drawing.Point(205, 98);
+            this.txtFechaNacPer.Mask = "00/00/0000";
+            this.txtFechaNacPer.Name = "txtFechaNacPer";
+            this.txtFechaNacPer.Size = new System.Drawing.Size(297, 24);
+            this.txtFechaNacPer.TabIndex = 29;
+            this.txtFechaNacPer.ValidatingType = typeof(System.DateTime);
             // 
-            // comboBox3
+            // cmbNivelEducativo
             // 
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cmbNivelEducativo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbNivelEducativo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNivelEducativo.FormattingEnabled = true;
+            this.cmbNivelEducativo.Items.AddRange(new object[] {
             "Técnico/Bachillerato",
             "Licenciatura ",
             "Maestría",
             "Doctorado"});
-            this.comboBox3.Location = new System.Drawing.Point(143, 256);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(205, 26);
-            this.comboBox3.TabIndex = 30;
+            this.cmbNivelEducativo.Location = new System.Drawing.Point(205, 273);
+            this.cmbNivelEducativo.Name = "cmbNivelEducativo";
+            this.cmbNivelEducativo.Size = new System.Drawing.Size(297, 26);
+            this.cmbNivelEducativo.TabIndex = 30;
             // 
-            // comboBox4
+            // cmbPuesto
             // 
-            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cmbPuesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbPuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPuesto.FormattingEnabled = true;
+            this.cmbPuesto.Items.AddRange(new object[] {
             "Administrativo ",
             "Médico"});
-            this.comboBox4.Location = new System.Drawing.Point(494, 256);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(207, 26);
-            this.comboBox4.TabIndex = 31;
+            this.cmbPuesto.Location = new System.Drawing.Point(710, 273);
+            this.cmbPuesto.Name = "cmbPuesto";
+            this.cmbPuesto.Size = new System.Drawing.Size(298, 26);
+            this.cmbPuesto.TabIndex = 31;
             // 
-            // button1
+            // label30
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tblRegEmpleados.SetColumnSpan(this.button1, 2);
-            this.button1.Location = new System.Drawing.Point(449, 377);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 35);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label30.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(611, 321);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(93, 18);
+            this.label30.TabIndex = 34;
+            this.label30.Text = "Contraseña: ";
             // 
-            // tabPage4
+            // txtClave
             // 
-            this.tabPage4.Controls.Add(this.tbMedicamentos);
-            this.tabPage4.Location = new System.Drawing.Point(199, 4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1023, 427);
-            this.tabPage4.TabIndex = 4;
-            this.tabPage4.Text = "Medic";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.txtClave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtClave.Location = new System.Drawing.Point(710, 318);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.PasswordChar = '*';
+            this.txtClave.Size = new System.Drawing.Size(298, 24);
+            this.txtClave.TabIndex = 33;
+            // 
+            // label31
+            // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(131, 321);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(68, 18);
+            this.label31.TabIndex = 36;
+            this.label31.Text = "Usuario: ";
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUsuario.Location = new System.Drawing.Point(205, 318);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(297, 24);
+            this.txtUsuario.TabIndex = 35;
+            // 
+            // cbEstacionamiento
+            // 
+            this.cbEstacionamiento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbEstacionamiento.AutoSize = true;
+            this.tableLayoutPanel5.SetColumnSpan(this.cbEstacionamiento, 2);
+            this.cbEstacionamiento.Location = new System.Drawing.Point(67, 364);
+            this.cbEstacionamiento.Name = "cbEstacionamiento";
+            this.cbEstacionamiento.Size = new System.Drawing.Size(371, 22);
+            this.cbEstacionamiento.TabIndex = 37;
+            this.cbEstacionamiento.Text = "¿Quiere registrar su vehículo en el estacionamiento?";
+            this.cbEstacionamiento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbEstacionamiento.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGuardar.Location = new System.Drawing.Point(803, 357);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(111, 35);
+            this.btnGuardar.TabIndex = 38;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            // 
+            // tpMedicamentos
+            // 
+            this.tpMedicamentos.Controls.Add(this.tbMedicamentos);
+            this.tpMedicamentos.Location = new System.Drawing.Point(199, 4);
+            this.tpMedicamentos.Name = "tpMedicamentos";
+            this.tpMedicamentos.Size = new System.Drawing.Size(1023, 427);
+            this.tpMedicamentos.TabIndex = 4;
+            this.tpMedicamentos.Text = "Medic";
+            this.tpMedicamentos.UseVisualStyleBackColor = true;
             // 
             // tbMedicamentos
             // 
@@ -1122,7 +1160,7 @@
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.listBox1, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lstMedicamentos, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 20);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -1131,15 +1169,15 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(499, 398);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
-            // listBox1
+            // lstMedicamentos
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 18;
-            this.listBox1.Location = new System.Drawing.Point(133, 3);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(232, 382);
-            this.listBox1.TabIndex = 0;
+            this.lstMedicamentos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lstMedicamentos.FormattingEnabled = true;
+            this.lstMedicamentos.ItemHeight = 18;
+            this.lstMedicamentos.Location = new System.Drawing.Point(133, 3);
+            this.lstMedicamentos.Name = "lstMedicamentos";
+            this.lstMedicamentos.Size = new System.Drawing.Size(232, 382);
+            this.lstMedicamentos.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -1170,7 +1208,7 @@
             this.tableLayoutPanel7.Controls.Add(this.label26, 3, 1);
             this.tableLayoutPanel7.Controls.Add(this.lblSubtotal, 3, 2);
             this.tableLayoutPanel7.Controls.Add(this.label33, 2, 3);
-            this.tableLayoutPanel7.Controls.Add(this.label34, 3, 3);
+            this.tableLayoutPanel7.Controls.Add(this.lblTotal, 3, 3);
             this.tableLayoutPanel7.Controls.Add(this.btnAgregar, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.btnRealizar, 1, 4);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1238,33 +1276,6 @@
             this.label28.TabIndex = 4;
             this.label28.Text = "Precio unitario";
             // 
-            // lblDescripcion
-            // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(3, 78);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(16, 18);
-            this.lblDescripcion.TabIndex = 5;
-            this.lblDescripcion.Text = "_";
-            // 
-            // lblCantidad
-            // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(128, 78);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(16, 18);
-            this.lblCantidad.TabIndex = 6;
-            this.lblCantidad.Text = "_";
-            // 
-            // lblUnitario
-            // 
-            this.lblUnitario.AutoSize = true;
-            this.lblUnitario.Location = new System.Drawing.Point(253, 78);
-            this.lblUnitario.Name = "lblUnitario";
-            this.lblUnitario.Size = new System.Drawing.Size(16, 18);
-            this.lblUnitario.TabIndex = 7;
-            this.lblUnitario.Text = "_";
-            // 
             // label26
             // 
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1274,15 +1285,6 @@
             this.label26.Size = new System.Drawing.Size(62, 18);
             this.label26.TabIndex = 8;
             this.label26.Text = "Subtotal";
-            // 
-            // lblSubtotal
-            // 
-            this.lblSubtotal.AutoSize = true;
-            this.lblSubtotal.Location = new System.Drawing.Point(378, 78);
-            this.lblSubtotal.Name = "lblSubtotal";
-            this.lblSubtotal.Size = new System.Drawing.Size(16, 18);
-            this.lblSubtotal.TabIndex = 9;
-            this.lblSubtotal.Text = "_";
             // 
             // label33
             // 
@@ -1294,15 +1296,15 @@
             this.label33.TabIndex = 10;
             this.label33.Text = "Total: ";
             // 
-            // label34
+            // lblTotal
             // 
-            this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(429, 326);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(16, 18);
-            this.label34.TabIndex = 11;
-            this.label34.Text = "$";
+            this.lblTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(429, 326);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(16, 18);
+            this.lblTotal.TabIndex = 11;
+            this.lblTotal.Text = "$";
             // 
             // btnAgregar
             // 
@@ -1366,42 +1368,41 @@
             this.lblUsuario.TabIndex = 3;
             this.lblUsuario.Text = "_usuario_ !";
             // 
-            // label29
+            // lblSubtotal
             // 
-            this.label29.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(69, 301);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(68, 18);
-            this.label29.TabIndex = 32;
-            this.label29.Text = "Usuario: ";
+            this.lblSubtotal.AutoSize = true;
+            this.lblSubtotal.Location = new System.Drawing.Point(378, 78);
+            this.lblSubtotal.Name = "lblSubtotal";
+            this.lblSubtotal.Size = new System.Drawing.Size(16, 18);
+            this.lblSubtotal.TabIndex = 9;
+            this.lblSubtotal.Text = "_";
             // 
-            // textBox11
+            // lblUnitario
             // 
-            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox11.Location = new System.Drawing.Point(494, 298);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.PasswordChar = '*';
-            this.textBox11.Size = new System.Drawing.Size(207, 24);
-            this.textBox11.TabIndex = 33;
+            this.lblUnitario.AutoSize = true;
+            this.lblUnitario.Location = new System.Drawing.Point(253, 78);
+            this.lblUnitario.Name = "lblUnitario";
+            this.lblUnitario.Size = new System.Drawing.Size(16, 18);
+            this.lblUnitario.TabIndex = 7;
+            this.lblUnitario.Text = "_";
             // 
-            // label30
+            // lblCantidad
             // 
-            this.label30.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(405, 301);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(83, 18);
-            this.label30.TabIndex = 34;
-            this.label30.Text = "Password: ";
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Location = new System.Drawing.Point(128, 78);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(16, 18);
+            this.lblCantidad.TabIndex = 6;
+            this.lblCantidad.Text = "_";
             // 
-            // textBox12
+            // lblDescripcion
             // 
-            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox12.Location = new System.Drawing.Point(143, 298);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(205, 24);
-            this.textBox12.TabIndex = 35;
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Location = new System.Drawing.Point(3, 78);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(16, 18);
+            this.lblDescripcion.TabIndex = 5;
+            this.lblDescripcion.Text = "_";
             // 
             // PpalAdministrativos
             // 
@@ -1417,7 +1418,7 @@
             this.tbPrincipalA.ResumeLayout(false);
             this.tbPrincipalA.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.tbCitas.ResumeLayout(false);
+            this.tpCitas.ResumeLayout(false);
             this.tblCitas.ResumeLayout(false);
             this.grpCalendario.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -1425,15 +1426,15 @@
             this.grpDatos.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
+            this.tpRegPaciente.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
+            this.tpRegPersonal.ResumeLayout(false);
             this.tblRegEmpleados.ResumeLayout(false);
             this.grpPersona.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
+            this.tpMedicamentos.ResumeLayout(false);
             this.tbMedicamentos.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
@@ -1454,15 +1455,15 @@
         private System.Windows.Forms.PictureBox imgLogo;
         private System.Windows.Forms.Label lblBienvenido;
         private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.TabPage tbCitas;
+        private System.Windows.Forms.TabPage tpCitas;
         private System.Windows.Forms.TableLayoutPanel tblCitas;
         private System.Windows.Forms.GroupBox grpCalendario;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.MonthCalendar mcCalendario;
         private System.Windows.Forms.ComboBox cmbHorarios;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton rbPrimera;
+        private System.Windows.Forms.RadioButton rbSeguimiento;
+        private System.Windows.Forms.RadioButton rbOtra;
         private System.Windows.Forms.GroupBox grpDatos;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label1;
@@ -1475,23 +1476,21 @@
         private System.Windows.Forms.ListBox lstEspecialidades;
         private System.Windows.Forms.ListBox lstMedicos;
         private System.Windows.Forms.Button btnAgendar;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tpRegPersonal;
+        private System.Windows.Forms.TabPage tpMedicamentos;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tpRegPaciente;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tblRegEmpleados;
-        private System.Windows.Forms.GroupBox grpAutomovil;
         private System.Windows.Forms.GroupBox grpPersona;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.MaskedTextBox txtRFCPa;
+        private System.Windows.Forms.MaskedTextBox txtTelefonoPa;
+        private System.Windows.Forms.ComboBox cmbSexoPa;
+        private System.Windows.Forms.MaskedTextBox txtCURPPa;
+        private System.Windows.Forms.TextBox txtDomicilioPa;
+        private System.Windows.Forms.TextBox txtCorreoPa;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
@@ -1502,10 +1501,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.TextBox txtNombrePa;
+        private System.Windows.Forms.TextBox txtPrApellidoPa;
+        private System.Windows.Forms.TextBox txtSegApellidoPa;
+        private System.Windows.Forms.MaskedTextBox txtFechaNacPa;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
@@ -1519,22 +1518,22 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox7;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox8;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.MaskedTextBox txtCURPPers;
+        private System.Windows.Forms.MaskedTextBox txtRFCPer;
+        private System.Windows.Forms.TextBox txtNombrePer;
+        private System.Windows.Forms.TextBox txtPrApellidoPer;
+        private System.Windows.Forms.TextBox txtSegApellidoPer;
+        private System.Windows.Forms.TextBox txtDomicilioPers;
+        private System.Windows.Forms.TextBox txtCorreoPers;
+        private System.Windows.Forms.ComboBox cmbSexoPer;
+        private System.Windows.Forms.MaskedTextBox txtTelefonoPer;
+        private System.Windows.Forms.MaskedTextBox txtFechaNacPer;
+        private System.Windows.Forms.ComboBox cmbNivelEducativo;
+        private System.Windows.Forms.ComboBox cmbPuesto;
         private System.Windows.Forms.TableLayoutPanel tbMedicamentos;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lstMedicamentos;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label lblNombreMed;
@@ -1542,18 +1541,20 @@
         private System.Windows.Forms.Label Descripción;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnRealizar;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox txtClave;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.CheckBox cbEstacionamiento;
+        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.Label lblUnitario;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label lblSubtotal;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnRealizar;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox11;
     }
 }

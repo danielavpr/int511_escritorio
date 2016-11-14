@@ -20,7 +20,7 @@ namespace e_Clinica
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            PpalAdministrativos p = new PpalAdministrativos();
+            PpalMedicos p = new PpalMedicos();
             p.ShowDialog();
               
         }

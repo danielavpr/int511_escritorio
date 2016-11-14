@@ -33,8 +33,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtClave = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -69,8 +69,8 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtUsuario);
+            this.panel1.Controls.Add(this.txtClave);
             this.panel1.Location = new System.Drawing.Point(52, 131);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(263, 185);
@@ -98,20 +98,20 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Usuario: ";
             // 
-            // textBox2
+            // txtUsuario
             // 
-            this.textBox2.Location = new System.Drawing.Point(23, 43);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(218, 37);
-            this.textBox2.TabIndex = 10;
+            this.txtUsuario.Location = new System.Drawing.Point(23, 43);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(218, 37);
+            this.txtUsuario.TabIndex = 10;
             // 
-            // textBox1
+            // txtClave
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(218, 37);
-            this.textBox1.TabIndex = 9;
+            this.txtClave.Location = new System.Drawing.Point(23, 127);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.PasswordChar = '*';
+            this.txtClave.Size = new System.Drawing.Size(218, 37);
+            this.txtClave.TabIndex = 9;
             // 
             // InicioSesion
             // 
@@ -141,8 +141,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtClave;
     }
 }
 
