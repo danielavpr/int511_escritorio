@@ -16,5 +16,6 @@ namespace e_Clinica.Vista
         {
             InitializeComponent();
         }
+        
     }
 }

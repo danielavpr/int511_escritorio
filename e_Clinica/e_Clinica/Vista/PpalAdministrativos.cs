@@ -19,10 +19,10 @@ namespace e_Clinica.Vista
             //   TimeSpan t = new TimeSpan(9, 0, 0);
             cmbHorarios.Items.AddRange(lstHorarios.ToArray());
         }
-        #region VARIABLES GLOBALES }
-        List<string> lstHorarios = new List<string> {"09:00","09:30","10:00","10:30","11:00" };
+        #region VARIABLES GLOBALES 
+        List<string> lstHorarios = new List<string> {"09:00","09:30","10:00","10:30","11:00" };     
         //private DateTime prev;
-        #endregion
+        #endregion                
         private void dtHorario_ValueChanged(object sender, EventArgs e)
         {
             //DateTime dt = dtHorario.Value;
