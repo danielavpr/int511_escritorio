@@ -13,6 +13,7 @@ namespace e_Clinica
 {
     public partial class InicioSesion : Form
     {
+        int user; 
         public InicioSesion()
         {
             InitializeComponent();
@@ -20,8 +21,18 @@ namespace e_Clinica
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            PpalMedicos p = new PpalMedicos();
-            p.ShowDialog();                        
+            user = Int32.Parse(txtUsuario.Text);
+            if (user == 1)
+            {
+                PpalMedicos p = new PpalMedicos();
+                p.ShowDialog();
+            }
+            else if (user == 2)
+            {
+                PpalAdministrativos pA = new PpalAdministrativos();
+                pA.ShowDialog();
+            }
+                       
         }
     }
 }
