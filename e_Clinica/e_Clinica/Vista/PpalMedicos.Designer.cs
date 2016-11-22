@@ -72,6 +72,8 @@
             this.txtLocalizacion = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.txtSintomaCol = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnRegPadecimiento = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
             this.txtFrecuenciaResp = new System.Windows.Forms.MaskedTextBox();
@@ -86,6 +88,24 @@
             this.txtComentarios = new System.Windows.Forms.TextBox();
             this.txtTemperatura = new System.Windows.Forms.MaskedTextBox();
             this.btnRegExploracion = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.tbAnt = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
+            this.lstMedReceta = new System.Windows.Forms.ListBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnRegReceta = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.cmbMedicamentos = new System.Windows.Forms.ComboBox();
+            this.nCantidad = new System.Windows.Forms.NumericUpDown();
+            this.btnAgregarMed = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
             this.tbExamen = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -93,6 +113,14 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.tpExpediente = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tpAntecedentes = new System.Windows.Forms.TabPage();
@@ -165,40 +193,12 @@
             this.label26 = new System.Windows.Forms.Label();
             this.btnBuscarHist = new System.Windows.Forms.Button();
             this.tbListaHistorial = new System.Windows.Forms.TableLayoutPanel();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.tbAnt = new System.Windows.Forms.TabPage();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
-            this.lstMedReceta = new System.Windows.Forms.ListBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.btnAgregarMed = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnRegPadecimiento = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnRegReceta = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.cmbMedicamentos = new System.Windows.Forms.ComboBox();
-            this.nCantidad = new System.Windows.Forms.NumericUpDown();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tbPrincipalM.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpCitas.SuspendLayout();
@@ -212,11 +212,21 @@
             this.tableLayoutPanel20.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel21.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tableLayoutPanel23.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.tbAnt.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.tableLayoutPanel22.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nCantidad)).BeginInit();
+            this.panel7.SuspendLayout();
             this.tbExamen.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.tpExpediente.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tpAntecedentes.SuspendLayout();
@@ -238,18 +248,8 @@
             this.tpHistorial.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.tbAnt.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.tableLayoutPanel22.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nCantidad)).BeginInit();
-            this.panel7.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbPrincipalM
@@ -315,7 +315,7 @@
             this.tblCitas.Name = "tblCitas";
             this.tblCitas.RowCount = 1;
             this.tblCitas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblCitas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 473F));
+            this.tblCitas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 514F));
             this.tblCitas.Size = new System.Drawing.Size(861, 514);
             this.tblCitas.TabIndex = 0;
             // 
@@ -789,6 +789,31 @@
             this.txtSintomaCol.Size = new System.Drawing.Size(242, 27);
             this.txtSintomaCol.TabIndex = 9;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnRegPadecimiento);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(164, 117);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(248, 42);
+            this.panel4.TabIndex = 10;
+            // 
+            // btnRegPadecimiento
+            // 
+            this.btnRegPadecimiento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRegPadecimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.btnRegPadecimiento.FlatAppearance.BorderSize = 0;
+            this.btnRegPadecimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegPadecimiento.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegPadecimiento.ForeColor = System.Drawing.Color.White;
+            this.btnRegPadecimiento.Location = new System.Drawing.Point(115, 5);
+            this.btnRegPadecimiento.Name = "btnRegPadecimiento";
+            this.btnRegPadecimiento.Size = new System.Drawing.Size(100, 30);
+            this.btnRegPadecimiento.TabIndex = 6;
+            this.btnRegPadecimiento.Text = "Registrar";
+            this.btnRegPadecimiento.UseVisualStyleBackColor = false;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.tableLayoutPanel23);
@@ -963,6 +988,232 @@
             this.btnRegExploracion.Text = "Registrar";
             this.btnRegExploracion.UseVisualStyleBackColor = false;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.button3);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.groupBox4.Location = new System.Drawing.Point(427, 3);
+            this.groupBox4.Name = "groupBox4";
+            this.tableLayoutPanel20.SetRowSpan(this.groupBox4, 2);
+            this.groupBox4.Size = new System.Drawing.Size(419, 471);
+            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Antecedentes";
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(305, 419);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(106, 36);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Registrar";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // tbAnt
+            // 
+            this.tbAnt.Controls.Add(this.groupBox2);
+            this.tbAnt.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAnt.Location = new System.Drawing.Point(4, 4);
+            this.tbAnt.Name = "tbAnt";
+            this.tbAnt.Size = new System.Drawing.Size(855, 483);
+            this.tbAnt.TabIndex = 2;
+            this.tbAnt.Text = "Receta";
+            this.tbAnt.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.tableLayoutPanel22);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(855, 483);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Receta";
+            // 
+            // tableLayoutPanel22
+            // 
+            this.tableLayoutPanel22.ColumnCount = 3;
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel22.Controls.Add(this.lstMedReceta, 0, 2);
+            this.tableLayoutPanel22.Controls.Add(this.label51, 0, 1);
+            this.tableLayoutPanel22.Controls.Add(this.label53, 1, 1);
+            this.tableLayoutPanel22.Controls.Add(this.label54, 2, 1);
+            this.tableLayoutPanel22.Controls.Add(this.panel5, 0, 5);
+            this.tableLayoutPanel22.Controls.Add(this.panel6, 0, 0);
+            this.tableLayoutPanel22.Controls.Add(this.panel7, 2, 4);
+            this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(3, 23);
+            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
+            this.tableLayoutPanel22.RowCount = 6;
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel22.Size = new System.Drawing.Size(849, 457);
+            this.tableLayoutPanel22.TabIndex = 0;
+            // 
+            // lstMedReceta
+            // 
+            this.tableLayoutPanel22.SetColumnSpan(this.lstMedReceta, 3);
+            this.lstMedReceta.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstMedReceta.FormattingEnabled = true;
+            this.lstMedReceta.ItemHeight = 20;
+            this.lstMedReceta.Location = new System.Drawing.Point(10, 146);
+            this.lstMedReceta.Margin = new System.Windows.Forms.Padding(10);
+            this.lstMedReceta.Name = "lstMedReceta";
+            this.tableLayoutPanel22.SetRowSpan(this.lstMedReceta, 2);
+            this.lstMedReceta.Size = new System.Drawing.Size(829, 162);
+            this.lstMedReceta.TabIndex = 6;
+            // 
+            // label51
+            // 
+            this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(109, 92);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(64, 20);
+            this.label51.TabIndex = 0;
+            this.label51.Text = "Nombre";
+            // 
+            // label53
+            // 
+            this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(398, 92);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(50, 20);
+            this.label53.TabIndex = 2;
+            this.label53.Text = "Precio";
+            // 
+            // label54
+            // 
+            this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(674, 92);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(65, 20);
+            this.label54.TabIndex = 3;
+            this.label54.Text = "Subtotal";
+            // 
+            // panel5
+            // 
+            this.tableLayoutPanel22.SetColumnSpan(this.panel5, 3);
+            this.panel5.Controls.Add(this.btnRegReceta);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(3, 389);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(843, 65);
+            this.panel5.TabIndex = 10;
+            // 
+            // btnRegReceta
+            // 
+            this.btnRegReceta.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRegReceta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.btnRegReceta.FlatAppearance.BorderSize = 0;
+            this.btnRegReceta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegReceta.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegReceta.ForeColor = System.Drawing.Color.White;
+            this.btnRegReceta.Location = new System.Drawing.Point(718, 8);
+            this.btnRegReceta.Name = "btnRegReceta";
+            this.btnRegReceta.Size = new System.Drawing.Size(114, 37);
+            this.btnRegReceta.TabIndex = 13;
+            this.btnRegReceta.Text = "Registrar";
+            this.btnRegReceta.UseVisualStyleBackColor = false;
+            // 
+            // panel6
+            // 
+            this.tableLayoutPanel22.SetColumnSpan(this.panel6, 3);
+            this.panel6.Controls.Add(this.cmbMedicamentos);
+            this.panel6.Controls.Add(this.nCantidad);
+            this.panel6.Controls.Add(this.btnAgregarMed);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(3, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(843, 62);
+            this.panel6.TabIndex = 11;
+            // 
+            // cmbMedicamentos
+            // 
+            this.cmbMedicamentos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbMedicamentos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMedicamentos.FormattingEnabled = true;
+            this.cmbMedicamentos.Location = new System.Drawing.Point(15, 17);
+            this.cmbMedicamentos.Name = "cmbMedicamentos";
+            this.cmbMedicamentos.Size = new System.Drawing.Size(265, 28);
+            this.cmbMedicamentos.TabIndex = 9;
+            // 
+            // nCantidad
+            // 
+            this.nCantidad.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nCantidad.Location = new System.Drawing.Point(298, 17);
+            this.nCantidad.Name = "nCantidad";
+            this.nCantidad.Size = new System.Drawing.Size(85, 27);
+            this.nCantidad.TabIndex = 10;
+            // 
+            // btnAgregarMed
+            // 
+            this.btnAgregarMed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgregarMed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.btnAgregarMed.FlatAppearance.BorderSize = 0;
+            this.btnAgregarMed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarMed.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarMed.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarMed.Location = new System.Drawing.Point(412, 13);
+            this.btnAgregarMed.Name = "btnAgregarMed";
+            this.btnAgregarMed.Size = new System.Drawing.Size(113, 34);
+            this.btnAgregarMed.TabIndex = 9;
+            this.btnAgregarMed.Text = "Agregar";
+            this.btnAgregarMed.UseVisualStyleBackColor = false;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label56);
+            this.panel7.Controls.Add(this.label55);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(565, 318);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(284, 68);
+            this.panel7.TabIndex = 12;
+            // 
+            // label56
+            // 
+            this.label56.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft NeoGothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.Color.Black;
+            this.label56.Location = new System.Drawing.Point(126, 18);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(22, 26);
+            this.label56.TabIndex = 15;
+            this.label56.Text = "$";
+            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label55
+            // 
+            this.label55.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(74, 22);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(50, 20);
+            this.label55.TabIndex = 14;
+            this.label55.Text = "Total: ";
+            // 
             // tbExamen
             // 
             this.tbExamen.Controls.Add(this.tableLayoutPanel16);
@@ -1056,6 +1307,100 @@
             this.label22.Text = "Lbl donde se va a poner el resultado del procesamiento de la imagen por parte del" +
     " sistema";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.tableLayoutPanel16.SetColumnSpan(this.panel3, 3);
+            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.label25);
+            this.panel3.Controls.Add(this.label24);
+            this.panel3.Controls.Add(this.label23);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(349, 129);
+            this.panel3.Margin = new System.Windows.Forms.Padding(10);
+            this.panel3.Name = "panel3";
+            this.tableLayoutPanel16.SetRowSpan(this.panel3, 3);
+            this.panel3.Size = new System.Drawing.Size(490, 338);
+            this.panel3.TabIndex = 6;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(124, 184);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(340, 65);
+            this.textBox3.TabIndex = 17;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(124, 105);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(340, 65);
+            this.textBox1.TabIndex = 16;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(124, 27);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(340, 65);
+            this.textBox2.TabIndex = 15;
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Black;
+            this.label25.Location = new System.Drawing.Point(24, 205);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(105, 21);
+            this.label25.TabIndex = 12;
+            this.label25.Text = "Tratamiento: ";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(24, 126);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(104, 21);
+            this.label24.TabIndex = 11;
+            this.label24.Text = "Indicaciones: ";
+            // 
+            // label23
+            // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(26, 46);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(102, 21);
+            this.label23.TabIndex = 10;
+            this.label23.Text = "Diagnóstico: ";
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(335, 278);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(128, 35);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Guardar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // tpExpediente
             // 
             this.tpExpediente.Controls.Add(this.tabControl2);
@@ -1085,7 +1430,7 @@
             this.tpAntecedentes.Location = new System.Drawing.Point(4, 4);
             this.tpAntecedentes.Name = "tpAntecedentes";
             this.tpAntecedentes.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAntecedentes.Size = new System.Drawing.Size(853, 483);
+            this.tpAntecedentes.Size = new System.Drawing.Size(861, 491);
             this.tpAntecedentes.TabIndex = 0;
             this.tpAntecedentes.Text = "Antecedentes";
             this.tpAntecedentes.UseVisualStyleBackColor = true;
@@ -1104,7 +1449,7 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(847, 477);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(855, 485);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // grpAPP
@@ -1113,7 +1458,7 @@
             this.grpAPP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpAPP.Location = new System.Drawing.Point(3, 3);
             this.grpAPP.Name = "grpAPP";
-            this.grpAPP.Size = new System.Drawing.Size(417, 399);
+            this.grpAPP.Size = new System.Drawing.Size(421, 406);
             this.grpAPP.TabIndex = 0;
             this.grpAPP.TabStop = false;
             this.grpAPP.Text = "Antecedentes Personales Patológicos";
@@ -1162,13 +1507,13 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.94527F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.94527F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.94527F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(411, 376);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(415, 383);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // txtConvulsionesM
             // 
             this.txtConvulsionesM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtConvulsionesM.Location = new System.Drawing.Point(334, 340);
+            this.txtConvulsionesM.Location = new System.Drawing.Point(338, 347);
             this.txtConvulsionesM.Mask = "99";
             this.txtConvulsionesM.Name = "txtConvulsionesM";
             this.txtConvulsionesM.Size = new System.Drawing.Size(70, 24);
@@ -1178,7 +1523,7 @@
             // txtHepatitisM
             // 
             this.txtHepatitisM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtHepatitisM.Location = new System.Drawing.Point(334, 293);
+            this.txtHepatitisM.Location = new System.Drawing.Point(338, 299);
             this.txtHepatitisM.Mask = "99";
             this.txtHepatitisM.Name = "txtHepatitisM";
             this.txtHepatitisM.Size = new System.Drawing.Size(70, 24);
@@ -1188,7 +1533,7 @@
             // txtCancerM
             // 
             this.txtCancerM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCancerM.Location = new System.Drawing.Point(334, 247);
+            this.txtCancerM.Location = new System.Drawing.Point(338, 252);
             this.txtCancerM.Mask = "99";
             this.txtCancerM.Name = "txtCancerM";
             this.txtCancerM.Size = new System.Drawing.Size(70, 24);
@@ -1198,7 +1543,7 @@
             // txtVihM
             // 
             this.txtVihM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtVihM.Location = new System.Drawing.Point(334, 201);
+            this.txtVihM.Location = new System.Drawing.Point(338, 205);
             this.txtVihM.Mask = "99";
             this.txtVihM.Name = "txtVihM";
             this.txtVihM.Size = new System.Drawing.Size(70, 24);
@@ -1208,7 +1553,7 @@
             // txtDiabetesM
             // 
             this.txtDiabetesM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDiabetesM.Location = new System.Drawing.Point(334, 155);
+            this.txtDiabetesM.Location = new System.Drawing.Point(338, 158);
             this.txtDiabetesM.Mask = "99";
             this.txtDiabetesM.Name = "txtDiabetesM";
             this.txtDiabetesM.Size = new System.Drawing.Size(70, 24);
@@ -1218,7 +1563,7 @@
             // txtHipertensionM
             // 
             this.txtHipertensionM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtHipertensionM.Location = new System.Drawing.Point(334, 109);
+            this.txtHipertensionM.Location = new System.Drawing.Point(338, 111);
             this.txtHipertensionM.Mask = "99";
             this.txtHipertensionM.Name = "txtHipertensionM";
             this.txtHipertensionM.Size = new System.Drawing.Size(70, 24);
@@ -1234,18 +1579,18 @@
             this.tableLayoutPanel12.Controls.Add(this.rbSiConvulsiones, 1, 0);
             this.tableLayoutPanel12.Controls.Add(this.rbNoConvulsiones, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(167, 331);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(169, 338);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(158, 42);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(160, 42);
             this.tableLayoutPanel12.TabIndex = 41;
             // 
             // rbSiConvulsiones
             // 
             this.rbSiConvulsiones.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbSiConvulsiones.AutoSize = true;
-            this.rbSiConvulsiones.Location = new System.Drawing.Point(111, 14);
+            this.rbSiConvulsiones.Location = new System.Drawing.Point(113, 14);
             this.rbSiConvulsiones.Name = "rbSiConvulsiones";
             this.rbSiConvulsiones.Size = new System.Drawing.Size(14, 13);
             this.rbSiConvulsiones.TabIndex = 15;
@@ -1256,7 +1601,7 @@
             // 
             this.rbNoConvulsiones.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbNoConvulsiones.AutoSize = true;
-            this.rbNoConvulsiones.Location = new System.Drawing.Point(32, 14);
+            this.rbNoConvulsiones.Location = new System.Drawing.Point(33, 14);
             this.rbNoConvulsiones.Name = "rbNoConvulsiones";
             this.rbNoConvulsiones.Size = new System.Drawing.Size(14, 13);
             this.rbNoConvulsiones.TabIndex = 14;
@@ -1272,18 +1617,18 @@
             this.tableLayoutPanel11.Controls.Add(this.rbSiHepatitis, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.rbNoHepatitis, 0, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(167, 285);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(169, 291);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(158, 40);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(160, 41);
             this.tableLayoutPanel11.TabIndex = 40;
             // 
             // rbSiHepatitis
             // 
             this.rbSiHepatitis.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbSiHepatitis.AutoSize = true;
-            this.rbSiHepatitis.Location = new System.Drawing.Point(111, 13);
+            this.rbSiHepatitis.Location = new System.Drawing.Point(113, 14);
             this.rbSiHepatitis.Name = "rbSiHepatitis";
             this.rbSiHepatitis.Size = new System.Drawing.Size(14, 13);
             this.rbSiHepatitis.TabIndex = 15;
@@ -1294,7 +1639,7 @@
             // 
             this.rbNoHepatitis.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbNoHepatitis.AutoSize = true;
-            this.rbNoHepatitis.Location = new System.Drawing.Point(32, 13);
+            this.rbNoHepatitis.Location = new System.Drawing.Point(33, 14);
             this.rbNoHepatitis.Name = "rbNoHepatitis";
             this.rbNoHepatitis.Size = new System.Drawing.Size(14, 13);
             this.rbNoHepatitis.TabIndex = 14;
@@ -1310,18 +1655,18 @@
             this.tableLayoutPanel10.Controls.Add(this.rbSiCancer, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.rbNoCancer, 0, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(167, 239);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(169, 244);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(158, 40);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(160, 41);
             this.tableLayoutPanel10.TabIndex = 39;
             // 
             // rbSiCancer
             // 
             this.rbSiCancer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbSiCancer.AutoSize = true;
-            this.rbSiCancer.Location = new System.Drawing.Point(111, 13);
+            this.rbSiCancer.Location = new System.Drawing.Point(113, 14);
             this.rbSiCancer.Name = "rbSiCancer";
             this.rbSiCancer.Size = new System.Drawing.Size(14, 13);
             this.rbSiCancer.TabIndex = 15;
@@ -1332,7 +1677,7 @@
             // 
             this.rbNoCancer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbNoCancer.AutoSize = true;
-            this.rbNoCancer.Location = new System.Drawing.Point(32, 13);
+            this.rbNoCancer.Location = new System.Drawing.Point(33, 14);
             this.rbNoCancer.Name = "rbNoCancer";
             this.rbNoCancer.Size = new System.Drawing.Size(14, 13);
             this.rbNoCancer.TabIndex = 14;
@@ -1348,18 +1693,18 @@
             this.tableLayoutPanel9.Controls.Add(this.rbSiVih, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.rbNoVih, 0, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(167, 193);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(169, 197);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(158, 40);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(160, 41);
             this.tableLayoutPanel9.TabIndex = 38;
             // 
             // rbSiVih
             // 
             this.rbSiVih.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbSiVih.AutoSize = true;
-            this.rbSiVih.Location = new System.Drawing.Point(111, 13);
+            this.rbSiVih.Location = new System.Drawing.Point(113, 14);
             this.rbSiVih.Name = "rbSiVih";
             this.rbSiVih.Size = new System.Drawing.Size(14, 13);
             this.rbSiVih.TabIndex = 15;
@@ -1370,7 +1715,7 @@
             // 
             this.rbNoVih.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbNoVih.AutoSize = true;
-            this.rbNoVih.Location = new System.Drawing.Point(32, 13);
+            this.rbNoVih.Location = new System.Drawing.Point(33, 14);
             this.rbNoVih.Name = "rbNoVih";
             this.rbNoVih.Size = new System.Drawing.Size(14, 13);
             this.rbNoVih.TabIndex = 14;
@@ -1386,18 +1731,18 @@
             this.tableLayoutPanel8.Controls.Add(this.rbSiDiabetes, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.rbNoDiabetes, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(167, 147);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(169, 150);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(158, 40);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(160, 41);
             this.tableLayoutPanel8.TabIndex = 37;
             // 
             // rbSiDiabetes
             // 
             this.rbSiDiabetes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbSiDiabetes.AutoSize = true;
-            this.rbSiDiabetes.Location = new System.Drawing.Point(111, 13);
+            this.rbSiDiabetes.Location = new System.Drawing.Point(113, 14);
             this.rbSiDiabetes.Name = "rbSiDiabetes";
             this.rbSiDiabetes.Size = new System.Drawing.Size(14, 13);
             this.rbSiDiabetes.TabIndex = 15;
@@ -1408,7 +1753,7 @@
             // 
             this.rbNoDiabetes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbNoDiabetes.AutoSize = true;
-            this.rbNoDiabetes.Location = new System.Drawing.Point(32, 13);
+            this.rbNoDiabetes.Location = new System.Drawing.Point(33, 14);
             this.rbNoDiabetes.Name = "rbNoDiabetes";
             this.rbNoDiabetes.Size = new System.Drawing.Size(14, 13);
             this.rbNoDiabetes.TabIndex = 14;
@@ -1424,18 +1769,18 @@
             this.tableLayoutPanel7.Controls.Add(this.rbNoHipertension, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.rbSiHipertension, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(167, 101);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(169, 103);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(158, 40);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(160, 41);
             this.tableLayoutPanel7.TabIndex = 36;
             // 
             // rbNoHipertension
             // 
             this.rbNoHipertension.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbNoHipertension.AutoSize = true;
-            this.rbNoHipertension.Location = new System.Drawing.Point(32, 13);
+            this.rbNoHipertension.Location = new System.Drawing.Point(33, 14);
             this.rbNoHipertension.Name = "rbNoHipertension";
             this.rbNoHipertension.Size = new System.Drawing.Size(14, 13);
             this.rbNoHipertension.TabIndex = 12;
@@ -1446,7 +1791,7 @@
             // 
             this.rbSiHipertension.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbSiHipertension.AutoSize = true;
-            this.rbSiHipertension.Location = new System.Drawing.Point(111, 13);
+            this.rbSiHipertension.Location = new System.Drawing.Point(113, 14);
             this.rbSiHipertension.Name = "rbSiHipertension";
             this.rbSiHipertension.Size = new System.Drawing.Size(14, 13);
             this.rbSiHipertension.TabIndex = 13;
@@ -1457,7 +1802,7 @@
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(33, 334);
+            this.label14.Location = new System.Drawing.Point(34, 341);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(98, 36);
             this.label14.TabIndex = 34;
@@ -1468,7 +1813,7 @@
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(49, 296);
+            this.label13.Location = new System.Drawing.Point(50, 302);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(65, 18);
             this.label13.TabIndex = 33;
@@ -1478,7 +1823,7 @@
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(54, 250);
+            this.label12.Location = new System.Drawing.Point(55, 255);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(56, 18);
             this.label12.TabIndex = 32;
@@ -1487,7 +1832,7 @@
             // txtCardiacosM
             // 
             this.txtCardiacosM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCardiacosM.Location = new System.Drawing.Point(334, 63);
+            this.txtCardiacosM.Location = new System.Drawing.Point(338, 64);
             this.txtCardiacosM.Mask = "99";
             this.txtCardiacosM.Name = "txtCardiacosM";
             this.txtCardiacosM.Size = new System.Drawing.Size(70, 24);
@@ -1498,7 +1843,7 @@
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(66, 204);
+            this.label11.Location = new System.Drawing.Point(67, 208);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(31, 18);
             this.label11.TabIndex = 31;
@@ -1508,7 +1853,7 @@
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(49, 158);
+            this.label10.Location = new System.Drawing.Point(50, 161);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(66, 18);
             this.label10.TabIndex = 30;
@@ -1518,7 +1863,7 @@
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(36, 112);
+            this.label9.Location = new System.Drawing.Point(37, 114);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(91, 18);
             this.label9.TabIndex = 29;
@@ -1528,7 +1873,7 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 66);
+            this.label8.Location = new System.Drawing.Point(8, 67);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(149, 18);
             this.label8.TabIndex = 28;
@@ -1539,7 +1884,7 @@
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(343, 17);
+            this.label7.Location = new System.Drawing.Point(347, 17);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 18);
             this.label7.TabIndex = 3;
@@ -1549,7 +1894,7 @@
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(276, 17);
+            this.label6.Location = new System.Drawing.Point(280, 17);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(21, 18);
             this.label6.TabIndex = 2;
@@ -1559,7 +1904,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(191, 17);
+            this.label5.Location = new System.Drawing.Point(193, 17);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(28, 18);
             this.label5.TabIndex = 1;
@@ -1569,7 +1914,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(38, 17);
+            this.label4.Location = new System.Drawing.Point(39, 17);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 18);
             this.label4.TabIndex = 0;
@@ -1584,18 +1929,18 @@
             this.tableLayoutPanel6.Controls.Add(this.rbNoCardiacoss, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.rbSiCardiacos, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(167, 55);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(169, 56);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(158, 40);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(160, 41);
             this.tableLayoutPanel6.TabIndex = 35;
             // 
             // rbNoCardiacoss
             // 
             this.rbNoCardiacoss.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbNoCardiacoss.AutoSize = true;
-            this.rbNoCardiacoss.Location = new System.Drawing.Point(32, 13);
+            this.rbNoCardiacoss.Location = new System.Drawing.Point(33, 14);
             this.rbNoCardiacoss.Name = "rbNoCardiacoss";
             this.rbNoCardiacoss.Size = new System.Drawing.Size(14, 13);
             this.rbNoCardiacoss.TabIndex = 10;
@@ -1606,7 +1951,7 @@
             // 
             this.rbSiCardiacos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbSiCardiacos.AutoSize = true;
-            this.rbSiCardiacos.Location = new System.Drawing.Point(111, 13);
+            this.rbSiCardiacos.Location = new System.Drawing.Point(113, 14);
             this.rbSiCardiacos.Name = "rbSiCardiacos";
             this.rbSiCardiacos.Size = new System.Drawing.Size(14, 13);
             this.rbSiCardiacos.TabIndex = 11;
@@ -1617,10 +1962,10 @@
             // 
             this.grpAPNP.Controls.Add(this.tableLayoutPanel5);
             this.grpAPNP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grpAPNP.Location = new System.Drawing.Point(426, 3);
+            this.grpAPNP.Location = new System.Drawing.Point(430, 3);
             this.grpAPNP.Name = "grpAPNP";
             this.grpAPNP.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.grpAPNP.Size = new System.Drawing.Size(418, 399);
+            this.grpAPNP.Size = new System.Drawing.Size(422, 406);
             this.grpAPNP.TabIndex = 1;
             this.grpAPNP.TabStop = false;
             this.grpAPNP.Text = "Antecedentes Personales No Patológicos";
@@ -1649,7 +1994,7 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(412, 376);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(416, 383);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel15
@@ -1663,18 +2008,18 @@
             this.tableLayoutPanel15.Controls.Add(this.rbDrogasF, 1, 0);
             this.tableLayoutPanel15.Controls.Add(this.rbDrogasMF, 2, 0);
             this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(106, 285);
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(107, 288);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 1;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(303, 88);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(306, 92);
             this.tableLayoutPanel15.TabIndex = 16;
             // 
             // rbDrogasE
             // 
             this.rbDrogasE.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbDrogasE.AutoSize = true;
-            this.rbDrogasE.Location = new System.Drawing.Point(43, 37);
+            this.rbDrogasE.Location = new System.Drawing.Point(44, 39);
             this.rbDrogasE.Name = "rbDrogasE";
             this.rbDrogasE.Size = new System.Drawing.Size(14, 13);
             this.rbDrogasE.TabIndex = 9;
@@ -1685,7 +2030,7 @@
             // 
             this.rbDrogasF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbDrogasF.AutoSize = true;
-            this.rbDrogasF.Location = new System.Drawing.Point(144, 37);
+            this.rbDrogasF.Location = new System.Drawing.Point(146, 39);
             this.rbDrogasF.Name = "rbDrogasF";
             this.rbDrogasF.Size = new System.Drawing.Size(14, 13);
             this.rbDrogasF.TabIndex = 10;
@@ -1696,7 +2041,7 @@
             // 
             this.rbDrogasMF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbDrogasMF.AutoSize = true;
-            this.rbDrogasMF.Location = new System.Drawing.Point(245, 37);
+            this.rbDrogasMF.Location = new System.Drawing.Point(248, 39);
             this.rbDrogasMF.Name = "rbDrogasMF";
             this.rbDrogasMF.Size = new System.Drawing.Size(14, 13);
             this.rbDrogasMF.TabIndex = 11;
@@ -1714,18 +2059,18 @@
             this.tableLayoutPanel14.Controls.Add(this.rbAlcoholF, 1, 0);
             this.tableLayoutPanel14.Controls.Add(this.rbAlcoholMF, 2, 0);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(106, 191);
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(107, 193);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(303, 88);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(306, 89);
             this.tableLayoutPanel14.TabIndex = 15;
             // 
             // rbAlcoholE
             // 
             this.rbAlcoholE.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbAlcoholE.AutoSize = true;
-            this.rbAlcoholE.Location = new System.Drawing.Point(43, 37);
+            this.rbAlcoholE.Location = new System.Drawing.Point(44, 38);
             this.rbAlcoholE.Name = "rbAlcoholE";
             this.rbAlcoholE.Size = new System.Drawing.Size(14, 13);
             this.rbAlcoholE.TabIndex = 9;
@@ -1736,7 +2081,7 @@
             // 
             this.rbAlcoholF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbAlcoholF.AutoSize = true;
-            this.rbAlcoholF.Location = new System.Drawing.Point(144, 37);
+            this.rbAlcoholF.Location = new System.Drawing.Point(146, 38);
             this.rbAlcoholF.Name = "rbAlcoholF";
             this.rbAlcoholF.Size = new System.Drawing.Size(14, 13);
             this.rbAlcoholF.TabIndex = 10;
@@ -1747,7 +2092,7 @@
             // 
             this.rbAlcoholMF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbAlcoholMF.AutoSize = true;
-            this.rbAlcoholMF.Location = new System.Drawing.Point(245, 37);
+            this.rbAlcoholMF.Location = new System.Drawing.Point(248, 38);
             this.rbAlcoholMF.Name = "rbAlcoholMF";
             this.rbAlcoholMF.Size = new System.Drawing.Size(14, 13);
             this.rbAlcoholMF.TabIndex = 11;
@@ -1758,7 +2103,7 @@
             // 
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(116, 29);
+            this.label15.Location = new System.Drawing.Point(117, 29);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(77, 36);
             this.label15.TabIndex = 0;
@@ -1769,7 +2114,7 @@
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(210, 29);
+            this.label16.Location = new System.Drawing.Point(212, 29);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(95, 36);
             this.label16.TabIndex = 1;
@@ -1780,7 +2125,7 @@
             // 
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(326, 20);
+            this.label17.Location = new System.Drawing.Point(329, 20);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(69, 54);
             this.label17.TabIndex = 2;
@@ -1791,7 +2136,7 @@
             // 
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(20, 132);
+            this.label18.Location = new System.Drawing.Point(21, 133);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(62, 18);
             this.label18.TabIndex = 3;
@@ -1802,7 +2147,7 @@
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 208);
+            this.label19.Location = new System.Drawing.Point(6, 210);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(91, 54);
             this.label19.TabIndex = 4;
@@ -1813,7 +2158,7 @@
             // 
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(11, 311);
+            this.label20.Location = new System.Drawing.Point(11, 316);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(81, 36);
             this.label20.TabIndex = 5;
@@ -1831,18 +2176,18 @@
             this.tableLayoutPanel13.Controls.Add(this.rbFumaF, 1, 0);
             this.tableLayoutPanel13.Controls.Add(this.rbFumaMF, 2, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(106, 97);
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(107, 98);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(303, 88);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(306, 89);
             this.tableLayoutPanel13.TabIndex = 14;
             // 
             // txtFumaE
             // 
             this.txtFumaE.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtFumaE.AutoSize = true;
-            this.txtFumaE.Location = new System.Drawing.Point(43, 37);
+            this.txtFumaE.Location = new System.Drawing.Point(44, 38);
             this.txtFumaE.Name = "txtFumaE";
             this.txtFumaE.Size = new System.Drawing.Size(14, 13);
             this.txtFumaE.TabIndex = 9;
@@ -1853,7 +2198,7 @@
             // 
             this.rbFumaF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbFumaF.AutoSize = true;
-            this.rbFumaF.Location = new System.Drawing.Point(144, 37);
+            this.rbFumaF.Location = new System.Drawing.Point(146, 38);
             this.rbFumaF.Name = "rbFumaF";
             this.rbFumaF.Size = new System.Drawing.Size(14, 13);
             this.rbFumaF.TabIndex = 10;
@@ -1864,7 +2209,7 @@
             // 
             this.rbFumaMF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbFumaMF.AutoSize = true;
-            this.rbFumaMF.Location = new System.Drawing.Point(245, 37);
+            this.rbFumaMF.Location = new System.Drawing.Point(248, 38);
             this.rbFumaMF.Name = "rbFumaMF";
             this.rbFumaMF.Size = new System.Drawing.Size(14, 13);
             this.rbFumaMF.TabIndex = 11;
@@ -1875,7 +2220,7 @@
             // 
             this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel3.SetColumnSpan(this.btnGuardar, 2);
-            this.btnGuardar.Location = new System.Drawing.Point(375, 423);
+            this.btnGuardar.Location = new System.Drawing.Point(379, 431);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(97, 35);
             this.btnGuardar.TabIndex = 2;
@@ -1952,6 +2297,14 @@
             this.tbListaHistorial.Size = new System.Drawing.Size(597, 485);
             this.tbListaHistorial.TabIndex = 3;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "calendar-with-spring-binder-and-date-blocks.png");
+            this.imageList1.Images.SetKeyName(1, "medical-history.png");
+            this.imageList1.Images.SetKeyName(2, "icon34.png");
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.pictureBox2);
@@ -1961,6 +2314,16 @@
             this.tbPrincipalM.SetRowSpan(this.panel1, 2);
             this.panel1.Size = new System.Drawing.Size(117, 87);
             this.panel1.TabIndex = 4;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::e_Clinica.Properties.Resources.logo3;
+            this.pictureBox2.Location = new System.Drawing.Point(18, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // panel2
             // 
@@ -1999,369 +2362,6 @@
             this.lblUsuario.Text = "_usuario_ ";
             this.lblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::e_Clinica.Properties.Resources.logo3;
-            this.pictureBox2.Location = new System.Drawing.Point(18, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // tbAnt
-            // 
-            this.tbAnt.Controls.Add(this.groupBox2);
-            this.tbAnt.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbAnt.Location = new System.Drawing.Point(4, 4);
-            this.tbAnt.Name = "tbAnt";
-            this.tbAnt.Size = new System.Drawing.Size(855, 483);
-            this.tbAnt.TabIndex = 2;
-            this.tbAnt.Text = "Receta";
-            this.tbAnt.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.tableLayoutPanel16.SetColumnSpan(this.panel3, 3);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.label25);
-            this.panel3.Controls.Add(this.label24);
-            this.panel3.Controls.Add(this.label23);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(349, 129);
-            this.panel3.Margin = new System.Windows.Forms.Padding(10);
-            this.panel3.Name = "panel3";
-            this.tableLayoutPanel16.SetRowSpan(this.panel3, 3);
-            this.panel3.Size = new System.Drawing.Size(490, 338);
-            this.panel3.TabIndex = 6;
-            // 
-            // label25
-            // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(24, 205);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(105, 21);
-            this.label25.TabIndex = 12;
-            this.label25.Text = "Tratamiento: ";
-            // 
-            // label24
-            // 
-            this.label24.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(24, 126);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(104, 21);
-            this.label24.TabIndex = 11;
-            this.label24.Text = "Indicaciones: ";
-            // 
-            // label23
-            // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(26, 46);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(102, 21);
-            this.label23.TabIndex = 10;
-            this.label23.Text = "Diagnóstico: ";
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(335, 278);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 35);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(124, 27);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(340, 65);
-            this.textBox2.TabIndex = 15;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(124, 105);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 65);
-            this.textBox1.TabIndex = 16;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(124, 184);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(340, 65);
-            this.textBox3.TabIndex = 17;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.tableLayoutPanel22);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.groupBox2.Location = new System.Drawing.Point(0, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(855, 483);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Receta";
-            // 
-            // tableLayoutPanel22
-            // 
-            this.tableLayoutPanel22.ColumnCount = 3;
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel22.Controls.Add(this.lstMedReceta, 0, 2);
-            this.tableLayoutPanel22.Controls.Add(this.label51, 0, 1);
-            this.tableLayoutPanel22.Controls.Add(this.label53, 1, 1);
-            this.tableLayoutPanel22.Controls.Add(this.label54, 2, 1);
-            this.tableLayoutPanel22.Controls.Add(this.panel5, 0, 5);
-            this.tableLayoutPanel22.Controls.Add(this.panel6, 0, 0);
-            this.tableLayoutPanel22.Controls.Add(this.panel7, 2, 4);
-            this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(3, 23);
-            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
-            this.tableLayoutPanel22.RowCount = 6;
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(849, 457);
-            this.tableLayoutPanel22.TabIndex = 0;
-            // 
-            // lstMedReceta
-            // 
-            this.tableLayoutPanel22.SetColumnSpan(this.lstMedReceta, 3);
-            this.lstMedReceta.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstMedReceta.FormattingEnabled = true;
-            this.lstMedReceta.ItemHeight = 20;
-            this.lstMedReceta.Location = new System.Drawing.Point(10, 146);
-            this.lstMedReceta.Margin = new System.Windows.Forms.Padding(10);
-            this.lstMedReceta.Name = "lstMedReceta";
-            this.tableLayoutPanel22.SetRowSpan(this.lstMedReceta, 2);
-            this.lstMedReceta.Size = new System.Drawing.Size(829, 162);
-            this.lstMedReceta.TabIndex = 6;
-            // 
-            // label51
-            // 
-            this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(109, 92);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(64, 20);
-            this.label51.TabIndex = 0;
-            this.label51.Text = "Nombre";
-            // 
-            // label53
-            // 
-            this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(398, 92);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(50, 20);
-            this.label53.TabIndex = 2;
-            this.label53.Text = "Precio";
-            // 
-            // label54
-            // 
-            this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(674, 92);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(65, 20);
-            this.label54.TabIndex = 3;
-            this.label54.Text = "Subtotal";
-            // 
-            // btnAgregarMed
-            // 
-            this.btnAgregarMed.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAgregarMed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.btnAgregarMed.FlatAppearance.BorderSize = 0;
-            this.btnAgregarMed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarMed.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarMed.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarMed.Location = new System.Drawing.Point(412, 13);
-            this.btnAgregarMed.Name = "btnAgregarMed";
-            this.btnAgregarMed.Size = new System.Drawing.Size(113, 34);
-            this.btnAgregarMed.TabIndex = 9;
-            this.btnAgregarMed.Text = "Agregar";
-            this.btnAgregarMed.UseVisualStyleBackColor = false;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.button3);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.groupBox4.Location = new System.Drawing.Point(427, 3);
-            this.groupBox4.Name = "groupBox4";
-            this.tableLayoutPanel20.SetRowSpan(this.groupBox4, 2);
-            this.groupBox4.Size = new System.Drawing.Size(419, 471);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Antecedentes";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnRegPadecimiento);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(164, 117);
-            this.panel4.Margin = new System.Windows.Forms.Padding(0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(248, 42);
-            this.panel4.TabIndex = 10;
-            // 
-            // btnRegPadecimiento
-            // 
-            this.btnRegPadecimiento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnRegPadecimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.btnRegPadecimiento.FlatAppearance.BorderSize = 0;
-            this.btnRegPadecimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegPadecimiento.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegPadecimiento.ForeColor = System.Drawing.Color.White;
-            this.btnRegPadecimiento.Location = new System.Drawing.Point(115, 5);
-            this.btnRegPadecimiento.Name = "btnRegPadecimiento";
-            this.btnRegPadecimiento.Size = new System.Drawing.Size(100, 30);
-            this.btnRegPadecimiento.TabIndex = 6;
-            this.btnRegPadecimiento.Text = "Registrar";
-            this.btnRegPadecimiento.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(305, 419);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 36);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Registrar";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // panel5
-            // 
-            this.tableLayoutPanel22.SetColumnSpan(this.panel5, 3);
-            this.panel5.Controls.Add(this.btnRegReceta);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(3, 389);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(843, 65);
-            this.panel5.TabIndex = 10;
-            // 
-            // btnRegReceta
-            // 
-            this.btnRegReceta.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnRegReceta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.btnRegReceta.FlatAppearance.BorderSize = 0;
-            this.btnRegReceta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegReceta.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegReceta.ForeColor = System.Drawing.Color.White;
-            this.btnRegReceta.Location = new System.Drawing.Point(718, 8);
-            this.btnRegReceta.Name = "btnRegReceta";
-            this.btnRegReceta.Size = new System.Drawing.Size(114, 37);
-            this.btnRegReceta.TabIndex = 13;
-            this.btnRegReceta.Text = "Registrar";
-            this.btnRegReceta.UseVisualStyleBackColor = false;
-            // 
-            // panel6
-            // 
-            this.tableLayoutPanel22.SetColumnSpan(this.panel6, 3);
-            this.panel6.Controls.Add(this.cmbMedicamentos);
-            this.panel6.Controls.Add(this.nCantidad);
-            this.panel6.Controls.Add(this.btnAgregarMed);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(3, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(843, 62);
-            this.panel6.TabIndex = 11;
-            // 
-            // cmbMedicamentos
-            // 
-            this.cmbMedicamentos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbMedicamentos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMedicamentos.FormattingEnabled = true;
-            this.cmbMedicamentos.Location = new System.Drawing.Point(15, 17);
-            this.cmbMedicamentos.Name = "cmbMedicamentos";
-            this.cmbMedicamentos.Size = new System.Drawing.Size(265, 28);
-            this.cmbMedicamentos.TabIndex = 9;
-            // 
-            // nCantidad
-            // 
-            this.nCantidad.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.nCantidad.Location = new System.Drawing.Point(298, 17);
-            this.nCantidad.Name = "nCantidad";
-            this.nCantidad.Size = new System.Drawing.Size(85, 27);
-            this.nCantidad.TabIndex = 10;
-            // 
-            // label55
-            // 
-            this.label55.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(74, 22);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(50, 20);
-            this.label55.TabIndex = 14;
-            this.label55.Text = "Total: ";
-            // 
-            // label56
-            // 
-            this.label56.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft NeoGothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.Color.Black;
-            this.label56.Location = new System.Drawing.Point(126, 18);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(22, 26);
-            this.label56.TabIndex = 15;
-            this.label56.Text = "$";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.label56);
-            this.panel7.Controls.Add(this.label55);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(565, 318);
-            this.panel7.Margin = new System.Windows.Forms.Padding(0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(284, 68);
-            this.panel7.TabIndex = 12;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "calendar-with-spring-binder-and-date-blocks.png");
-            this.imageList1.Images.SetKeyName(1, "medical-history.png");
-            this.imageList1.Images.SetKeyName(2, "icon34.png");
-            // 
             // PpalMedicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -2388,13 +2388,26 @@
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel21.ResumeLayout(false);
             this.tableLayoutPanel21.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.tableLayoutPanel23.ResumeLayout(false);
             this.tableLayoutPanel23.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.tbAnt.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.tableLayoutPanel22.ResumeLayout(false);
+            this.tableLayoutPanel22.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nCantidad)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.tbExamen.ResumeLayout(false);
             this.tableLayoutPanel16.ResumeLayout(false);
             this.tableLayoutPanel16.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.tpExpediente.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tpAntecedentes.ResumeLayout(false);
@@ -2429,22 +2442,9 @@
             this.tableLayoutPanel18.ResumeLayout(false);
             this.tableLayoutPanel18.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.tbAnt.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.tableLayoutPanel22.ResumeLayout(false);
-            this.tableLayoutPanel22.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nCantidad)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
