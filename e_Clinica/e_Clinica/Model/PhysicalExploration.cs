@@ -1,0 +1,67 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace e_Clinica.Model
+{
+    public class PhysicalExploration
+    {
+        private int _id;
+
+        public int id_physical
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+
+        private double _temperature;
+
+        public double temperature
+        {
+            get { return _temperature; }
+            set { _temperature = value; }
+        }
+
+        private double _bloodP;
+
+        public double blood_pressure
+        {
+            get { return _bloodP; }
+            set { _bloodP = value; }
+        }
+
+        private int _heartR;
+
+        public int heart_rate
+        {
+            get { return _heartR; }
+            set { _heartR = value; }
+        }
+
+        private int _breathing;
+
+        public int breathing_rate
+        {
+            get { return _breathing; }
+            set { _breathing = value; }
+        }
+
+        private string _observ;
+
+        public string observations
+        {
+            get { return _observ; }
+            set { _observ = value; }
+        }
+        private int _id_CH;
+
+        public int id_CH_phy
+        {
+            get { return _id_CH; }
+            set { _id_CH = value; }
+        }
+
+    }
+}
