@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PpalAdministrativos));
             this.tbPrincipalA = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblBienvenido = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.tbAdministrativos = new System.Windows.Forms.TabControl();
             this.tpAgendar = new System.Windows.Forms.TabPage();
             this.tblCitas = new System.Windows.Forms.TableLayoutPanel();
@@ -38,10 +41,33 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lstPacientes = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtPaciente = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cmbDoct = new System.Windows.Forms.ComboBox();
+            this.cmbEsp = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.grpCalendario = new System.Windows.Forms.GroupBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.mcCalRegistro = new System.Windows.Forms.MonthCalendar();
+            this.cmbHorarios = new System.Windows.Forms.ComboBox();
+            this.rbPrimera = new System.Windows.Forms.RadioButton();
+            this.rbSeguimiento = new System.Windows.Forms.RadioButton();
+            this.rbOtra = new System.Windows.Forms.RadioButton();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnAgendar = new System.Windows.Forms.Button();
             this.tpBuscarCita = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.txtPaciente2 = new System.Windows.Forms.TextBox();
+            this.btnBuscarPaciente = new System.Windows.Forms.Button();
             this.grpBfecha = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.mcCalBusqueda = new System.Windows.Forms.MonthCalendar();
             this.lstBusquedaCitas = new System.Windows.Forms.ListBox();
             this.tpRegPaciente = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -79,9 +105,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.txtCURPPers = new System.Windows.Forms.MaskedTextBox();
             this.txtRFCPer = new System.Windows.Forms.MaskedTextBox();
             this.txtNombrePer = new System.Windows.Forms.TextBox();
@@ -90,16 +114,18 @@
             this.txtDomicilioPers = new System.Windows.Forms.TextBox();
             this.txtCorreoPers = new System.Windows.Forms.TextBox();
             this.cmbSexoPer = new System.Windows.Forms.ComboBox();
-            this.txtTelefonoPer = new System.Windows.Forms.MaskedTextBox();
             this.txtFechaNacPer = new System.Windows.Forms.MaskedTextBox();
             this.cmbNivelEducativo = new System.Windows.Forms.ComboBox();
-            this.cmbPuesto = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
             this.txtClave = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.cbEstacionamiento = new System.Windows.Forms.CheckBox();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtTelefonoPer = new System.Windows.Forms.MaskedTextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.cmbPuesto = new System.Windows.Forms.ComboBox();
             this.tpMedicamentos = new System.Windows.Forms.TabPage();
             this.tbMedicamentos = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -120,43 +146,23 @@
             this.lstPedido = new System.Windows.Forms.ListBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtPaciente = new System.Windows.Forms.TextBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnBuscarPaciente = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnAgendar = new System.Windows.Forms.Button();
-            this.mcCalRegistro = new System.Windows.Forms.MonthCalendar();
-            this.cmbHorarios = new System.Windows.Forms.ComboBox();
-            this.rbPrimera = new System.Windows.Forms.RadioButton();
-            this.rbSeguimiento = new System.Windows.Forms.RadioButton();
-            this.rbOtra = new System.Windows.Forms.RadioButton();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.mcCalBusqueda = new System.Windows.Forms.MonthCalendar();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblBienvenido = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tbPrincipalA.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.tbAdministrativos.SuspendLayout();
             this.tpAgendar.SuspendLayout();
             this.tblCitas.SuspendLayout();
             this.grpDatos.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.grpCalendario.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.tpBuscarCita.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.grpBfecha.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
             this.tpRegPaciente.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tpRegPersonal.SuspendLayout();
@@ -171,12 +177,6 @@
             this.tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nCantidad)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -199,6 +199,43 @@
             this.tbPrincipalA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
             this.tbPrincipalA.Size = new System.Drawing.Size(1159, 551);
             this.tbPrincipalA.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.tbPrincipalA.SetColumnSpan(this.panel3, 2);
+            this.panel3.Controls.Add(this.lblBienvenido);
+            this.panel3.Controls.Add(this.lblUsuario);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(126, 3);
+            this.panel3.Name = "panel3";
+            this.tbPrincipalA.SetRowSpan(this.panel3, 2);
+            this.panel3.Size = new System.Drawing.Size(1030, 76);
+            this.panel3.TabIndex = 7;
+            // 
+            // lblBienvenido
+            // 
+            this.lblBienvenido.AutoSize = true;
+            this.lblBienvenido.Font = new System.Drawing.Font("Microsoft NeoGothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenido.Location = new System.Drawing.Point(10, 18);
+            this.lblBienvenido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBienvenido.Name = "lblBienvenido";
+            this.lblBienvenido.Size = new System.Drawing.Size(106, 26);
+            this.lblBienvenido.TabIndex = 4;
+            this.lblBienvenido.Text = "Bienvenido";
+            this.lblBienvenido.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft NeoGothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(85)))), ((int)(((byte)(167)))));
+            this.lblUsuario.Location = new System.Drawing.Point(10, 38);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(96, 26);
+            this.lblUsuario.TabIndex = 5;
+            this.lblUsuario.Text = "_usuario_ ";
+            this.lblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tbAdministrativos
             // 
@@ -307,6 +344,101 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Pacientes";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnBuscar);
+            this.panel2.Controls.Add(this.txtPaciente);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 73);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(194, 64);
+            this.panel2.TabIndex = 17;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackgroundImage = global::e_Clinica.Properties.Resources.search;
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(144, 17);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(30, 30);
+            this.btnBuscar.TabIndex = 5;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
+            // txtPaciente
+            // 
+            this.txtPaciente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPaciente.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPaciente.Location = new System.Drawing.Point(10, 18);
+            this.txtPaciente.Name = "txtPaciente";
+            this.txtPaciente.Size = new System.Drawing.Size(134, 29);
+            this.txtPaciente.TabIndex = 4;
+            this.txtPaciente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.tableLayoutPanel3.SetColumnSpan(this.panel5, 2);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.cmbDoct);
+            this.panel5.Controls.Add(this.cmbEsp);
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(215, 85);
+            this.panel5.Margin = new System.Windows.Forms.Padding(15);
+            this.panel5.Name = "panel5";
+            this.tableLayoutPanel3.SetRowSpan(this.panel5, 4);
+            this.panel5.Size = new System.Drawing.Size(373, 253);
+            this.panel5.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(85)))), ((int)(((byte)(167)))));
+            this.label3.Location = new System.Drawing.Point(64, 135);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 21);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Médicos";
+            // 
+            // cmbDoct
+            // 
+            this.cmbDoct.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbDoct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDoct.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDoct.FormattingEnabled = true;
+            this.cmbDoct.Location = new System.Drawing.Point(68, 172);
+            this.cmbDoct.Name = "cmbDoct";
+            this.cmbDoct.Size = new System.Drawing.Size(252, 29);
+            this.cmbDoct.TabIndex = 17;
+            // 
+            // cmbEsp
+            // 
+            this.cmbEsp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbEsp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEsp.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEsp.FormattingEnabled = true;
+            this.cmbEsp.Location = new System.Drawing.Point(68, 69);
+            this.cmbEsp.Name = "cmbEsp";
+            this.cmbEsp.Size = new System.Drawing.Size(252, 29);
+            this.cmbEsp.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(85)))), ((int)(((byte)(167)))));
+            this.label2.Location = new System.Drawing.Point(64, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 21);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Especialidades";
+            // 
             // grpCalendario
             // 
             this.grpCalendario.Controls.Add(this.label34);
@@ -325,6 +457,109 @@
             this.grpCalendario.TabIndex = 0;
             this.grpCalendario.TabStop = false;
             this.grpCalendario.Text = "Elige fecha, hora y tipo de cita ";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(35, 237);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(45, 21);
+            this.label34.TabIndex = 11;
+            this.label34.Text = "Hora";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(35, 291);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(93, 21);
+            this.label32.TabIndex = 10;
+            this.label32.Text = "Tipo de cita";
+            // 
+            // mcCalRegistro
+            // 
+            this.mcCalRegistro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mcCalRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mcCalRegistro.Location = new System.Drawing.Point(38, 61);
+            this.mcCalRegistro.MinDate = new System.DateTime(2016, 11, 20, 0, 0, 0, 0);
+            this.mcCalRegistro.Name = "mcCalRegistro";
+            this.mcCalRegistro.TabIndex = 5;
+            // 
+            // cmbHorarios
+            // 
+            this.cmbHorarios.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cmbHorarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHorarios.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbHorarios.FormattingEnabled = true;
+            this.cmbHorarios.Location = new System.Drawing.Point(86, 237);
+            this.cmbHorarios.Name = "cmbHorarios";
+            this.cmbHorarios.Size = new System.Drawing.Size(200, 28);
+            this.cmbHorarios.TabIndex = 6;
+            // 
+            // rbPrimera
+            // 
+            this.rbPrimera.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rbPrimera.AutoSize = true;
+            this.rbPrimera.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPrimera.ForeColor = System.Drawing.Color.Black;
+            this.rbPrimera.Location = new System.Drawing.Point(39, 324);
+            this.rbPrimera.Name = "rbPrimera";
+            this.rbPrimera.Size = new System.Drawing.Size(112, 24);
+            this.rbPrimera.TabIndex = 7;
+            this.rbPrimera.TabStop = true;
+            this.rbPrimera.Text = "Primera vez";
+            this.rbPrimera.UseVisualStyleBackColor = true;
+            // 
+            // rbSeguimiento
+            // 
+            this.rbSeguimiento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rbSeguimiento.AutoSize = true;
+            this.rbSeguimiento.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSeguimiento.ForeColor = System.Drawing.Color.Black;
+            this.rbSeguimiento.Location = new System.Drawing.Point(165, 324);
+            this.rbSeguimiento.Name = "rbSeguimiento";
+            this.rbSeguimiento.Size = new System.Drawing.Size(121, 24);
+            this.rbSeguimiento.TabIndex = 8;
+            this.rbSeguimiento.TabStop = true;
+            this.rbSeguimiento.Text = "Seguimiento";
+            this.rbSeguimiento.UseVisualStyleBackColor = true;
+            // 
+            // rbOtra
+            // 
+            this.rbOtra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rbOtra.AutoSize = true;
+            this.rbOtra.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbOtra.ForeColor = System.Drawing.Color.Black;
+            this.rbOtra.Location = new System.Drawing.Point(301, 324);
+            this.rbOtra.Name = "rbOtra";
+            this.rbOtra.Size = new System.Drawing.Size(76, 24);
+            this.rbOtra.TabIndex = 9;
+            this.rbOtra.TabStop = true;
+            this.rbOtra.Text = "Rutina";
+            this.rbOtra.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnAgendar);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(618, 390);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(404, 52);
+            this.panel4.TabIndex = 3;
+            // 
+            // btnAgendar
+            // 
+            this.btnAgendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.btnAgendar.FlatAppearance.BorderSize = 0;
+            this.btnAgendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgendar.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendar.ForeColor = System.Drawing.Color.White;
+            this.btnAgendar.Location = new System.Drawing.Point(223, 6);
+            this.btnAgendar.Name = "btnAgendar";
+            this.btnAgendar.Size = new System.Drawing.Size(171, 40);
+            this.btnAgendar.TabIndex = 11;
+            this.btnAgendar.Text = "Agendar";
+            this.btnAgendar.UseVisualStyleBackColor = false;
             // 
             // tpBuscarCita
             // 
@@ -354,6 +589,54 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1027, 447);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label29);
+            this.groupBox4.Controls.Add(this.txtPaciente2);
+            this.groupBox4.Controls.Add(this.btnBuscarPaciente);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.groupBox4.Location = new System.Drawing.Point(3, 293);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(302, 151);
+            this.groupBox4.TabIndex = 4;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "...O busca un paciente ";
+            // 
+            // label29
+            // 
+            this.label29.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(6, 58);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(67, 20);
+            this.label29.TabIndex = 3;
+            this.label29.Text = "Paciente";
+            // 
+            // txtPaciente2
+            // 
+            this.txtPaciente2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPaciente2.Location = new System.Drawing.Point(79, 55);
+            this.txtPaciente2.Name = "txtPaciente2";
+            this.txtPaciente2.Size = new System.Drawing.Size(196, 27);
+            this.txtPaciente2.TabIndex = 4;
+            this.txtPaciente2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnBuscarPaciente
+            // 
+            this.btnBuscarPaciente.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBuscarPaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.btnBuscarPaciente.FlatAppearance.BorderSize = 0;
+            this.btnBuscarPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarPaciente.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarPaciente.Location = new System.Drawing.Point(169, 98);
+            this.btnBuscarPaciente.Name = "btnBuscarPaciente";
+            this.btnBuscarPaciente.Size = new System.Drawing.Size(106, 35);
+            this.btnBuscarPaciente.TabIndex = 5;
+            this.btnBuscarPaciente.Text = "Buscar";
+            this.btnBuscarPaciente.UseVisualStyleBackColor = false;
+            // 
             // grpBfecha
             // 
             this.grpBfecha.Controls.Add(this.tableLayoutPanel8);
@@ -366,6 +649,26 @@
             this.grpBfecha.TabIndex = 0;
             this.grpBfecha.TabStop = false;
             this.grpBfecha.Text = "Selecciona una fecha... ";
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 1;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.mcCalBusqueda, 0, 0);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 23);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 1;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(296, 258);
+            this.tableLayoutPanel8.TabIndex = 0;
+            // 
+            // mcCalBusqueda
+            // 
+            this.mcCalBusqueda.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mcCalBusqueda.Location = new System.Drawing.Point(24, 48);
+            this.mcCalBusqueda.Name = "mcCalBusqueda";
+            this.mcCalBusqueda.TabIndex = 0;
             // 
             // lstBusquedaCitas
             // 
@@ -629,7 +932,7 @@
             "Femenino",
             "Masculino",
             "Otro"});
-            this.cmbSexoPa.Location = new System.Drawing.Point(416, 171);
+            this.cmbSexoPa.Location = new System.Drawing.Point(416, 170);
             this.cmbSexoPa.Name = "cmbSexoPa";
             this.cmbSexoPa.Size = new System.Drawing.Size(148, 28);
             this.cmbSexoPa.TabIndex = 22;
@@ -858,17 +1161,6 @@
             this.label22.TabIndex = 10;
             this.label22.Text = "Correo: ";
             // 
-            // label23
-            // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(632, 196);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(79, 21);
-            this.label23.TabIndex = 11;
-            this.label23.Text = "Teléfono: ";
-            // 
             // label24
             // 
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -879,17 +1171,6 @@
             this.label24.Size = new System.Drawing.Size(127, 21);
             this.label24.TabIndex = 12;
             this.label24.Text = "Nivel educativo: ";
-            // 
-            // label25
-            // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(135, 334);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(66, 21);
-            this.label25.TabIndex = 13;
-            this.label25.Text = "Puesto: ";
             // 
             // txtCURPPers
             // 
@@ -959,19 +1240,10 @@
             "Femenino",
             "Masculino",
             "Otro"});
-            this.cmbSexoPer.Location = new System.Drawing.Point(717, 101);
+            this.cmbSexoPer.Location = new System.Drawing.Point(717, 104);
             this.cmbSexoPer.Name = "cmbSexoPer";
             this.cmbSexoPer.Size = new System.Drawing.Size(301, 28);
             this.cmbSexoPer.TabIndex = 27;
-            // 
-            // txtTelefonoPer
-            // 
-            this.txtTelefonoPer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTelefonoPer.Location = new System.Drawing.Point(717, 193);
-            this.txtTelefonoPer.Mask = "(999)000-0000";
-            this.txtTelefonoPer.Name = "txtTelefonoPer";
-            this.txtTelefonoPer.Size = new System.Drawing.Size(301, 27);
-            this.txtTelefonoPer.TabIndex = 28;
             // 
             // txtFechaNacPer
             // 
@@ -993,23 +1265,10 @@
             "Licenciatura ",
             "Maestría",
             "Doctorado"});
-            this.cmbNivelEducativo.Location = new System.Drawing.Point(207, 285);
+            this.cmbNivelEducativo.Location = new System.Drawing.Point(207, 288);
             this.cmbNivelEducativo.Name = "cmbNivelEducativo";
             this.cmbNivelEducativo.Size = new System.Drawing.Size(300, 28);
             this.cmbNivelEducativo.TabIndex = 30;
-            // 
-            // cmbPuesto
-            // 
-            this.cmbPuesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbPuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPuesto.FormattingEnabled = true;
-            this.cmbPuesto.Items.AddRange(new object[] {
-            "Administrativo ",
-            "Médico"});
-            this.cmbPuesto.Location = new System.Drawing.Point(207, 331);
-            this.cmbPuesto.Name = "cmbPuesto";
-            this.cmbPuesto.Size = new System.Drawing.Size(300, 28);
-            this.cmbPuesto.TabIndex = 31;
             // 
             // label30
             // 
@@ -1030,25 +1289,6 @@
             this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(301, 27);
             this.txtClave.TabIndex = 33;
-            // 
-            // label31
-            // 
-            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(639, 288);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(72, 21);
-            this.label31.TabIndex = 36;
-            this.label31.Text = "Usuario: ";
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUsuario.Location = new System.Drawing.Point(717, 285);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(301, 27);
-            this.txtUsuario.TabIndex = 35;
             // 
             // cbEstacionamiento
             // 
@@ -1079,6 +1319,69 @@
             this.btnGuardar.TabIndex = 38;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            // 
+            // label23
+            // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(632, 196);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(79, 21);
+            this.label23.TabIndex = 11;
+            this.label23.Text = "Teléfono: ";
+            // 
+            // txtTelefonoPer
+            // 
+            this.txtTelefonoPer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTelefonoPer.Location = new System.Drawing.Point(717, 193);
+            this.txtTelefonoPer.Mask = "(999)000-0000";
+            this.txtTelefonoPer.Name = "txtTelefonoPer";
+            this.txtTelefonoPer.Size = new System.Drawing.Size(301, 27);
+            this.txtTelefonoPer.TabIndex = 28;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUsuario.Location = new System.Drawing.Point(717, 285);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(301, 27);
+            this.txtUsuario.TabIndex = 35;
+            // 
+            // label31
+            // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(639, 288);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(72, 21);
+            this.label31.TabIndex = 36;
+            this.label31.Text = "Usuario: ";
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(135, 334);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(66, 21);
+            this.label25.TabIndex = 13;
+            this.label25.Text = "Puesto: ";
+            // 
+            // cmbPuesto
+            // 
+            this.cmbPuesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbPuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPuesto.FormattingEnabled = true;
+            this.cmbPuesto.Items.AddRange(new object[] {
+            "Administrativo ",
+            "Médico"});
+            this.cmbPuesto.Location = new System.Drawing.Point(207, 334);
+            this.cmbPuesto.Name = "cmbPuesto";
+            this.cmbPuesto.Size = new System.Drawing.Size(300, 28);
+            this.cmbPuesto.TabIndex = 31;
             // 
             // tpMedicamentos
             // 
@@ -1336,309 +1639,6 @@
             this.panel1.Size = new System.Drawing.Size(117, 76);
             this.panel1.TabIndex = 4;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.txtPaciente);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 73);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(194, 64);
-            this.panel2.TabIndex = 17;
-            // 
-            // txtPaciente
-            // 
-            this.txtPaciente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPaciente.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPaciente.Location = new System.Drawing.Point(10, 18);
-            this.txtPaciente.Name = "txtPaciente";
-            this.txtPaciente.Size = new System.Drawing.Size(134, 29);
-            this.txtPaciente.TabIndex = 4;
-            this.txtPaciente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label29);
-            this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Controls.Add(this.btnBuscarPaciente);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.groupBox4.Location = new System.Drawing.Point(3, 293);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(302, 151);
-            this.groupBox4.TabIndex = 4;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "...O busca un paciente ";
-            // 
-            // label29
-            // 
-            this.label29.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(6, 58);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(67, 20);
-            this.label29.TabIndex = 3;
-            this.label29.Text = "Paciente";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(79, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 27);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnBuscarPaciente
-            // 
-            this.btnBuscarPaciente.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnBuscarPaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.btnBuscarPaciente.FlatAppearance.BorderSize = 0;
-            this.btnBuscarPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarPaciente.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarPaciente.Location = new System.Drawing.Point(169, 98);
-            this.btnBuscarPaciente.Name = "btnBuscarPaciente";
-            this.btnBuscarPaciente.Size = new System.Drawing.Size(106, 35);
-            this.btnBuscarPaciente.TabIndex = 5;
-            this.btnBuscarPaciente.Text = "Buscar";
-            this.btnBuscarPaciente.UseVisualStyleBackColor = false;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnAgendar);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(618, 390);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(404, 52);
-            this.panel4.TabIndex = 3;
-            // 
-            // btnAgendar
-            // 
-            this.btnAgendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.btnAgendar.FlatAppearance.BorderSize = 0;
-            this.btnAgendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgendar.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgendar.ForeColor = System.Drawing.Color.White;
-            this.btnAgendar.Location = new System.Drawing.Point(223, 6);
-            this.btnAgendar.Name = "btnAgendar";
-            this.btnAgendar.Size = new System.Drawing.Size(171, 40);
-            this.btnAgendar.TabIndex = 11;
-            this.btnAgendar.Text = "Agendar";
-            this.btnAgendar.UseVisualStyleBackColor = false;
-            // 
-            // mcCalRegistro
-            // 
-            this.mcCalRegistro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mcCalRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mcCalRegistro.Location = new System.Drawing.Point(38, 61);
-            this.mcCalRegistro.MinDate = new System.DateTime(2016, 11, 20, 0, 0, 0, 0);
-            this.mcCalRegistro.Name = "mcCalRegistro";
-            this.mcCalRegistro.TabIndex = 5;
-            // 
-            // cmbHorarios
-            // 
-            this.cmbHorarios.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cmbHorarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHorarios.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbHorarios.FormattingEnabled = true;
-            this.cmbHorarios.Location = new System.Drawing.Point(86, 237);
-            this.cmbHorarios.Name = "cmbHorarios";
-            this.cmbHorarios.Size = new System.Drawing.Size(200, 28);
-            this.cmbHorarios.TabIndex = 6;
-            // 
-            // rbPrimera
-            // 
-            this.rbPrimera.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rbPrimera.AutoSize = true;
-            this.rbPrimera.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbPrimera.ForeColor = System.Drawing.Color.Black;
-            this.rbPrimera.Location = new System.Drawing.Point(39, 324);
-            this.rbPrimera.Name = "rbPrimera";
-            this.rbPrimera.Size = new System.Drawing.Size(112, 24);
-            this.rbPrimera.TabIndex = 7;
-            this.rbPrimera.TabStop = true;
-            this.rbPrimera.Text = "Primera vez";
-            this.rbPrimera.UseVisualStyleBackColor = true;
-            // 
-            // rbSeguimiento
-            // 
-            this.rbSeguimiento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rbSeguimiento.AutoSize = true;
-            this.rbSeguimiento.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbSeguimiento.ForeColor = System.Drawing.Color.Black;
-            this.rbSeguimiento.Location = new System.Drawing.Point(165, 324);
-            this.rbSeguimiento.Name = "rbSeguimiento";
-            this.rbSeguimiento.Size = new System.Drawing.Size(121, 24);
-            this.rbSeguimiento.TabIndex = 8;
-            this.rbSeguimiento.TabStop = true;
-            this.rbSeguimiento.Text = "Seguimiento";
-            this.rbSeguimiento.UseVisualStyleBackColor = true;
-            // 
-            // rbOtra
-            // 
-            this.rbOtra.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rbOtra.AutoSize = true;
-            this.rbOtra.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbOtra.ForeColor = System.Drawing.Color.Black;
-            this.rbOtra.Location = new System.Drawing.Point(301, 324);
-            this.rbOtra.Name = "rbOtra";
-            this.rbOtra.Size = new System.Drawing.Size(76, 24);
-            this.rbOtra.TabIndex = 9;
-            this.rbOtra.TabStop = true;
-            this.rbOtra.Text = "Rutina";
-            this.rbOtra.UseVisualStyleBackColor = true;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(35, 291);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(93, 21);
-            this.label32.TabIndex = 10;
-            this.label32.Text = "Tipo de cita";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(35, 237);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(45, 21);
-            this.label34.TabIndex = 11;
-            this.label34.Text = "Hora";
-            // 
-            // mcCalBusqueda
-            // 
-            this.mcCalBusqueda.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mcCalBusqueda.Location = new System.Drawing.Point(24, 48);
-            this.mcCalBusqueda.Name = "mcCalBusqueda";
-            this.mcCalBusqueda.TabIndex = 0;
-            // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.ColumnCount = 1;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Controls.Add(this.mcCalBusqueda, 0, 0);
-            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 23);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 1;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(296, 258);
-            this.tableLayoutPanel8.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.tbPrincipalA.SetColumnSpan(this.panel3, 2);
-            this.panel3.Controls.Add(this.lblBienvenido);
-            this.panel3.Controls.Add(this.lblUsuario);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(126, 3);
-            this.panel3.Name = "panel3";
-            this.tbPrincipalA.SetRowSpan(this.panel3, 2);
-            this.panel3.Size = new System.Drawing.Size(1030, 76);
-            this.panel3.TabIndex = 7;
-            // 
-            // lblBienvenido
-            // 
-            this.lblBienvenido.AutoSize = true;
-            this.lblBienvenido.Font = new System.Drawing.Font("Microsoft NeoGothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenido.Location = new System.Drawing.Point(10, 18);
-            this.lblBienvenido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(106, 26);
-            this.lblBienvenido.TabIndex = 4;
-            this.lblBienvenido.Text = "Bienvenido";
-            this.lblBienvenido.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Microsoft NeoGothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(85)))), ((int)(((byte)(167)))));
-            this.lblUsuario.Location = new System.Drawing.Point(10, 38);
-            this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(96, 26);
-            this.lblUsuario.TabIndex = 5;
-            this.lblUsuario.Text = "_usuario_ ";
-            this.lblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.tableLayoutPanel3.SetColumnSpan(this.panel5, 2);
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Controls.Add(this.comboBox2);
-            this.panel5.Controls.Add(this.comboBox1);
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(215, 85);
-            this.panel5.Margin = new System.Windows.Forms.Padding(15);
-            this.panel5.Name = "panel5";
-            this.tableLayoutPanel3.SetRowSpan(this.panel5, 4);
-            this.panel5.Size = new System.Drawing.Size(373, 253);
-            this.panel5.TabIndex = 18;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(85)))), ((int)(((byte)(167)))));
-            this.label3.Location = new System.Drawing.Point(64, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 21);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Médicos";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(68, 172);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(252, 29);
-            this.comboBox2.TabIndex = 17;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(68, 69);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(252, 29);
-            this.comboBox1.TabIndex = 16;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(85)))), ((int)(((byte)(167)))));
-            this.label2.Location = new System.Drawing.Point(64, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 21);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Especialidades";
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::e_Clinica.Properties.Resources.search;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(144, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(30, 30);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::e_Clinica.Properties.Resources.logo3;
@@ -1661,17 +1661,27 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.tbPrincipalA.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.tbAdministrativos.ResumeLayout(false);
             this.tpAgendar.ResumeLayout(false);
             this.tblCitas.ResumeLayout(false);
             this.grpDatos.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.grpCalendario.ResumeLayout(false);
             this.grpCalendario.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.tpBuscarCita.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.grpBfecha.ResumeLayout(false);
+            this.tableLayoutPanel8.ResumeLayout(false);
             this.tpRegPaciente.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
@@ -1689,16 +1699,6 @@
             this.tableLayoutPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nCantidad)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.tableLayoutPanel8.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -1798,11 +1798,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtPaciente;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPaciente2;
         private System.Windows.Forms.Button btnBuscarPaciente;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label32;
@@ -1820,8 +1820,8 @@
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbDoct;
+        private System.Windows.Forms.ComboBox cmbEsp;
         private System.Windows.Forms.Label label2;
     }
 }

@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PpalMedicos));
             this.tbPrincipalM = new System.Windows.Forms.TableLayoutPanel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tbcDoctores = new System.Windows.Forms.TabControl();
             this.tpCitas = new System.Windows.Forms.TabPage();
             this.tblCitas = new System.Windows.Forms.TableLayoutPanel();
             this.grpCalendario = new System.Windows.Forms.GroupBox();
@@ -89,7 +89,7 @@
             this.txtTemperatura = new System.Windows.Forms.MaskedTextBox();
             this.btnRegExploracion = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnRegAnt = new System.Windows.Forms.Button();
             this.tbAnt = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
@@ -104,23 +104,23 @@
             this.nCantidad = new System.Windows.Forms.NumericUpDown();
             this.btnAgregarMed = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label56 = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.tbExamen = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbxCamera = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
+            this.cmbDispositivo = new System.Windows.Forms.ComboBox();
+            this.btnTake = new System.Windows.Forms.Button();
+            this.lblResultImg = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTratamiento = new System.Windows.Forms.TextBox();
+            this.txtIndicacion = new System.Windows.Forms.TextBox();
+            this.txtDiagnostico = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnGuardarS = new System.Windows.Forms.Button();
             this.tpExpediente = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tpAntecedentes = new System.Windows.Forms.TabPage();
@@ -200,7 +200,7 @@
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.tbPrincipalM.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.tbcDoctores.SuspendLayout();
             this.tpCitas.SuspendLayout();
             this.tblCitas.SuspendLayout();
             this.grpCalendario.SuspendLayout();
@@ -225,7 +225,7 @@
             this.panel7.SuspendLayout();
             this.tbExamen.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCamera)).BeginInit();
             this.panel3.SuspendLayout();
             this.tpExpediente.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -258,7 +258,7 @@
             this.tbPrincipalM.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
             this.tbPrincipalM.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tbPrincipalM.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbPrincipalM.Controls.Add(this.tabControl1, 0, 2);
+            this.tbPrincipalM.Controls.Add(this.tbcDoctores, 0, 2);
             this.tbPrincipalM.Controls.Add(this.panel1, 0, 0);
             this.tbPrincipalM.Controls.Add(this.panel2, 1, 0);
             this.tbPrincipalM.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -275,23 +275,23 @@
             this.tbPrincipalM.Size = new System.Drawing.Size(987, 623);
             this.tbPrincipalM.TabIndex = 1;
             // 
-            // tabControl1
+            // tbcDoctores
             // 
-            this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.tbPrincipalM.SetColumnSpan(this.tabControl1, 3);
-            this.tabControl1.Controls.Add(this.tpCitas);
-            this.tabControl1.Controls.Add(this.tpConsulta);
-            this.tabControl1.Controls.Add(this.tpExpediente);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.ImageList = this.imageList1;
-            this.tabControl1.ItemSize = new System.Drawing.Size(100, 110);
-            this.tabControl1.Location = new System.Drawing.Point(0, 93);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
-            this.tabControl1.Multiline = true;
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(987, 530);
-            this.tabControl1.TabIndex = 0;
+            this.tbcDoctores.Alignment = System.Windows.Forms.TabAlignment.Left;
+            this.tbPrincipalM.SetColumnSpan(this.tbcDoctores, 3);
+            this.tbcDoctores.Controls.Add(this.tpCitas);
+            this.tbcDoctores.Controls.Add(this.tpConsulta);
+            this.tbcDoctores.Controls.Add(this.tpExpediente);
+            this.tbcDoctores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbcDoctores.ImageList = this.imageList1;
+            this.tbcDoctores.ItemSize = new System.Drawing.Size(100, 110);
+            this.tbcDoctores.Location = new System.Drawing.Point(0, 93);
+            this.tbcDoctores.Margin = new System.Windows.Forms.Padding(0);
+            this.tbcDoctores.Multiline = true;
+            this.tbcDoctores.Name = "tbcDoctores";
+            this.tbcDoctores.SelectedIndex = 0;
+            this.tbcDoctores.Size = new System.Drawing.Size(987, 530);
+            this.tbcDoctores.TabIndex = 0;
             // 
             // tpCitas
             // 
@@ -990,7 +990,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button3);
+            this.groupBox4.Controls.Add(this.btnRegAnt);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
@@ -1002,20 +1002,20 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Antecedentes";
             // 
-            // button3
+            // btnRegAnt
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(305, 419);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 36);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Registrar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnRegAnt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRegAnt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.btnRegAnt.FlatAppearance.BorderSize = 0;
+            this.btnRegAnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegAnt.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegAnt.ForeColor = System.Drawing.Color.White;
+            this.btnRegAnt.Location = new System.Drawing.Point(305, 419);
+            this.btnRegAnt.Name = "btnRegAnt";
+            this.btnRegAnt.Size = new System.Drawing.Size(106, 36);
+            this.btnRegAnt.TabIndex = 7;
+            this.btnRegAnt.Text = "Registrar";
+            this.btnRegAnt.UseVisualStyleBackColor = false;
             // 
             // tbAnt
             // 
@@ -1182,7 +1182,7 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.label56);
+            this.panel7.Controls.Add(this.lblTotal);
             this.panel7.Controls.Add(this.label55);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(565, 318);
@@ -1191,18 +1191,18 @@
             this.panel7.Size = new System.Drawing.Size(284, 68);
             this.panel7.TabIndex = 12;
             // 
-            // label56
+            // lblTotal
             // 
-            this.label56.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft NeoGothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.Color.Black;
-            this.label56.Location = new System.Drawing.Point(126, 18);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(22, 26);
-            this.label56.TabIndex = 15;
-            this.label56.Text = "$";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft NeoGothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.Color.Black;
+            this.lblTotal.Location = new System.Drawing.Point(126, 18);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(22, 26);
+            this.lblTotal.TabIndex = 15;
+            this.lblTotal.Text = "$";
+            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label55
             // 
@@ -1233,11 +1233,11 @@
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel16.Controls.Add(this.pictureBox1, 0, 0);
+            this.tableLayoutPanel16.Controls.Add(this.pbxCamera, 0, 0);
             this.tableLayoutPanel16.Controls.Add(this.label21, 1, 0);
-            this.tableLayoutPanel16.Controls.Add(this.comboBox2, 2, 0);
-            this.tableLayoutPanel16.Controls.Add(this.button1, 3, 0);
-            this.tableLayoutPanel16.Controls.Add(this.label22, 0, 3);
+            this.tableLayoutPanel16.Controls.Add(this.cmbDispositivo, 2, 0);
+            this.tableLayoutPanel16.Controls.Add(this.btnTake, 3, 0);
+            this.tableLayoutPanel16.Controls.Add(this.lblResultImg, 0, 3);
             this.tableLayoutPanel16.Controls.Add(this.panel3, 1, 1);
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel16.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1251,15 +1251,15 @@
             this.tableLayoutPanel16.Size = new System.Drawing.Size(849, 477);
             this.tableLayoutPanel16.TabIndex = 0;
             // 
-            // pictureBox1
+            // pbxCamera
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.tableLayoutPanel16.SetRowSpan(this.pictureBox1, 3);
-            this.pictureBox1.Size = new System.Drawing.Size(296, 300);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbxCamera.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbxCamera.Location = new System.Drawing.Point(21, 28);
+            this.pbxCamera.Name = "pbxCamera";
+            this.tableLayoutPanel16.SetRowSpan(this.pbxCamera, 3);
+            this.pbxCamera.Size = new System.Drawing.Size(296, 300);
+            this.pbxCamera.TabIndex = 0;
+            this.pbxCamera.TabStop = false;
             // 
             // label21
             // 
@@ -1271,53 +1271,53 @@
             this.label21.TabIndex = 1;
             this.label21.Text = "Selecciona un dispositivo: ";
             // 
-            // comboBox2
+            // cmbDispositivo
             // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(520, 45);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(145, 28);
-            this.comboBox2.TabIndex = 2;
+            this.cmbDispositivo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbDispositivo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDispositivo.FormattingEnabled = true;
+            this.cmbDispositivo.Location = new System.Drawing.Point(520, 49);
+            this.cmbDispositivo.Name = "cmbDispositivo";
+            this.cmbDispositivo.Size = new System.Drawing.Size(145, 28);
+            this.cmbDispositivo.TabIndex = 2;
             // 
-            // button1
+            // btnTake
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(711, 42);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 35);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Tomar foto";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnTake.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnTake.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.btnTake.FlatAppearance.BorderSize = 0;
+            this.btnTake.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTake.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTake.ForeColor = System.Drawing.Color.White;
+            this.btnTake.Location = new System.Drawing.Point(711, 42);
+            this.btnTake.Name = "btnTake";
+            this.btnTake.Size = new System.Drawing.Size(104, 35);
+            this.btnTake.TabIndex = 3;
+            this.btnTake.Text = "Tomar foto";
+            this.btnTake.UseVisualStyleBackColor = false;
             // 
-            // label22
+            // lblResultImg
             // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(3, 387);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(294, 60);
-            this.label22.TabIndex = 5;
-            this.label22.Text = "Lbl donde se va a poner el resultado del procesamiento de la imagen por parte del" +
+            this.lblResultImg.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblResultImg.AutoSize = true;
+            this.lblResultImg.Location = new System.Drawing.Point(3, 387);
+            this.lblResultImg.Name = "lblResultImg";
+            this.lblResultImg.Size = new System.Drawing.Size(294, 60);
+            this.lblResultImg.TabIndex = 5;
+            this.lblResultImg.Text = "Lbl donde se va a poner el resultado del procesamiento de la imagen por parte del" +
     " sistema";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.tableLayoutPanel16.SetColumnSpan(this.panel3, 3);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.txtTratamiento);
+            this.panel3.Controls.Add(this.txtIndicacion);
+            this.panel3.Controls.Add(this.txtDiagnostico);
             this.panel3.Controls.Add(this.label25);
             this.panel3.Controls.Add(this.label24);
             this.panel3.Controls.Add(this.label23);
-            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.btnGuardarS);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(349, 129);
             this.panel3.Margin = new System.Windows.Forms.Padding(10);
@@ -1326,29 +1326,29 @@
             this.panel3.Size = new System.Drawing.Size(490, 338);
             this.panel3.TabIndex = 6;
             // 
-            // textBox3
+            // txtTratamiento
             // 
-            this.textBox3.Location = new System.Drawing.Point(124, 184);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(340, 65);
-            this.textBox3.TabIndex = 17;
+            this.txtTratamiento.Location = new System.Drawing.Point(124, 184);
+            this.txtTratamiento.Multiline = true;
+            this.txtTratamiento.Name = "txtTratamiento";
+            this.txtTratamiento.Size = new System.Drawing.Size(340, 65);
+            this.txtTratamiento.TabIndex = 17;
             // 
-            // textBox1
+            // txtIndicacion
             // 
-            this.textBox1.Location = new System.Drawing.Point(124, 105);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 65);
-            this.textBox1.TabIndex = 16;
+            this.txtIndicacion.Location = new System.Drawing.Point(124, 105);
+            this.txtIndicacion.Multiline = true;
+            this.txtIndicacion.Name = "txtIndicacion";
+            this.txtIndicacion.Size = new System.Drawing.Size(340, 65);
+            this.txtIndicacion.TabIndex = 16;
             // 
-            // textBox2
+            // txtDiagnostico
             // 
-            this.textBox2.Location = new System.Drawing.Point(124, 27);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(340, 65);
-            this.textBox2.TabIndex = 15;
+            this.txtDiagnostico.Location = new System.Drawing.Point(124, 27);
+            this.txtDiagnostico.Multiline = true;
+            this.txtDiagnostico.Name = "txtDiagnostico";
+            this.txtDiagnostico.Size = new System.Drawing.Size(340, 65);
+            this.txtDiagnostico.TabIndex = 15;
             // 
             // label25
             // 
@@ -1386,20 +1386,20 @@
             this.label23.TabIndex = 10;
             this.label23.Text = "Diagnóstico: ";
             // 
-            // button2
+            // btnGuardarS
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(335, 278);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 35);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnGuardarS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGuardarS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.btnGuardarS.FlatAppearance.BorderSize = 0;
+            this.btnGuardarS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarS.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarS.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarS.Location = new System.Drawing.Point(335, 278);
+            this.btnGuardarS.Name = "btnGuardarS";
+            this.btnGuardarS.Size = new System.Drawing.Size(128, 35);
+            this.btnGuardarS.TabIndex = 13;
+            this.btnGuardarS.Text = "Guardar";
+            this.btnGuardarS.UseVisualStyleBackColor = false;
             // 
             // tpExpediente
             // 
@@ -2374,7 +2374,7 @@
             this.Name = "PpalMedicos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.tbPrincipalM.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
+            this.tbcDoctores.ResumeLayout(false);
             this.tpCitas.ResumeLayout(false);
             this.tblCitas.ResumeLayout(false);
             this.grpCalendario.ResumeLayout(false);
@@ -2405,7 +2405,7 @@
             this.tbExamen.ResumeLayout(false);
             this.tableLayoutPanel16.ResumeLayout(false);
             this.tableLayoutPanel16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCamera)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.tpExpediente.ResumeLayout(false);
@@ -2452,7 +2452,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tbPrincipalM;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tbcDoctores;
         private System.Windows.Forms.TabPage tpCitas;
         private System.Windows.Forms.TableLayoutPanel tblCitas;
         private System.Windows.Forms.GroupBox grpCalendario;
@@ -2576,11 +2576,11 @@
         private System.Windows.Forms.TabPage tbExamen;
         private System.Windows.Forms.Button btnRegExploracion;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbxCamera;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.ComboBox cmbDispositivo;
+        private System.Windows.Forms.Button btnTake;
+        private System.Windows.Forms.Label lblResultImg;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
         private System.Windows.Forms.TextBox txtHistPaciente;
         private System.Windows.Forms.Label label26;
@@ -2595,7 +2595,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnRegPadecimiento;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnRegAnt;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel22;
         private System.Windows.Forms.ListBox lstMedReceta;
@@ -2609,16 +2609,16 @@
         private System.Windows.Forms.NumericUpDown nCantidad;
         private System.Windows.Forms.Button btnAgregarMed;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTratamiento;
+        private System.Windows.Forms.TextBox txtIndicacion;
+        private System.Windows.Forms.TextBox txtDiagnostico;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnGuardarS;
         private System.Windows.Forms.ImageList imageList1;
     }
 }
