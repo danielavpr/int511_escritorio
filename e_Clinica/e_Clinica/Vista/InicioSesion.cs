@@ -32,7 +32,11 @@ namespace e_Clinica
                 PpalAdministrativos pA = new PpalAdministrativos();
                 pA.ShowDialog();
             }
-                       
+            else if (user == 3)
+            {
+                PruebasImg prueba = new PruebasImg();
+                prueba.ShowDialog(); 
+            }
         }
     }
 }

@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Gma.QrCodeNet.Encoding, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QrCode.Net.0.4.0.0\lib\net45\Gma.QrCodeNet.Encoding.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +50,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManejoImagen\GenerateQRCode.cs" />
+    <Compile Include="Model\Ailment.cs" />
+    <Compile Include="Model\Antecedent.cs" />
+    <Compile Include="Model\Appointment.cs" />
+    <Compile Include="Model\Clinic.cs" />
+    <Compile Include="Model\ClinicalHistory.cs" />
+    <Compile Include="Model\Drug.cs" />
+    <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\Image_Study.cs" />
+    <Compile Include="Model\Patient.cs" />
+    <Compile Include="Model\PhysicalExploration.cs" />
+    <Compile Include="Model\Prescription.cs" />
+    <Compile Include="Model\PrescriptionDetail.cs" />
+    <Compile Include="Model\Specialty.cs" />
+    <Compile Include="Model\Study.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Vista\InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +86,12 @@
     <Compile Include="Vista\PpalAdministrativos.Designer.cs">
       <DependentUpon>PpalAdministrativos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\PruebasImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\PruebasImg.Designer.cs">
+      <DependentUpon>PruebasImg.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -85,6 +111,10 @@
     <EmbeddedResource Include="Vista\PpalMedicos.resx">
       <DependentUpon>PpalMedicos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\PruebasImg.resx">
+      <DependentUpon>PruebasImg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,10 +131,7 @@
   <ItemGroup>
     <None Include="Resources\logo2.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ManejoImagen\" />
-    <Folder Include="Modelo\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\logo3.png" />
   </ItemGroup>
