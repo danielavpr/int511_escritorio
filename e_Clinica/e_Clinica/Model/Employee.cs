@@ -10,7 +10,7 @@ namespace e_Clinica.Model
     {
         private int _id;
 
-        public int id_emp
+        public int id
         {
             get { return _id; }
             set { _id = value; }
@@ -18,7 +18,7 @@ namespace e_Clinica.Model
 
         private string _name;
 
-        public string name_emp
+        public string name
         {
             get { return _name; }
             set { _name = value; }
@@ -26,7 +26,7 @@ namespace e_Clinica.Model
 
         private string _address;
 
-        public string address_emp
+        public string address
         {
             get { return _address; }
             set { _address = value; }
@@ -34,7 +34,7 @@ namespace e_Clinica.Model
 
         private string _phone;
 
-        public string phone_emp
+        public string phone
         {
             get { return _phone; }
             set { _phone = value; }
@@ -42,7 +42,7 @@ namespace e_Clinica.Model
 
         private DateTime _date;
 
-        public DateTime date_birth_emp
+        public DateTime date_birth
         {
             get { return _date; }
             set { _date = value; }
@@ -50,7 +50,7 @@ namespace e_Clinica.Model
 
         private string _last_name;
 
-        public string last_name_emp
+        public string last_name
         {
             get { return _last_name; }
             set { _last_name = value; }
@@ -58,7 +58,7 @@ namespace e_Clinica.Model
 
         private int _user;
 
-        public int user_emp
+        public int user_id
         {
             get { return _user; }
             set { _user = value; }
@@ -66,7 +66,7 @@ namespace e_Clinica.Model
 
         private string _gender;
 
-        public string gender_emp
+        public string gender
         {
             get { return _gender; }
             set { _gender = value; }
@@ -74,7 +74,7 @@ namespace e_Clinica.Model
 
         private string _curp;
 
-        public string curp_emp
+        public string curp
         {
             get { return _curp; }
             set { _curp = value; }
@@ -82,7 +82,7 @@ namespace e_Clinica.Model
 
         private string _rfc;
 
-        public string rfc_emp
+        public string rfc
         {
             get { return _rfc; }
             set { _rfc = value; }
@@ -90,7 +90,7 @@ namespace e_Clinica.Model
 
         private string _email;
 
-        public string email_emp
+        public string email
         {
             get { return _email; }
             set { _email = value; }
@@ -110,6 +110,14 @@ namespace e_Clinica.Model
         {
             get { return _job; }
             set { _job = value; }
+        }
+
+        private int _specialty_id;
+
+        public int specialty_id
+        {
+            get { return _specialty_id; }
+            set { _specialty_id = value; }
         }
 
     }

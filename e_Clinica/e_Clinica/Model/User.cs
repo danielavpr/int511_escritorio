@@ -10,7 +10,7 @@ namespace e_Clinica.Model
     {
         private int _id;
 
-        public int id_user
+        public int id
         {
             get { return _id; }
             set { _id = value; }
@@ -18,7 +18,7 @@ namespace e_Clinica.Model
 
         private string _name;
 
-        public string name_user
+        public string username
         {
             get { return _name; }
             set { _name = value; }
@@ -26,7 +26,7 @@ namespace e_Clinica.Model
 
         private string _pswd;
 
-        public string pswd_user
+        public string password
         {
             get { return _pswd; }
             set { _pswd = value; }
@@ -34,7 +34,7 @@ namespace e_Clinica.Model
 
         private string _level;
 
-        public string level_user
+        public string level
         {
             get { return _level; }
             set { _level = value; }

@@ -10,7 +10,7 @@ namespace e_Clinica.Model
     {
         private int _id;
 
-        public int id_pdetail
+        public int id
         {
             get { return _id; }
             set { _id = value; }
@@ -18,7 +18,7 @@ namespace e_Clinica.Model
 
         private int _quantity;
 
-        public int quantity_pdetail
+        public int quantity
         {
             get { return _quantity; }
             set { _quantity = value; }
@@ -36,7 +36,7 @@ namespace e_Clinica.Model
 
         private int _description;
 
-        public int description_pdetail
+        public int description
         {
             get { return _description; }
             set { _description = value; }
@@ -44,7 +44,7 @@ namespace e_Clinica.Model
 
         private int _drug;
 
-        public int drug_pdetail
+        public int drug_id
         {
             get { return _drug; }
             set { _drug = value; }

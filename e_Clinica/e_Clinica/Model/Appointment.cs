@@ -11,7 +11,7 @@ namespace e_Clinica.Model
         
         private int _id;
 
-        public int id_app
+        public int id
         {
             get { return _id; }
             set { _id = value; }
@@ -19,7 +19,7 @@ namespace e_Clinica.Model
 
         private DateTime _date;
 
-        public DateTime date_app
+        public DateTime date
         {
             get { return _date; }
             set { _date = value; }
@@ -27,7 +27,7 @@ namespace e_Clinica.Model
 
         private int _patient;
 
-        public int patient_app
+        public int patient
         {
             get { return _patient; }
             set { _patient = value; }
@@ -35,7 +35,7 @@ namespace e_Clinica.Model
 
         private int _employee;
 
-        public int employee_app
+        public int employee
         {
             get { return _employee; }
             set { _employee = value; }
@@ -51,7 +51,7 @@ namespace e_Clinica.Model
 
         private string _type;
 
-        public string type_app
+        public string type
         {
             get { return _type; }
             set { _type = value; }

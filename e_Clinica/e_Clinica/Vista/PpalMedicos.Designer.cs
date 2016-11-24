@@ -1276,7 +1276,7 @@
             this.cmbDispositivo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbDispositivo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDispositivo.FormattingEnabled = true;
-            this.cmbDispositivo.Location = new System.Drawing.Point(520, 49);
+            this.cmbDispositivo.Location = new System.Drawing.Point(520, 45);
             this.cmbDispositivo.Name = "cmbDispositivo";
             this.cmbDispositivo.Size = new System.Drawing.Size(145, 28);
             this.cmbDispositivo.TabIndex = 2;

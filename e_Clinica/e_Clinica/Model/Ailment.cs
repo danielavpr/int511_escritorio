@@ -10,7 +10,7 @@ namespace e_Clinica.Model
     {
         private int _id_ailment;
 
-        public int id_ailment
+        public int id
         {
             get { return _id_ailment; }
             set { _id_ailment = value; }
@@ -58,7 +58,7 @@ namespace e_Clinica.Model
 
         private int _id_CH;
 
-        public int id_CH_ail
+        public int clinical_history_id
         {
             get { return _id_CH; }
             set { _id_CH = value; }
