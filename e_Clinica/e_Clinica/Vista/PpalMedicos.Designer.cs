@@ -111,7 +111,6 @@
             this.pbxCamera = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.cmbDispositivo = new System.Windows.Forms.ComboBox();
-            this.btnTake = new System.Windows.Forms.Button();
             this.lblResultImg = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtTratamiento = new System.Windows.Forms.TextBox();
@@ -199,6 +198,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btnTake = new System.Windows.Forms.Button();
+            this.btnAnalyze = new System.Windows.Forms.Button();
             this.tbPrincipalM.SuspendLayout();
             this.tbcDoctores.SuspendLayout();
             this.tpCitas.SuspendLayout();
@@ -250,6 +252,7 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbPrincipalM
@@ -1236,9 +1239,9 @@
             this.tableLayoutPanel16.Controls.Add(this.pbxCamera, 0, 0);
             this.tableLayoutPanel16.Controls.Add(this.label21, 1, 0);
             this.tableLayoutPanel16.Controls.Add(this.cmbDispositivo, 2, 0);
-            this.tableLayoutPanel16.Controls.Add(this.btnTake, 3, 0);
             this.tableLayoutPanel16.Controls.Add(this.lblResultImg, 0, 3);
             this.tableLayoutPanel16.Controls.Add(this.panel3, 1, 1);
+            this.tableLayoutPanel16.Controls.Add(this.panel8, 3, 0);
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel16.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 3);
@@ -1254,6 +1257,7 @@
             // pbxCamera
             // 
             this.pbxCamera.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbxCamera.BackColor = System.Drawing.Color.Gainsboro;
             this.pbxCamera.Location = new System.Drawing.Point(21, 28);
             this.pbxCamera.Name = "pbxCamera";
             this.tableLayoutPanel16.SetRowSpan(this.pbxCamera, 3);
@@ -1276,25 +1280,11 @@
             this.cmbDispositivo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbDispositivo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDispositivo.FormattingEnabled = true;
-            this.cmbDispositivo.Location = new System.Drawing.Point(520, 45);
+            this.cmbDispositivo.Location = new System.Drawing.Point(520, 49);
             this.cmbDispositivo.Name = "cmbDispositivo";
             this.cmbDispositivo.Size = new System.Drawing.Size(145, 28);
             this.cmbDispositivo.TabIndex = 2;
-            // 
-            // btnTake
-            // 
-            this.btnTake.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnTake.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.btnTake.FlatAppearance.BorderSize = 0;
-            this.btnTake.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTake.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTake.ForeColor = System.Drawing.Color.White;
-            this.btnTake.Location = new System.Drawing.Point(711, 42);
-            this.btnTake.Name = "btnTake";
-            this.btnTake.Size = new System.Drawing.Size(104, 35);
-            this.btnTake.TabIndex = 3;
-            this.btnTake.Text = "Tomar foto";
-            this.btnTake.UseVisualStyleBackColor = false;
+            this.cmbDispositivo.SelectedIndexChanged += new System.EventHandler(this.cmbDispositivo_SelectedIndexChanged);
             // 
             // lblResultImg
             // 
@@ -2362,6 +2352,48 @@
             this.lblUsuario.Text = "_usuario_ ";
             this.lblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.btnAnalyze);
+            this.panel8.Controls.Add(this.btnTake);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(677, 0);
+            this.panel8.Margin = new System.Windows.Forms.Padding(0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(172, 119);
+            this.panel8.TabIndex = 7;
+            // 
+            // btnTake
+            // 
+            this.btnTake.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnTake.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.btnTake.FlatAppearance.BorderSize = 0;
+            this.btnTake.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTake.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTake.ForeColor = System.Drawing.Color.White;
+            this.btnTake.Location = new System.Drawing.Point(39, 23);
+            this.btnTake.Name = "btnTake";
+            this.btnTake.Size = new System.Drawing.Size(104, 35);
+            this.btnTake.TabIndex = 4;
+            this.btnTake.Text = "Tomar foto";
+            this.btnTake.UseVisualStyleBackColor = false;
+            this.btnTake.Click += new System.EventHandler(this.btnTake_Click);
+            // 
+            // btnAnalyze
+            // 
+            this.btnAnalyze.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAnalyze.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.btnAnalyze.FlatAppearance.BorderSize = 0;
+            this.btnAnalyze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnalyze.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnalyze.ForeColor = System.Drawing.Color.White;
+            this.btnAnalyze.Location = new System.Drawing.Point(39, 64);
+            this.btnAnalyze.Name = "btnAnalyze";
+            this.btnAnalyze.Size = new System.Drawing.Size(104, 35);
+            this.btnAnalyze.TabIndex = 5;
+            this.btnAnalyze.Text = "Analizar";
+            this.btnAnalyze.UseVisualStyleBackColor = false;
+            // 
             // PpalMedicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -2373,6 +2405,7 @@
             this.MaximizeBox = false;
             this.Name = "PpalMedicos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.PpalMedicos_Load);
             this.tbPrincipalM.ResumeLayout(false);
             this.tbcDoctores.ResumeLayout(false);
             this.tpCitas.ResumeLayout(false);
@@ -2445,6 +2478,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2579,7 +2613,6 @@
         private System.Windows.Forms.PictureBox pbxCamera;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.ComboBox cmbDispositivo;
-        private System.Windows.Forms.Button btnTake;
         private System.Windows.Forms.Label lblResultImg;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
         private System.Windows.Forms.TextBox txtHistPaciente;
@@ -2620,5 +2653,8 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Button btnGuardarS;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button btnAnalyze;
+        private System.Windows.Forms.Button btnTake;
     }
 }
