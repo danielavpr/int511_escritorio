@@ -10,7 +10,7 @@ namespace e_Clinica.Model
     {
         private int _id;
 
-        public int id_study
+        public int id
         {
             get { return _id; }
             set { _id = value; }
@@ -18,7 +18,7 @@ namespace e_Clinica.Model
 
         private DateTime _date;
 
-        public DateTime date_study
+        public DateTime date
         {
             get { return _date; }
             set { _date = value; }
@@ -59,7 +59,7 @@ namespace e_Clinica.Model
 
         private int _employee;
 
-        public int employee_study
+        public int employee_id
         {
             get { return _employee; }
             set { _employee = value; }
@@ -67,7 +67,7 @@ namespace e_Clinica.Model
 
         private int _id_CH;
 
-        public int id_CH_study
+        public int clinical_history_id
         {
             get { return _id_CH; }
             set { _id_CH = value; }

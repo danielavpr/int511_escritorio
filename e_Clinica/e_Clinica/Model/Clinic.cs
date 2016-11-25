@@ -18,7 +18,7 @@ namespace e_Clinica.Model
 
         private int _id;
 
-        public int id_clinic
+        public int id
         {
             get { return _id; }
             set { _id = value; }
@@ -26,7 +26,7 @@ namespace e_Clinica.Model
 
         private string _name;
 
-        public string name_clinic
+        public string name
         {
             get { return _name; }
             set { _name = value; }
@@ -34,7 +34,7 @@ namespace e_Clinica.Model
 
         private string _address;
 
-        public string address_clinic
+        public string address
         {
             get { return _address; }
             set { _address = value; }
@@ -42,7 +42,7 @@ namespace e_Clinica.Model
 
         private string _phone;
 
-        public string phone_clinic
+        public string phone
         {
             get { return _phone; }
             set { _phone = value; }
@@ -50,7 +50,7 @@ namespace e_Clinica.Model
 
         private int _manager;
 
-        public int manager_clinic
+        public int manager
         {
             get { return _manager; }
             set { _manager = value; }
@@ -58,7 +58,7 @@ namespace e_Clinica.Model
 
         private DateTime _open_time;
 
-        public DateTime open_time_c
+        public DateTime open_time
         {
             get { return _open_time; }
             set { _open_time = value; }
@@ -66,11 +66,20 @@ namespace e_Clinica.Model
 
         private DateTime _close_time;
 
-        public DateTime close_time_c
+        public DateTime close_time
         {
             get { return _close_time; }
             set { _close_time = value; }
         }
+
+        private string _open_days;
+
+        public string open_days
+        {
+            get { return _open_days; }
+            set { _open_days = value; }
+        }
+
 
     }
 }

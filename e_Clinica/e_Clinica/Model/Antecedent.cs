@@ -11,7 +11,7 @@ namespace e_Clinica.Model
 
         private int _id;
 
-        public int id_ant
+        public int id
         {
             get { return _id; }
             set { _id = value; }
@@ -19,7 +19,7 @@ namespace e_Clinica.Model
 
         private string _name;
 
-        public string name_ant
+        public string name
         {
             get { return _name; }
             set { _name = value; }
@@ -27,7 +27,7 @@ namespace e_Clinica.Model
 
         private string _desc;
 
-        public string _desc_ant
+        public string description
         {
             get { return _desc; }
             set { _desc = value; }
@@ -35,7 +35,7 @@ namespace e_Clinica.Model
 
         private int _id_CH;
 
-        public int id_CH_ant
+        public int clinical_history_id
         {
             get { return _id_CH; }
             set { _id_CH = value; }
@@ -43,7 +43,7 @@ namespace e_Clinica.Model
 
         private string _type;
 
-        public string type_ant
+        public string type
         {
             get { return _type; }
             set { _type = value; }

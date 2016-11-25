@@ -12,7 +12,7 @@ namespace e_Clinica.Model
 
         private int _id;
 
-        public int id_image
+        public int id
         {
             get { return _id; }
             set { _id = value; }
@@ -20,7 +20,7 @@ namespace e_Clinica.Model
 
         private int _study;
 
-        public int id_study_img
+        public int study_id
         {
             get { return _study; }
             set { _study = value; }

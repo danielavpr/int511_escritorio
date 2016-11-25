@@ -10,15 +10,15 @@ namespace e_Clinica.Model
     {
         private int _id;
 
-        public int id_drug
+        public int id
         {
             get { return _id; }
             set { _id = value; }
         }
 
-        private int _sku;
+        private string _sku;
 
-        public int sku
+        public string sku
         {
             get { return _sku; }
             set { _sku = value; }
@@ -26,7 +26,7 @@ namespace e_Clinica.Model
 
         private string _name;
 
-        public string name_drug
+        public string name
         {
             get { return _name; }
             set { _name = value; }
@@ -34,7 +34,7 @@ namespace e_Clinica.Model
 
         private string _description;
 
-        public string description_drug
+        public string description
         {
             get { return _description; }
             set { _description = value; }
@@ -42,7 +42,7 @@ namespace e_Clinica.Model
 
         private double _purchase;
 
-        public double purchase_price
+        public double purchase
         {
             get { return _purchase; }
             set { _purchase = value; }

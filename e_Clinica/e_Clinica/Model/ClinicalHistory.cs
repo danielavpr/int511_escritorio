@@ -11,7 +11,7 @@ namespace e_Clinica.Model
 
         private int _id;
 
-        public int id_clinical_h
+        public int id
         {
             get { return _id; }
             set { _id = value; }
@@ -19,10 +19,18 @@ namespace e_Clinica.Model
 
         private int _clinic;
 
-        public int clinic
+        public int clinic_id
         {
             get { return _clinic; }
             set { _clinic = value; }
+        }
+
+        private int _patient_id;
+
+        public int patient_id
+        {
+            get { return _patient_id; }
+            set { _patient_id = value; }
         }
 
     }
