@@ -15,7 +15,7 @@ namespace e_Clinica.ManejoImagen
         private bool existeCamara;
         private bool activaCaptura = false;
 
-        private string dispositivoActual = "";
+        //private string dispositivoActual = "";
         public List<string> lstDispositivos;
         public Bitmap imgGeneral = null;
         public System.Windows.Forms.PictureBox pbxCamera;

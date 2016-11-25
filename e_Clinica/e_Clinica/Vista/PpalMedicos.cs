@@ -19,13 +19,12 @@ namespace e_Clinica.Vista
             btnAnalyze.Visible = false;
         }
 
-<<<<<<< HEAD
         private void btnRegExploracion_Click(object sender, EventArgs e)
         {
             
         }
 
-=======
+
         #region Local Variables
         VideoManager vManager;
         int device = 0; 
@@ -58,6 +57,5 @@ namespace e_Clinica.Vista
         #endregion
 
 
->>>>>>> ffdb44cc436bf2c4ca75caefa1be6d6be8907130
     }
 }
