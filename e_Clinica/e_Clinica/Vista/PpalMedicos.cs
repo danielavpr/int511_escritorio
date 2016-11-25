@@ -16,6 +16,11 @@ namespace e_Clinica.Vista
         {
             InitializeComponent();
         }
-        
+
+        private void btnRegExploracion_Click(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }
