@@ -57,6 +57,10 @@
       <HintPath>..\packages\QrCode.Net.0.4.0.0\lib\net45\Gma.QrCodeNet.Encoding.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.2-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -70,6 +74,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\Appointment_Ctrl.cs" />
+    <Compile Include="Controller\ClinicalHistory_Ctrl.cs" />
+    <Compile Include="Controller\Drug_Ctrl.cs" />
+    <Compile Include="Controller\Employee_Ctrl.cs" />
+    <Compile Include="Controller\Patient_Ctrl.cs" />
+    <Compile Include="Controller\PhysicalExploration_Ctrl.cs" />
+    <Compile Include="Controller\User_Ctrl.cs" />
+    <Compile Include="Helpers\RESTHelper.cs" />
     <Compile Include="ManejoImagen\GenerateQRCode.cs" />
     <Compile Include="ManejoImagen\VideoManager.cs" />
     <Compile Include="Model\Ailment.cs" />

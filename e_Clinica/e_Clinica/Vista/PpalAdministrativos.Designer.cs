@@ -126,6 +126,8 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.cmbPuesto = new System.Windows.Forms.ComboBox();
+            this.cmbEspecialidad = new System.Windows.Forms.ComboBox();
+            this.label35 = new System.Windows.Forms.Label();
             this.tpMedicamentos = new System.Windows.Forms.TabPage();
             this.tbMedicamentos = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -1046,6 +1048,8 @@
             this.tableLayoutPanel5.Controls.Add(this.label31, 2, 6);
             this.tableLayoutPanel5.Controls.Add(this.label25, 0, 7);
             this.tableLayoutPanel5.Controls.Add(this.cmbPuesto, 1, 7);
+            this.tableLayoutPanel5.Controls.Add(this.cmbEspecialidad, 3, 5);
+            this.tableLayoutPanel5.Controls.Add(this.label35, 2, 5);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 23);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -1237,9 +1241,9 @@
             this.cmbSexoPer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSexoPer.FormattingEnabled = true;
             this.cmbSexoPer.Items.AddRange(new object[] {
-            "Femenino",
-            "Masculino",
-            "Otro"});
+            "F",
+            "M",
+            "O"});
             this.cmbSexoPer.Location = new System.Drawing.Point(717, 104);
             this.cmbSexoPer.Name = "cmbSexoPer";
             this.cmbSexoPer.Size = new System.Drawing.Size(301, 28);
@@ -1249,11 +1253,10 @@
             // 
             this.txtFechaNacPer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFechaNacPer.Location = new System.Drawing.Point(207, 101);
-            this.txtFechaNacPer.Mask = "00/00/0000";
+            this.txtFechaNacPer.Mask = "0000-00-00";
             this.txtFechaNacPer.Name = "txtFechaNacPer";
             this.txtFechaNacPer.Size = new System.Drawing.Size(300, 27);
             this.txtFechaNacPer.TabIndex = 29;
-            this.txtFechaNacPer.ValidatingType = typeof(System.DateTime);
             // 
             // cmbNivelEducativo
             // 
@@ -1319,6 +1322,7 @@
             this.btnGuardar.TabIndex = 38;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label23
             // 
@@ -1335,7 +1339,7 @@
             // 
             this.txtTelefonoPer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTelefonoPer.Location = new System.Drawing.Point(717, 193);
-            this.txtTelefonoPer.Mask = "(999)000-0000";
+            this.txtTelefonoPer.Mask = "9999999999";
             this.txtTelefonoPer.Name = "txtTelefonoPer";
             this.txtTelefonoPer.Size = new System.Drawing.Size(301, 27);
             this.txtTelefonoPer.TabIndex = 28;
@@ -1376,12 +1380,35 @@
             this.cmbPuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPuesto.FormattingEnabled = true;
             this.cmbPuesto.Items.AddRange(new object[] {
-            "Administrativo ",
-            "Médico"});
+            "doctor ",
+            "adm"});
             this.cmbPuesto.Location = new System.Drawing.Point(207, 334);
             this.cmbPuesto.Name = "cmbPuesto";
             this.cmbPuesto.Size = new System.Drawing.Size(300, 28);
             this.cmbPuesto.TabIndex = 31;
+            // 
+            // cmbEspecialidad
+            // 
+            this.cmbEspecialidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEspecialidad.FormattingEnabled = true;
+            this.cmbEspecialidad.Items.AddRange(new object[] {
+            "Dermatología "});
+            this.cmbEspecialidad.Location = new System.Drawing.Point(717, 242);
+            this.cmbEspecialidad.Name = "cmbEspecialidad";
+            this.cmbEspecialidad.Size = new System.Drawing.Size(301, 28);
+            this.cmbEspecialidad.TabIndex = 39;
+            // 
+            // label35
+            // 
+            this.label35.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(605, 242);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(106, 21);
+            this.label35.TabIndex = 40;
+            this.label35.Text = "Especialidad: ";
             // 
             // tpMedicamentos
             // 
@@ -1823,5 +1850,7 @@
         private System.Windows.Forms.ComboBox cmbDoct;
         private System.Windows.Forms.ComboBox cmbEsp;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbEspecialidad;
+        private System.Windows.Forms.Label label35;
     }
 }

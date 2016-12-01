@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace e_Clinica.Model
 {
     public class PhysicalExploration
-    {
+    { 
+
         private int _id;
 
         public int id

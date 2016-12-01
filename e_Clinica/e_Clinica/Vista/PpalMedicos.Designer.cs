@@ -37,6 +37,8 @@
             this.grpCalendario = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtNacimiento = new System.Windows.Forms.TextBox();
+            this.btnInformacion = new System.Windows.Forms.Button();
             this.label36 = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
@@ -49,12 +51,9 @@
             this.txtRFC = new System.Windows.Forms.MaskedTextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.txtSexo = new System.Windows.Forms.TextBox();
-            this.txtFechaNacimiento = new System.Windows.Forms.MaskedTextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPrApellido = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtSegApellido = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
@@ -75,18 +74,21 @@
             this.btnRegPadecimiento = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtFrecuenciaResp = new System.Windows.Forms.MaskedTextBox();
             this.txtPresion = new System.Windows.Forms.MaskedTextBox();
-            this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
             this.txtComentarios = new System.Windows.Forms.TextBox();
             this.txtTemperatura = new System.Windows.Forms.MaskedTextBox();
             this.btnRegExploracion = new System.Windows.Forms.Button();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.txtFrecuenciaResp = new System.Windows.Forms.MaskedTextBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtFrecuenciaArt = new System.Windows.Forms.MaskedTextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.btnRegAnt = new System.Windows.Forms.Button();
@@ -147,24 +149,26 @@
             this.lstNoPatologicas = new System.Windows.Forms.ListBox();
             this.lstPatologicas = new System.Windows.Forms.ListBox();
             this.grpUltExploracion = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblFrecCard = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblObservaciones = new System.Windows.Forms.Label();
-            this.lblFrecuencia = new System.Windows.Forms.Label();
+            this.lblFrecResp = new System.Windows.Forms.Label();
             this.lblPresion = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblTemp = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.btnInformacion = new System.Windows.Forms.Button();
             this.tbPrincipalM.SuspendLayout();
             this.tbcDoctores.SuspendLayout();
             this.tpCitas.SuspendLayout();
@@ -313,6 +317,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel1.Controls.Add(this.txtNacimiento, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnInformacion, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.label36, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.txtCorreo, 1, 6);
@@ -326,12 +331,9 @@
             this.tableLayoutPanel1.Controls.Add(this.txtRFC, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.label30, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.txtSexo, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.txtFechaNacimiento, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label29, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.txtPrApellido, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.txtSegApellido, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtApellido, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtNombre, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label38, 0, 0);
@@ -351,6 +353,32 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(550, 482);
             this.tableLayoutPanel1.TabIndex = 5;
+            // 
+            // txtNacimiento
+            // 
+            this.txtNacimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNacimiento.Enabled = false;
+            this.txtNacimiento.Location = new System.Drawing.Point(113, 182);
+            this.txtNacimiento.Name = "txtNacimiento";
+            this.txtNacimiento.Size = new System.Drawing.Size(159, 27);
+            this.txtNacimiento.TabIndex = 28;
+            // 
+            // btnInformacion
+            // 
+            this.btnInformacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnInformacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
+            this.tableLayoutPanel1.SetColumnSpan(this.btnInformacion, 4);
+            this.btnInformacion.FlatAppearance.BorderSize = 0;
+            this.btnInformacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInformacion.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInformacion.ForeColor = System.Drawing.Color.White;
+            this.btnInformacion.Location = new System.Drawing.Point(188, 417);
+            this.btnInformacion.Name = "btnInformacion";
+            this.btnInformacion.Size = new System.Drawing.Size(173, 40);
+            this.btnInformacion.TabIndex = 27;
+            this.btnInformacion.Text = "Ir a cita";
+            this.btnInformacion.UseVisualStyleBackColor = false;
+            this.btnInformacion.Click += new System.EventHandler(this.btnInformacion_Click);
             // 
             // label36
             // 
@@ -388,7 +416,6 @@
             this.txtTelefono.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtTelefono.Enabled = false;
             this.txtTelefono.Location = new System.Drawing.Point(388, 350);
-            this.txtTelefono.Mask = "(999)000-0000";
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(141, 27);
             this.txtTelefono.TabIndex = 20;
@@ -430,7 +457,6 @@
             this.txtCURP.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtCURP.Enabled = false;
             this.txtCURP.Location = new System.Drawing.Point(113, 238);
-            this.txtCURP.Mask = "AAAA000000AAAAA00";
             this.txtCURP.Name = "txtCURP";
             this.txtCURP.Size = new System.Drawing.Size(139, 27);
             this.txtCURP.TabIndex = 19;
@@ -451,7 +477,6 @@
             this.txtRFC.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtRFC.Enabled = false;
             this.txtRFC.Location = new System.Drawing.Point(388, 238);
-            this.txtRFC.Mask = "AAAA000000AAA";
             this.txtRFC.Name = "txtRFC";
             this.txtRFC.Size = new System.Drawing.Size(141, 27);
             this.txtRFC.TabIndex = 10;
@@ -476,17 +501,6 @@
             this.txtSexo.Size = new System.Drawing.Size(141, 27);
             this.txtSexo.TabIndex = 24;
             // 
-            // txtFechaNacimiento
-            // 
-            this.txtFechaNacimiento.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtFechaNacimiento.Enabled = false;
-            this.txtFechaNacimiento.Location = new System.Drawing.Point(113, 182);
-            this.txtFechaNacimiento.Mask = "00/00/0000";
-            this.txtFechaNacimiento.Name = "txtFechaNacimiento";
-            this.txtFechaNacimiento.Size = new System.Drawing.Size(139, 27);
-            this.txtFechaNacimiento.TabIndex = 21;
-            this.txtFechaNacimiento.ValidatingType = typeof(System.DateTime);
-            // 
             // label29
             // 
             this.label29.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -503,40 +517,21 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(34, 120);
+            this.label2.Location = new System.Drawing.Point(28, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 40);
+            this.label2.Size = new System.Drawing.Size(79, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Primer Apellido: ";
+            this.label2.Text = "Apellidos: ";
             // 
-            // txtPrApellido
+            // txtApellido
             // 
-            this.txtPrApellido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPrApellido.Enabled = false;
-            this.txtPrApellido.Location = new System.Drawing.Point(113, 126);
-            this.txtPrApellido.Name = "txtPrApellido";
-            this.txtPrApellido.Size = new System.Drawing.Size(159, 27);
-            this.txtPrApellido.TabIndex = 17;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(309, 120);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 40);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Segundo Apellido: ";
-            // 
-            // txtSegApellido
-            // 
-            this.txtSegApellido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSegApellido.Enabled = false;
-            this.txtSegApellido.Location = new System.Drawing.Point(388, 126);
-            this.txtSegApellido.Name = "txtSegApellido";
-            this.txtSegApellido.Size = new System.Drawing.Size(159, 27);
-            this.txtSegApellido.TabIndex = 18;
+            this.txtApellido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.txtApellido, 3);
+            this.txtApellido.Enabled = false;
+            this.txtApellido.Location = new System.Drawing.Point(113, 126);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(434, 27);
+            this.txtApellido.TabIndex = 17;
             // 
             // txtNombre
             // 
@@ -581,6 +576,7 @@
             this.lstPacientes.Name = "lstPacientes";
             this.lstPacientes.Size = new System.Drawing.Size(258, 464);
             this.lstPacientes.TabIndex = 0;
+            this.lstPacientes.SelectedIndexChanged += new System.EventHandler(this.lstPacientes_SelectedIndexChanged);
             // 
             // tpConsulta
             // 
@@ -606,6 +602,7 @@
             this.tbConsulta.SelectedIndex = 0;
             this.tbConsulta.Size = new System.Drawing.Size(863, 516);
             this.tbConsulta.TabIndex = 0;
+            this.tbConsulta.SelectedIndexChanged += new System.EventHandler(this.tbConsulta_SelectedIndexChanged);
             // 
             // tbRegConsulta
             // 
@@ -775,66 +772,50 @@
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel23.Controls.Add(this.txtFrecuenciaResp, 1, 2);
             this.tableLayoutPanel23.Controls.Add(this.txtPresion, 1, 1);
-            this.tableLayoutPanel23.Controls.Add(this.label57, 2, 2);
             this.tableLayoutPanel23.Controls.Add(this.label58, 2, 1);
             this.tableLayoutPanel23.Controls.Add(this.label59, 0, 1);
-            this.tableLayoutPanel23.Controls.Add(this.label60, 0, 2);
             this.tableLayoutPanel23.Controls.Add(this.label61, 0, 0);
             this.tableLayoutPanel23.Controls.Add(this.label62, 2, 0);
-            this.tableLayoutPanel23.Controls.Add(this.label63, 0, 3);
-            this.tableLayoutPanel23.Controls.Add(this.txtComentarios, 1, 3);
+            this.tableLayoutPanel23.Controls.Add(this.txtComentarios, 1, 4);
             this.tableLayoutPanel23.Controls.Add(this.txtTemperatura, 1, 0);
-            this.tableLayoutPanel23.Controls.Add(this.btnRegExploracion, 2, 5);
+            this.tableLayoutPanel23.Controls.Add(this.btnRegExploracion, 2, 6);
+            this.tableLayoutPanel23.Controls.Add(this.label63, 0, 4);
+            this.tableLayoutPanel23.Controls.Add(this.label60, 0, 3);
+            this.tableLayoutPanel23.Controls.Add(this.txtFrecuenciaResp, 1, 3);
+            this.tableLayoutPanel23.Controls.Add(this.label57, 2, 3);
+            this.tableLayoutPanel23.Controls.Add(this.label12, 0, 2);
+            this.tableLayoutPanel23.Controls.Add(this.txtFrecuenciaArt, 1, 2);
+            this.tableLayoutPanel23.Controls.Add(this.label13, 2, 2);
             this.tableLayoutPanel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel23.Location = new System.Drawing.Point(3, 23);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
-            this.tableLayoutPanel23.RowCount = 6;
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel23.RowCount = 7;
+            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
             this.tableLayoutPanel23.Size = new System.Drawing.Size(412, 254);
             this.tableLayoutPanel23.TabIndex = 0;
             // 
-            // txtFrecuenciaResp
-            // 
-            this.txtFrecuenciaResp.Location = new System.Drawing.Point(167, 87);
-            this.txtFrecuenciaResp.Mask = "99";
-            this.txtFrecuenciaResp.Name = "txtFrecuenciaResp";
-            this.txtFrecuenciaResp.Size = new System.Drawing.Size(67, 27);
-            this.txtFrecuenciaResp.TabIndex = 9;
-            this.txtFrecuenciaResp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // txtPresion
             // 
-            this.txtPresion.Location = new System.Drawing.Point(167, 45);
+            this.txtPresion.Location = new System.Drawing.Point(167, 39);
             this.txtPresion.Mask = "99";
             this.txtPresion.Name = "txtPresion";
             this.txtPresion.Size = new System.Drawing.Size(67, 27);
             this.txtPresion.TabIndex = 8;
             this.txtPresion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label57
-            // 
-            this.label57.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(249, 95);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(141, 20);
-            this.label57.TabIndex = 5;
-            this.label57.Text = "respiraciones x min.";
-            // 
             // label58
             // 
             this.label58.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(249, 53);
+            this.label58.Location = new System.Drawing.Point(249, 44);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(98, 20);
             this.label58.TabIndex = 4;
@@ -845,29 +826,18 @@
             this.label59.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label59.AutoSize = true;
             this.label59.ForeColor = System.Drawing.Color.Black;
-            this.label59.Location = new System.Drawing.Point(46, 53);
+            this.label59.Location = new System.Drawing.Point(46, 44);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(115, 20);
             this.label59.TabIndex = 1;
             this.label59.Text = "Presión arterial: ";
-            // 
-            // label60
-            // 
-            this.label60.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label60.AutoSize = true;
-            this.label60.ForeColor = System.Drawing.Color.Black;
-            this.label60.Location = new System.Drawing.Point(35, 95);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(126, 20);
-            this.label60.TabIndex = 1;
-            this.label60.Text = "Frec. respiratoria: ";
             // 
             // label61
             // 
             this.label61.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label61.AutoSize = true;
             this.label61.ForeColor = System.Drawing.Color.Black;
-            this.label61.Location = new System.Drawing.Point(60, 11);
+            this.label61.Location = new System.Drawing.Point(60, 8);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(101, 20);
             this.label61.TabIndex = 0;
@@ -878,32 +848,21 @@
             this.label62.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label62.AutoSize = true;
             this.label62.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(249, 11);
+            this.label62.Location = new System.Drawing.Point(249, 8);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(24, 20);
             this.label62.TabIndex = 3;
             this.label62.Text = "°C";
             // 
-            // label63
-            // 
-            this.label63.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label63.AutoSize = true;
-            this.label63.ForeColor = System.Drawing.Color.Black;
-            this.label63.Location = new System.Drawing.Point(49, 137);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(112, 20);
-            this.label63.TabIndex = 2;
-            this.label63.Text = "Observaciones: ";
-            // 
             // txtComentarios
             // 
             this.tableLayoutPanel23.SetColumnSpan(this.txtComentarios, 2);
             this.txtComentarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtComentarios.Location = new System.Drawing.Point(167, 129);
+            this.txtComentarios.Location = new System.Drawing.Point(167, 147);
             this.txtComentarios.Multiline = true;
             this.txtComentarios.Name = "txtComentarios";
             this.tableLayoutPanel23.SetRowSpan(this.txtComentarios, 2);
-            this.txtComentarios.Size = new System.Drawing.Size(242, 78);
+            this.txtComentarios.Size = new System.Drawing.Size(242, 66);
             this.txtComentarios.TabIndex = 6;
             // 
             // txtTemperatura
@@ -923,13 +882,86 @@
             this.btnRegExploracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegExploracion.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegExploracion.ForeColor = System.Drawing.Color.White;
-            this.btnRegExploracion.Location = new System.Drawing.Point(279, 217);
+            this.btnRegExploracion.Location = new System.Drawing.Point(279, 220);
             this.btnRegExploracion.Name = "btnRegExploracion";
             this.btnRegExploracion.Size = new System.Drawing.Size(100, 30);
             this.btnRegExploracion.TabIndex = 10;
             this.btnRegExploracion.Text = "Registrar";
             this.btnRegExploracion.UseVisualStyleBackColor = false;
             this.btnRegExploracion.Click += new System.EventHandler(this.btnRegExploracion_Click);
+            // 
+            // label63
+            // 
+            this.label63.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label63.AutoSize = true;
+            this.label63.ForeColor = System.Drawing.Color.Black;
+            this.label63.Location = new System.Drawing.Point(49, 152);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(112, 20);
+            this.label63.TabIndex = 2;
+            this.label63.Text = "Observaciones: ";
+            // 
+            // label60
+            // 
+            this.label60.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label60.AutoSize = true;
+            this.label60.ForeColor = System.Drawing.Color.Black;
+            this.label60.Location = new System.Drawing.Point(35, 116);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(126, 20);
+            this.label60.TabIndex = 1;
+            this.label60.Text = "Frec. respiratoria: ";
+            // 
+            // txtFrecuenciaResp
+            // 
+            this.txtFrecuenciaResp.Location = new System.Drawing.Point(167, 111);
+            this.txtFrecuenciaResp.Mask = "99";
+            this.txtFrecuenciaResp.Name = "txtFrecuenciaResp";
+            this.txtFrecuenciaResp.Size = new System.Drawing.Size(67, 27);
+            this.txtFrecuenciaResp.TabIndex = 9;
+            this.txtFrecuenciaResp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label57
+            // 
+            this.label57.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(249, 116);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(141, 20);
+            this.label57.TabIndex = 5;
+            this.label57.Text = "respiraciones x min.";
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(64, 80);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(97, 20);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "Frec. arterial: ";
+            // 
+            // txtFrecuenciaArt
+            // 
+            this.txtFrecuenciaArt.Location = new System.Drawing.Point(167, 75);
+            this.txtFrecuenciaArt.Mask = "99";
+            this.txtFrecuenciaArt.Name = "txtFrecuenciaArt";
+            this.txtFrecuenciaArt.Size = new System.Drawing.Size(67, 27);
+            this.txtFrecuenciaArt.TabIndex = 12;
+            this.txtFrecuenciaArt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(249, 80);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(132, 20);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "pulsaciones x min.";
             // 
             // groupBox4
             // 
@@ -1306,7 +1338,7 @@
             this.cmbDispositivo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbDispositivo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDispositivo.FormattingEnabled = true;
-            this.cmbDispositivo.Location = new System.Drawing.Point(520, 49);
+            this.cmbDispositivo.Location = new System.Drawing.Point(520, 45);
             this.cmbDispositivo.Name = "cmbDispositivo";
             this.cmbDispositivo.Size = new System.Drawing.Size(145, 28);
             this.cmbDispositivo.TabIndex = 2;
@@ -1537,6 +1569,7 @@
             this.btnBuscarHist.TabIndex = 2;
             this.btnBuscarHist.Text = "Buscar";
             this.btnBuscarHist.UseVisualStyleBackColor = true;
+            this.btnBuscarHist.Click += new System.EventHandler(this.btnBuscarHist_Click);
             // 
             // tbListaHistorial
             // 
@@ -1664,13 +1697,16 @@
             // 
             // grpUltExploracion
             // 
+            this.grpUltExploracion.Controls.Add(this.label3);
+            this.grpUltExploracion.Controls.Add(this.lblFrecCard);
+            this.grpUltExploracion.Controls.Add(this.label14);
             this.grpUltExploracion.Controls.Add(this.label9);
             this.grpUltExploracion.Controls.Add(this.label10);
             this.grpUltExploracion.Controls.Add(this.label11);
             this.grpUltExploracion.Controls.Add(this.lblObservaciones);
-            this.grpUltExploracion.Controls.Add(this.lblFrecuencia);
+            this.grpUltExploracion.Controls.Add(this.lblFrecResp);
             this.grpUltExploracion.Controls.Add(this.lblPresion);
-            this.grpUltExploracion.Controls.Add(this.label8);
+            this.grpUltExploracion.Controls.Add(this.lblTemp);
             this.grpUltExploracion.Controls.Add(this.label4);
             this.grpUltExploracion.Controls.Add(this.label5);
             this.grpUltExploracion.Controls.Add(this.label6);
@@ -1684,12 +1720,43 @@
             this.grpUltExploracion.TabStop = false;
             this.grpUltExploracion.Text = "Última exploración física";
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(194, 138);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(132, 20);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "pulsaciones x min.";
+            // 
+            // lblFrecCard
+            // 
+            this.lblFrecCard.AutoSize = true;
+            this.lblFrecCard.Location = new System.Drawing.Point(158, 139);
+            this.lblFrecCard.Name = "lblFrecCard";
+            this.lblFrecCard.Size = new System.Drawing.Size(24, 18);
+            this.lblFrecCard.TabIndex = 15;
+            this.lblFrecCard.Text = "__";
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(42, 139);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(110, 18);
+            this.label14.TabIndex = 14;
+            this.label14.Text = "Frec. cardiaca: ";
+            // 
             // label9
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(194, 124);
+            this.label9.Location = new System.Drawing.Point(194, 108);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(141, 20);
             this.label9.TabIndex = 13;
@@ -1700,7 +1767,7 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(194, 82);
+            this.label10.Location = new System.Drawing.Point(194, 73);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(98, 20);
             this.label10.TabIndex = 12;
@@ -1711,7 +1778,7 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(194, 38);
+            this.label11.Location = new System.Drawing.Point(194, 40);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(24, 20);
             this.label11.TabIndex = 11;
@@ -1720,45 +1787,45 @@
             // lblObservaciones
             // 
             this.lblObservaciones.AutoSize = true;
-            this.lblObservaciones.Location = new System.Drawing.Point(158, 166);
+            this.lblObservaciones.Location = new System.Drawing.Point(158, 172);
             this.lblObservaciones.Name = "lblObservaciones";
             this.lblObservaciones.Size = new System.Drawing.Size(24, 18);
             this.lblObservaciones.TabIndex = 10;
             this.lblObservaciones.Text = "__";
             // 
-            // lblFrecuencia
+            // lblFrecResp
             // 
-            this.lblFrecuencia.AutoSize = true;
-            this.lblFrecuencia.Location = new System.Drawing.Point(158, 124);
-            this.lblFrecuencia.Name = "lblFrecuencia";
-            this.lblFrecuencia.Size = new System.Drawing.Size(24, 18);
-            this.lblFrecuencia.TabIndex = 9;
-            this.lblFrecuencia.Text = "__";
+            this.lblFrecResp.AutoSize = true;
+            this.lblFrecResp.Location = new System.Drawing.Point(158, 108);
+            this.lblFrecResp.Name = "lblFrecResp";
+            this.lblFrecResp.Size = new System.Drawing.Size(24, 18);
+            this.lblFrecResp.TabIndex = 9;
+            this.lblFrecResp.Text = "__";
             // 
             // lblPresion
             // 
             this.lblPresion.AutoSize = true;
-            this.lblPresion.Location = new System.Drawing.Point(158, 82);
+            this.lblPresion.Location = new System.Drawing.Point(158, 72);
             this.lblPresion.Name = "lblPresion";
             this.lblPresion.Size = new System.Drawing.Size(24, 18);
             this.lblPresion.TabIndex = 8;
             this.lblPresion.Text = "__";
             // 
-            // label8
+            // lblTemp
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(158, 40);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 18);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "__";
+            this.lblTemp.AutoSize = true;
+            this.lblTemp.Location = new System.Drawing.Point(158, 40);
+            this.lblTemp.Name = "lblTemp";
+            this.lblTemp.Size = new System.Drawing.Size(24, 18);
+            this.lblTemp.TabIndex = 7;
+            this.lblTemp.Text = "__";
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(38, 82);
+            this.label4.Location = new System.Drawing.Point(37, 74);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 18);
             this.label4.TabIndex = 4;
@@ -1769,7 +1836,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(27, 124);
+            this.label5.Location = new System.Drawing.Point(24, 108);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(128, 18);
             this.label5.TabIndex = 5;
@@ -1791,11 +1858,19 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(41, 166);
+            this.label7.Location = new System.Drawing.Point(36, 172);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(116, 18);
             this.label7.TabIndex = 6;
             this.label7.Text = "Observaciones: ";
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "calendar-with-spring-binder-and-date-blocks.png");
+            this.imageList1.Images.SetKeyName(1, "medical-history.png");
+            this.imageList1.Images.SetKeyName(2, "icon34.png");
             // 
             // panel1
             // 
@@ -1853,30 +1928,6 @@
             this.lblUsuario.TabIndex = 7;
             this.lblUsuario.Text = "_usuario_ ";
             this.lblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "calendar-with-spring-binder-and-date-blocks.png");
-            this.imageList1.Images.SetKeyName(1, "medical-history.png");
-            this.imageList1.Images.SetKeyName(2, "icon34.png");
-            // 
-            // btnInformacion
-            // 
-            this.btnInformacion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnInformacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.btnInformacion, 4);
-            this.btnInformacion.FlatAppearance.BorderSize = 0;
-            this.btnInformacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInformacion.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInformacion.ForeColor = System.Drawing.Color.White;
-            this.btnInformacion.Location = new System.Drawing.Point(188, 417);
-            this.btnInformacion.Name = "btnInformacion";
-            this.btnInformacion.Size = new System.Drawing.Size(173, 40);
-            this.btnInformacion.TabIndex = 27;
-            this.btnInformacion.Text = "Ir a cita";
-            this.btnInformacion.UseVisualStyleBackColor = false;
             // 
             // PpalMedicos
             // 
@@ -1970,12 +2021,9 @@
         private System.Windows.Forms.MaskedTextBox txtRFC;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox txtSexo;
-        private System.Windows.Forms.MaskedTextBox txtFechaNacimiento;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPrApellido;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtSegApellido;
+        private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label38;
@@ -2063,7 +2111,7 @@
         private System.Windows.Forms.GroupBox grpEstudios;
         private System.Windows.Forms.GroupBox grpAntecedentes;
         private System.Windows.Forms.GroupBox grpUltExploracion;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblTemp;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -2078,12 +2126,19 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblObservaciones;
-        private System.Windows.Forms.Label lblFrecuencia;
+        private System.Windows.Forms.Label lblFrecResp;
         private System.Windows.Forms.Label lblPresion;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button btnAnalyze;
         private System.Windows.Forms.Button btnTake;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button btnInformacion;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.MaskedTextBox txtFrecuenciaArt;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtNacimiento;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblFrecCard;
+        private System.Windows.Forms.Label label14;
     }
 }

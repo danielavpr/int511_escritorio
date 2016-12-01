@@ -8,37 +8,48 @@ namespace e_Clinica.Model
 {
     public class User
     {
+        User user;
+        private string _name;
+        private string _level;
         private int _id;
 
-        public int id
+        public string name
         {
-            get { return _id; }
-            set { _id = value; }
+            get
+            {
+                return _name;
+            }
+
+            set
+            {
+                _name = value;
+            }
         }
-
-        private string _name;
-
-        public string username
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
-
-        private string _pswd;
-
-        public string password
-        {
-            get { return _pswd; }
-            set { _pswd = value; }
-        }
-
-        private string _level;
 
         public string level
         {
-            get { return _level; }
-            set { _level = value; }
+            get
+            {
+                return _level;
+            }
+
+            set
+            {
+                _level = value;
+            }
         }
 
+        public int id
+        {
+            get
+            {
+                return _id;
+            }
+
+            set
+            {
+                _id = value;
+            }
+        }
     }
 }

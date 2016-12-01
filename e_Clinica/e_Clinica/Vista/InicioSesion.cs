@@ -1,4 +1,6 @@
-﻿using e_Clinica.Vista;
+﻿using e_Clinica.Controller;
+using e_Clinica.Model;
+using e_Clinica.Vista;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +15,6 @@ namespace e_Clinica
 {
     public partial class InicioSesion : Form
     {
-        int user; 
         public InicioSesion()
         {
             InitializeComponent();
@@ -21,21 +22,22 @@ namespace e_Clinica
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            user = Int32.Parse(txtUsuario.Text);
-            if (user == 1)
+            User objUser = new User();
+            objUser = User_Ctrl.LogIn(txtUsuario.Text, txtClave.Text);
+            if (objUser.level == "doctor")
             {
-                PpalMedicos p = new PpalMedicos();
+                PpalMedicos p = new PpalMedicos(objUser);
+                
                 p.ShowDialog();
             }
-            else if (user == 2)
+            else if (objUser.level == "adm")
             {
-                PpalAdministrativos pA = new PpalAdministrativos();
+                PpalAdministrativos pA = new PpalAdministrativos(objUser);
                 pA.ShowDialog();
             }
-            else if (user == 3)
+            else
             {
-                PruebasImg prueba = new PruebasImg();
-                prueba.ShowDialog(); 
+                MessageBox.Show("Intente nuevamente");
             }
         }
     }
