@@ -8,6 +8,7 @@ namespace e_Clinica.Model
 {
     public class Patient
     {
+        public int clinical_history_id { get; set; }
         private int _id;
 
         public int id
@@ -40,9 +41,9 @@ namespace e_Clinica.Model
             set { _phone = value; }
         }
 
-        private DateTime _date;
+        private string _date;
 
-        public DateTime date_of_birth
+        public string date_of_birth
         {
             get { return _date; }
             set { _date = value; }

@@ -11,7 +11,7 @@ namespace e_Clinica.Helpers
 {
     class RESTHelper
     {
-        private static string Url = "http://10.188.224.139:4000";
+        private static string Url = "http://192.168.1.200:4000";
         public static string Execute(string Param, string Datos, string Metodo)
         {
             string json = "[]";
@@ -40,34 +40,41 @@ namespace e_Clinica.Helpers
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Ha ocurrido un error en el servidor");               
             }
 
             return json;
         }
-        public static void PostJSON(string Param, string json)
+        public static  string PostJSON(string Param, string json)
         {
             HttpWebRequest request;
+            var result="";
             request = WebRequest.Create(Url + Param) as HttpWebRequest;
             request.Timeout = 10 * 1000;
             request.Method = "POST";
             request.ContentType = "application/json; charset=utf-8";
+            try {
+                using (var streamWriter = new StreamWriter(request.GetRequestStream()))
+                {
+                    //string json = "{\"user\":\"test\"," +
+                    //              "\"password\":\"bla\"}";
 
-            using (var streamWriter = new StreamWriter(request.GetRequestStream()))
-            {
-                //string json = "{\"user\":\"test\"," +
-                //              "\"password\":\"bla\"}";
+                    streamWriter.Write(json);
+                    streamWriter.Flush();
+                    streamWriter.Close();
+                }
 
-                streamWriter.Write(json);
-                streamWriter.Flush();
-                streamWriter.Close();
+                var httpResponse = (HttpWebResponse)request.GetResponse();
+                using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                {
+                    result = streamReader.ReadToEnd();
+                }
             }
-
-            var httpResponse = (HttpWebResponse)request.GetResponse();
-            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            catch(Exception ex)
             {
-                var result = streamReader.ReadToEnd();
+                MessageBox.Show("Ha ocurrido un error en el servidor");
             }
+            return result; 
         }
     }
 }

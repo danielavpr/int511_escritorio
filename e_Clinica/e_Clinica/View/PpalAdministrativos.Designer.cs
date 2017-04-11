@@ -42,8 +42,8 @@
             this.lstPacientes = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtPaciente = new System.Windows.Forms.MaskedTextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtPaciente = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbDoct = new System.Windows.Forms.ComboBox();
@@ -116,14 +116,9 @@
             this.cmbSexoPer = new System.Windows.Forms.ComboBox();
             this.txtFechaNacPer = new System.Windows.Forms.MaskedTextBox();
             this.cmbNivelEducativo = new System.Windows.Forms.ComboBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.txtClave = new System.Windows.Forms.TextBox();
-            this.cbEstacionamiento = new System.Windows.Forms.CheckBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.txtTelefonoPer = new System.Windows.Forms.MaskedTextBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.cmbPuesto = new System.Windows.Forms.ComboBox();
             this.cmbEspecialidad = new System.Windows.Forms.ComboBox();
@@ -137,10 +132,6 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.lblNombreMed = new System.Windows.Forms.Label();
             this.nCantidad = new System.Windows.Forms.NumericUpDown();
-            this.Descripción = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -149,6 +140,10 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtUsuarioEmp = new System.Windows.Forms.TextBox();
+            this.txtPasswordEmp = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.tbPrincipalA.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tbAdministrativos.SuspendLayout();
@@ -348,13 +343,22 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnBuscar);
             this.panel2.Controls.Add(this.txtPaciente);
+            this.panel2.Controls.Add(this.btnBuscar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 73);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(194, 64);
             this.panel2.TabIndex = 17;
+            // 
+            // txtPaciente
+            // 
+            this.txtPaciente.Location = new System.Drawing.Point(11, 18);
+            this.txtPaciente.Mask = "99999";
+            this.txtPaciente.Name = "txtPaciente";
+            this.txtPaciente.Size = new System.Drawing.Size(135, 29);
+            this.txtPaciente.TabIndex = 6;
+            this.txtPaciente.ValidatingType = typeof(int);
             // 
             // btnBuscar
             // 
@@ -363,21 +367,12 @@
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(144, 17);
+            this.btnBuscar.Location = new System.Drawing.Point(144, 18);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(30, 30);
+            this.btnBuscar.Size = new System.Drawing.Size(30, 29);
             this.btnBuscar.TabIndex = 5;
             this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // txtPaciente
-            // 
-            this.txtPaciente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPaciente.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPaciente.Location = new System.Drawing.Point(10, 18);
-            this.txtPaciente.Name = "txtPaciente";
-            this.txtPaciente.Size = new System.Drawing.Size(134, 29);
-            this.txtPaciente.TabIndex = 4;
-            this.txtPaciente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // panel5
             // 
@@ -417,6 +412,7 @@
             this.cmbDoct.Name = "cmbDoct";
             this.cmbDoct.Size = new System.Drawing.Size(252, 29);
             this.cmbDoct.TabIndex = 17;
+            this.cmbDoct.SelectedIndexChanged += new System.EventHandler(this.cmbDoct_SelectedIndexChanged);
             // 
             // cmbEsp
             // 
@@ -428,6 +424,7 @@
             this.cmbEsp.Name = "cmbEsp";
             this.cmbEsp.Size = new System.Drawing.Size(252, 29);
             this.cmbEsp.TabIndex = 16;
+            this.cmbEsp.SelectedIndexChanged += new System.EventHandler(this.cmbEsp_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -486,6 +483,7 @@
             this.mcCalRegistro.MinDate = new System.DateTime(2016, 11, 20, 0, 0, 0, 0);
             this.mcCalRegistro.Name = "mcCalRegistro";
             this.mcCalRegistro.TabIndex = 5;
+            this.mcCalRegistro.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.mcCalRegistro_DateChanged);
             // 
             // cmbHorarios
             // 
@@ -743,11 +741,10 @@
             this.txtFechaNacPa.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtFechaNacPa.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaNacPa.Location = new System.Drawing.Point(416, 130);
-            this.txtFechaNacPa.Mask = "00/00/0000";
+            this.txtFechaNacPa.Mask = "0000-00-00";
             this.txtFechaNacPa.Name = "txtFechaNacPa";
             this.txtFechaNacPa.Size = new System.Drawing.Size(148, 27);
             this.txtFechaNacPa.TabIndex = 21;
-            this.txtFechaNacPa.ValidatingType = typeof(System.DateTime);
             // 
             // txtSegApellidoPa
             // 
@@ -931,9 +928,9 @@
             this.cmbSexoPa.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSexoPa.FormattingEnabled = true;
             this.cmbSexoPa.Items.AddRange(new object[] {
-            "Femenino",
-            "Masculino",
-            "Otro"});
+            "F",
+            "M",
+            "O"});
             this.cmbSexoPa.Location = new System.Drawing.Point(416, 170);
             this.cmbSexoPa.Name = "cmbSexoPa";
             this.cmbSexoPa.Size = new System.Drawing.Size(148, 28);
@@ -944,7 +941,7 @@
             this.txtTelefonoPa.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtTelefonoPa.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefonoPa.Location = new System.Drawing.Point(416, 376);
-            this.txtTelefonoPa.Mask = "(999)000-0000";
+            this.txtTelefonoPa.Mask = "9999999999";
             this.txtTelefonoPa.Name = "txtTelefonoPa";
             this.txtTelefonoPa.Size = new System.Drawing.Size(148, 27);
             this.txtTelefonoPa.TabIndex = 20;
@@ -973,6 +970,7 @@
             this.btnRegistrar.TabIndex = 23;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // tpRegPersonal
             // 
@@ -1038,18 +1036,17 @@
             this.tableLayoutPanel5.Controls.Add(this.cmbSexoPer, 3, 2);
             this.tableLayoutPanel5.Controls.Add(this.txtFechaNacPer, 1, 2);
             this.tableLayoutPanel5.Controls.Add(this.cmbNivelEducativo, 1, 6);
-            this.tableLayoutPanel5.Controls.Add(this.label30, 2, 7);
-            this.tableLayoutPanel5.Controls.Add(this.txtClave, 3, 7);
-            this.tableLayoutPanel5.Controls.Add(this.cbEstacionamiento, 0, 8);
             this.tableLayoutPanel5.Controls.Add(this.btnGuardar, 3, 8);
             this.tableLayoutPanel5.Controls.Add(this.label23, 2, 4);
             this.tableLayoutPanel5.Controls.Add(this.txtTelefonoPer, 3, 4);
-            this.tableLayoutPanel5.Controls.Add(this.txtUsuario, 3, 6);
-            this.tableLayoutPanel5.Controls.Add(this.label31, 2, 6);
             this.tableLayoutPanel5.Controls.Add(this.label25, 0, 7);
             this.tableLayoutPanel5.Controls.Add(this.cmbPuesto, 1, 7);
             this.tableLayoutPanel5.Controls.Add(this.cmbEspecialidad, 3, 5);
             this.tableLayoutPanel5.Controls.Add(this.label35, 2, 5);
+            this.tableLayoutPanel5.Controls.Add(this.txtUsuarioEmp, 3, 6);
+            this.tableLayoutPanel5.Controls.Add(this.txtPasswordEmp, 3, 7);
+            this.tableLayoutPanel5.Controls.Add(this.label26, 2, 6);
+            this.tableLayoutPanel5.Controls.Add(this.label27, 2, 7);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 23);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -1244,7 +1241,7 @@
             "F",
             "M",
             "O"});
-            this.cmbSexoPer.Location = new System.Drawing.Point(717, 104);
+            this.cmbSexoPer.Location = new System.Drawing.Point(717, 101);
             this.cmbSexoPer.Name = "cmbSexoPer";
             this.cmbSexoPer.Size = new System.Drawing.Size(301, 28);
             this.cmbSexoPer.TabIndex = 27;
@@ -1268,45 +1265,10 @@
             "Licenciatura ",
             "Maestría",
             "Doctorado"});
-            this.cmbNivelEducativo.Location = new System.Drawing.Point(207, 288);
+            this.cmbNivelEducativo.Location = new System.Drawing.Point(207, 285);
             this.cmbNivelEducativo.Name = "cmbNivelEducativo";
             this.cmbNivelEducativo.Size = new System.Drawing.Size(300, 28);
             this.cmbNivelEducativo.TabIndex = 30;
-            // 
-            // label30
-            // 
-            this.label30.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(613, 334);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(98, 21);
-            this.label30.TabIndex = 34;
-            this.label30.Text = "Contraseña: ";
-            // 
-            // txtClave
-            // 
-            this.txtClave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtClave.Location = new System.Drawing.Point(717, 331);
-            this.txtClave.Name = "txtClave";
-            this.txtClave.PasswordChar = '*';
-            this.txtClave.Size = new System.Drawing.Size(301, 27);
-            this.txtClave.TabIndex = 33;
-            // 
-            // cbEstacionamiento
-            // 
-            this.cbEstacionamiento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbEstacionamiento.AutoSize = true;
-            this.tableLayoutPanel5.SetColumnSpan(this.cbEstacionamiento, 2);
-            this.cbEstacionamiento.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbEstacionamiento.ForeColor = System.Drawing.Color.Black;
-            this.cbEstacionamiento.Location = new System.Drawing.Point(65, 382);
-            this.cbEstacionamiento.Name = "cbEstacionamiento";
-            this.cbEstacionamiento.Size = new System.Drawing.Size(379, 24);
-            this.cbEstacionamiento.TabIndex = 37;
-            this.cbEstacionamiento.Text = "¿Quiere registrar su vehículo en el estacionamiento?";
-            this.cbEstacionamiento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbEstacionamiento.UseVisualStyleBackColor = true;
             // 
             // btnGuardar
             // 
@@ -1344,25 +1306,6 @@
             this.txtTelefonoPer.Size = new System.Drawing.Size(301, 27);
             this.txtTelefonoPer.TabIndex = 28;
             // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUsuario.Location = new System.Drawing.Point(717, 285);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(301, 27);
-            this.txtUsuario.TabIndex = 35;
-            // 
-            // label31
-            // 
-            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(639, 288);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(72, 21);
-            this.label31.TabIndex = 36;
-            this.label31.Text = "Usuario: ";
-            // 
             // label25
             // 
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -1382,7 +1325,7 @@
             this.cmbPuesto.Items.AddRange(new object[] {
             "doctor ",
             "adm"});
-            this.cmbPuesto.Location = new System.Drawing.Point(207, 334);
+            this.cmbPuesto.Location = new System.Drawing.Point(207, 331);
             this.cmbPuesto.Name = "cmbPuesto";
             this.cmbPuesto.Size = new System.Drawing.Size(300, 28);
             this.cmbPuesto.TabIndex = 31;
@@ -1392,9 +1335,7 @@
             this.cmbEspecialidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEspecialidad.FormattingEnabled = true;
-            this.cmbEspecialidad.Items.AddRange(new object[] {
-            "Dermatología "});
-            this.cmbEspecialidad.Location = new System.Drawing.Point(717, 242);
+            this.cmbEspecialidad.Location = new System.Drawing.Point(717, 239);
             this.cmbEspecialidad.Name = "cmbEspecialidad";
             this.cmbEspecialidad.Size = new System.Drawing.Size(301, 28);
             this.cmbEspecialidad.TabIndex = 39;
@@ -1472,6 +1413,7 @@
             this.lstMedicamentos.Name = "lstMedicamentos";
             this.lstMedicamentos.Size = new System.Drawing.Size(232, 403);
             this.lstMedicamentos.TabIndex = 0;
+            this.lstMedicamentos.SelectedIndexChanged += new System.EventHandler(this.lstMedicamentos_SelectedIndexChanged);
             // 
             // groupBox2
             // 
@@ -1495,15 +1437,11 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel7.Controls.Add(this.lblNombreMed, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.nCantidad, 2, 0);
-            this.tableLayoutPanel7.Controls.Add(this.Descripción, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.label27, 1, 1);
-            this.tableLayoutPanel7.Controls.Add(this.label28, 2, 1);
-            this.tableLayoutPanel7.Controls.Add(this.label26, 3, 1);
             this.tableLayoutPanel7.Controls.Add(this.label33, 2, 3);
             this.tableLayoutPanel7.Controls.Add(this.lblTotal, 3, 3);
             this.tableLayoutPanel7.Controls.Add(this.btnAgregar, 3, 0);
-            this.tableLayoutPanel7.Controls.Add(this.btnRealizar, 1, 4);
             this.tableLayoutPanel7.Controls.Add(this.lstPedido, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.btnRealizar, 1, 4);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 25);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -1543,50 +1481,6 @@
             this.nCantidad.Size = new System.Drawing.Size(119, 27);
             this.nCantidad.TabIndex = 1;
             // 
-            // Descripción
-            // 
-            this.Descripción.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Descripción.AutoSize = true;
-            this.Descripción.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Descripción.Location = new System.Drawing.Point(17, 51);
-            this.Descripción.Name = "Descripción";
-            this.Descripción.Size = new System.Drawing.Size(92, 21);
-            this.Descripción.TabIndex = 2;
-            this.Descripción.Text = "Descripción";
-            // 
-            // label27
-            // 
-            this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(151, 51);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(75, 21);
-            this.label27.TabIndex = 3;
-            this.label27.Text = "Cantidad";
-            // 
-            // label28
-            // 
-            this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(259, 51);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(112, 21);
-            this.label28.TabIndex = 4;
-            this.label28.Text = "Precio unitario";
-            // 
-            // label26
-            // 
-            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(406, 51);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(71, 21);
-            this.label26.TabIndex = 8;
-            this.label26.Text = "Subtotal";
-            // 
             // label33
             // 
             this.label33.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1623,17 +1517,19 @@
             this.btnAgregar.TabIndex = 12;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnRealizar
             // 
             this.btnRealizar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel7.SetColumnSpan(this.btnRealizar, 2);
-            this.btnRealizar.Location = new System.Drawing.Point(189, 396);
+            this.btnRealizar.Location = new System.Drawing.Point(189, 380);
             this.btnRealizar.Name = "btnRealizar";
-            this.btnRealizar.Size = new System.Drawing.Size(125, 1);
+            this.btnRealizar.Size = new System.Drawing.Size(125, 33);
             this.btnRealizar.TabIndex = 13;
             this.btnRealizar.Text = "Realizar pedido";
             this.btnRealizar.UseVisualStyleBackColor = true;
+            this.btnRealizar.Click += new System.EventHandler(this.btnRealizar_Click);
             // 
             // lstPedido
             // 
@@ -1675,6 +1571,45 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // txtUsuarioEmp
+            // 
+            this.txtUsuarioEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUsuarioEmp.Location = new System.Drawing.Point(717, 285);
+            this.txtUsuarioEmp.Name = "txtUsuarioEmp";
+            this.txtUsuarioEmp.Size = new System.Drawing.Size(301, 27);
+            this.txtUsuarioEmp.TabIndex = 41;
+            // 
+            // txtPasswordEmp
+            // 
+            this.txtPasswordEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPasswordEmp.Location = new System.Drawing.Point(717, 331);
+            this.txtPasswordEmp.Name = "txtPasswordEmp";
+            this.txtPasswordEmp.PasswordChar = '*';
+            this.txtPasswordEmp.Size = new System.Drawing.Size(301, 27);
+            this.txtPasswordEmp.TabIndex = 42;
+            // 
+            // label26
+            // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(639, 288);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(72, 21);
+            this.label26.TabIndex = 43;
+            this.label26.Text = "Usuario: ";
+            // 
+            // label27
+            // 
+            this.label27.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(613, 334);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(98, 21);
+            this.label27.TabIndex = 44;
+            this.label27.Text = "Contraseña: ";
             // 
             // PpalAdministrativos
             // 
@@ -1799,19 +1734,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label lblNombreMed;
         private System.Windows.Forms.NumericUpDown nCantidad;
-        private System.Windows.Forms.Label Descripción;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnRealizar;
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox txtClave;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.CheckBox cbEstacionamiento;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.GroupBox grpDatos;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
@@ -1826,7 +1752,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TextBox txtPaciente;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox txtPaciente2;
@@ -1852,5 +1777,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbEspecialidad;
         private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.MaskedTextBox txtPaciente;
+        private System.Windows.Forms.TextBox txtUsuarioEmp;
+        private System.Windows.Forms.TextBox txtPasswordEmp;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
     }
 }

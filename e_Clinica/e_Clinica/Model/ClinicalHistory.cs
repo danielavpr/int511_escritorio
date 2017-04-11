@@ -8,7 +8,24 @@ namespace e_Clinica.Model
 {
     public class ClinicalHistory
     {
-
+        private PhysicalExploration _last_exploration;
+        private List<Antecedent> _antecedents;
+        private List<Ailment> _ailments;
+        public PhysicalExploration last_exploration
+        {
+            get { return _last_exploration; }
+            set { _last_exploration = value; }
+        }
+        public List<Antecedent>antecedents
+        {
+            get { return _antecedents; }
+            set { _antecedents = value; }
+        }
+        public List<Ailment> ailments
+        {
+            get { return _ailments; }
+            set { _ailments = value; }
+        }
         private int _id;
 
         public int id

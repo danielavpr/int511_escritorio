@@ -8,16 +8,14 @@ namespace e_Clinica.Model
 {
     public class Appointment
     {
-        private Patient _patient=new Patient();
+        //private Patient _patient=new Patient();
         public string patient_name
         {
-            get { return _patient.name; }
-            set { _patient.name = value; }
+            set; get;
         }
         public int patient_id
         {
-            get { return _patient.id; }
-            set { _patient.id = value; }
+            set; get;
         }
         private int _id;
 
@@ -27,9 +25,9 @@ namespace e_Clinica.Model
             set { _id = value; }
         }
 
-        private DateTime _date;
+        private string _date;
 
-        public DateTime date
+        public string date
         {
             get { return _date; }
             set { _date = value; }

@@ -8,7 +8,7 @@ namespace e_Clinica.Model
 {
     public class User
     {
-        User user;
+
         private string _name;
         private string _level;
         private int _id;

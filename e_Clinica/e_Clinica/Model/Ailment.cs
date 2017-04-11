@@ -24,9 +24,9 @@ namespace e_Clinica.Model
             set { _main_symp = value; }
         }
 
-        private DateTime _date_detection;
+        private string  _date_detection;
 
-        public DateTime date_of_detection
+        public string date_of_detection
         {
             get { return _date_detection; }
             set { _date_detection = value; }
@@ -40,12 +40,12 @@ namespace e_Clinica.Model
             set { _symp_location = value; }
         }
 
-        private string _collateral;
+        private string _colateral;
 
-        public string collateral_symptom
+        public string colateral_symptom
         {
-            get { return _collateral; }
-            set { _collateral = value; }
+            get { return _colateral; }
+            set { _colateral = value; }
         }
 
         private DateTime _end_date;

@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 namespace e_Clinica.Model
 {
     public class PhysicalExploration
-    { 
+    {
 
+        public int clinical_history_id { set; get; }
         private int _id;
 
         public int id
@@ -43,11 +44,11 @@ namespace e_Clinica.Model
 
         private int _breathing;
 
-        public int breathing_rate
-        {
-            get { return _breathing; }
-            set { _breathing = value; }
-        }
+        //public int breathing_rate
+        //{
+        //    get { return _breathing; }
+        //    set { _breathing = value; }
+        //}
 
         private string _observ;
 
@@ -56,13 +57,7 @@ namespace e_Clinica.Model
             get { return _observ; }
             set { _observ = value; }
         }
-        private int _id_CH;
-
-        public int clinical_history_id
-        {
-            get { return _id_CH; }
-            set { _id_CH = value; }
-        }
+        public int breathing_frec { set; get; }
 
     }
 }

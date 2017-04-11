@@ -74,16 +74,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\Ailment_Ctrl.cs" />
+    <Compile Include="Controller\Antecedent_Ctrl.cs" />
     <Compile Include="Controller\Appointment_Ctrl.cs" />
     <Compile Include="Controller\ClinicalHistory_Ctrl.cs" />
+    <Compile Include="Controller\Clinic_Ctrl.cs" />
     <Compile Include="Controller\Drug_Ctrl.cs" />
     <Compile Include="Controller\Employee_Ctrl.cs" />
     <Compile Include="Controller\Patient_Ctrl.cs" />
     <Compile Include="Controller\PhysicalExploration_Ctrl.cs" />
+    <Compile Include="Controller\Specialty_Ctrl.cs" />
+    <Compile Include="Controller\Study_Ctrl.cs" />
     <Compile Include="Controller\User_Ctrl.cs" />
+    <Compile Include="Helpers\ParkingLotHelper.cs" />
+    <Compile Include="Helpers\ProductionHelper.cs" />
     <Compile Include="Helpers\RESTHelper.cs" />
-    <Compile Include="ManejoImagen\GenerateQRCode.cs" />
-    <Compile Include="ManejoImagen\VideoManager.cs" />
+    <Compile Include="ImageProcessing\AnalizeImg.cs" />
+    <Compile Include="ImageProcessing\Filter.cs" />
+    <Compile Include="ImageProcessing\GenerateQRCode.cs" />
+    <Compile Include="ImageProcessing\VideoManager.cs" />
     <Compile Include="Model\Ailment.cs" />
     <Compile Include="Model\Antecedent.cs" />
     <Compile Include="Model\Appointment.cs" />
@@ -99,30 +108,30 @@
     <Compile Include="Model\Specialty.cs" />
     <Compile Include="Model\Study.cs" />
     <Compile Include="Model\User.cs" />
-    <Compile Include="Vista\InicioSesion.cs">
+    <Compile Include="View\InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\InicioSesion.Designer.cs">
+    <Compile Include="View\InicioSesion.Designer.cs">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vista\PpalMedicos.cs">
+    <Compile Include="View\PpalMedicos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\PpalMedicos.Designer.cs">
+    <Compile Include="View\PpalMedicos.Designer.cs">
       <DependentUpon>PpalMedicos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\PpalAdministrativos.cs">
+    <Compile Include="View\PpalAdministrativos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\PpalAdministrativos.Designer.cs">
+    <Compile Include="View\PpalAdministrativos.Designer.cs">
       <DependentUpon>PpalAdministrativos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\PruebasImg.cs">
+    <Compile Include="View\PruebasImg.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\PruebasImg.Designer.cs">
+    <Compile Include="View\PruebasImg.Designer.cs">
       <DependentUpon>PruebasImg.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -135,16 +144,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Vista\InicioSesion.resx">
+    <EmbeddedResource Include="View\InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\PpalAdministrativos.resx">
+    <EmbeddedResource Include="View\PpalAdministrativos.resx">
       <DependentUpon>PpalAdministrativos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\PpalMedicos.resx">
+    <EmbeddedResource Include="View\PpalMedicos.resx">
       <DependentUpon>PpalMedicos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\PruebasImg.resx">
+    <EmbeddedResource Include="View\PruebasImg.resx">
       <DependentUpon>PruebasImg.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -164,7 +173,9 @@
   <ItemGroup>
     <None Include="Resources\logo2.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\nevus_azul06.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo3.png" />
   </ItemGroup>

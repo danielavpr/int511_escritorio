@@ -8,9 +8,9 @@ namespace e_Clinica.Model
 {
     public class Drug
     {
-        private int _quantity;
+        private string _quantity;
 
-        public int quantity
+        public string quantity
         {
             get { return _quantity; }
             set { _quantity = value; }
@@ -22,15 +22,6 @@ namespace e_Clinica.Model
             get { return _id; }
             set { _id = value; }
         }
-
-        private string _sku;
-
-        public string sku
-        {
-            get { return _sku; }
-            set { _sku = value; }
-        }
-
         private string _name;
 
         public string name
@@ -57,7 +48,7 @@ namespace e_Clinica.Model
 
         private double _sell;
 
-        public double sell_price
+        public double price
         {
             get { return _sell; }
             set { _sell = value; }

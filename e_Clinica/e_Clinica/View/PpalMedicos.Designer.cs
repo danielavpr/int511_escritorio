@@ -98,25 +98,8 @@
             this.cmbNombre = new System.Windows.Forms.ComboBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.tbAnt = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
-            this.lstMedReceta = new System.Windows.Forms.ListBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnRegReceta = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.cmbMedicamentos = new System.Windows.Forms.ComboBox();
-            this.nCantidad = new System.Windows.Forms.NumericUpDown();
-            this.btnAgregarMed = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
             this.tbExamen = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.pbxCamera = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.cmbDispositivo = new System.Windows.Forms.ComboBox();
             this.lblResultImg = new System.Windows.Forms.Label();
@@ -145,9 +128,7 @@
             this.lstEstudios = new System.Windows.Forms.ListBox();
             this.grpAntecedentes = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.lstHeredoF = new System.Windows.Forms.ListBox();
-            this.lstNoPatologicas = new System.Windows.Forms.ListBox();
-            this.lstPatologicas = new System.Windows.Forms.ListBox();
+            this.lstAntecedentes = new System.Windows.Forms.ListBox();
             this.grpUltExploracion = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblFrecCard = new System.Windows.Forms.Label();
@@ -165,10 +146,15 @@
             this.label7 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnlColor = new System.Windows.Forms.Panel();
+            this.pbxAnalizado = new System.Windows.Forms.PictureBox();
+            this.pbxCamera = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.idHist = new System.Windows.Forms.Label();
             this.tbPrincipalM.SuspendLayout();
             this.tbcDoctores.SuspendLayout();
             this.tpCitas.SuspendLayout();
@@ -187,16 +173,8 @@
             this.tableLayoutPanel23.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
-            this.tbAnt.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.tableLayoutPanel22.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nCantidad)).BeginInit();
-            this.panel7.SuspendLayout();
             this.tbExamen.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCamera)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
             this.tpExpediente.SuspendLayout();
@@ -210,8 +188,11 @@
             this.tableLayoutPanel3.SuspendLayout();
             this.grpUltExploracion.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAnalizado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCamera)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tbPrincipalM
@@ -593,7 +574,6 @@
             // 
             this.tbConsulta.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.tbConsulta.Controls.Add(this.tbRegConsulta);
-            this.tbConsulta.Controls.Add(this.tbAnt);
             this.tbConsulta.Controls.Add(this.tbExamen);
             this.tbConsulta.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbConsulta.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -752,6 +732,7 @@
             this.btnRegPadecimiento.TabIndex = 6;
             this.btnRegPadecimiento.Text = "Registrar";
             this.btnRegPadecimiento.UseVisualStyleBackColor = false;
+            this.btnRegPadecimiento.Click += new System.EventHandler(this.btnRegPadecimiento_Click);
             // 
             // groupBox3
             // 
@@ -1016,6 +997,7 @@
             this.btnRegAnt.TabIndex = 7;
             this.btnRegAnt.Text = "Registrar";
             this.btnRegAnt.UseVisualStyleBackColor = false;
+            this.btnRegAnt.Click += new System.EventHandler(this.btnRegAnt_Click);
             // 
             // label22
             // 
@@ -1042,10 +1024,15 @@
             this.cmbTipo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "patologico",
+            "no patologico",
+            "heredofamiliar"});
             this.cmbTipo.Location = new System.Drawing.Point(3, 69);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(200, 28);
             this.cmbTipo.TabIndex = 2;
+            this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
             // 
             // cmbNombre
             // 
@@ -1078,203 +1065,6 @@
             this.label28.TabIndex = 5;
             this.label28.Text = "Descripción";
             // 
-            // tbAnt
-            // 
-            this.tbAnt.Controls.Add(this.groupBox2);
-            this.tbAnt.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbAnt.Location = new System.Drawing.Point(4, 4);
-            this.tbAnt.Name = "tbAnt";
-            this.tbAnt.Size = new System.Drawing.Size(855, 483);
-            this.tbAnt.TabIndex = 2;
-            this.tbAnt.Text = "Receta";
-            this.tbAnt.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.tableLayoutPanel22);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.groupBox2.Location = new System.Drawing.Point(0, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(855, 483);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Receta";
-            // 
-            // tableLayoutPanel22
-            // 
-            this.tableLayoutPanel22.ColumnCount = 3;
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel22.Controls.Add(this.lstMedReceta, 0, 2);
-            this.tableLayoutPanel22.Controls.Add(this.label51, 0, 1);
-            this.tableLayoutPanel22.Controls.Add(this.label53, 1, 1);
-            this.tableLayoutPanel22.Controls.Add(this.label54, 2, 1);
-            this.tableLayoutPanel22.Controls.Add(this.panel5, 0, 5);
-            this.tableLayoutPanel22.Controls.Add(this.panel6, 0, 0);
-            this.tableLayoutPanel22.Controls.Add(this.panel7, 2, 4);
-            this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(3, 23);
-            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
-            this.tableLayoutPanel22.RowCount = 6;
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(849, 457);
-            this.tableLayoutPanel22.TabIndex = 0;
-            // 
-            // lstMedReceta
-            // 
-            this.tableLayoutPanel22.SetColumnSpan(this.lstMedReceta, 3);
-            this.lstMedReceta.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstMedReceta.FormattingEnabled = true;
-            this.lstMedReceta.ItemHeight = 20;
-            this.lstMedReceta.Location = new System.Drawing.Point(10, 146);
-            this.lstMedReceta.Margin = new System.Windows.Forms.Padding(10);
-            this.lstMedReceta.Name = "lstMedReceta";
-            this.tableLayoutPanel22.SetRowSpan(this.lstMedReceta, 2);
-            this.lstMedReceta.Size = new System.Drawing.Size(829, 162);
-            this.lstMedReceta.TabIndex = 6;
-            // 
-            // label51
-            // 
-            this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(109, 92);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(64, 20);
-            this.label51.TabIndex = 0;
-            this.label51.Text = "Nombre";
-            // 
-            // label53
-            // 
-            this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(398, 92);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(50, 20);
-            this.label53.TabIndex = 2;
-            this.label53.Text = "Precio";
-            // 
-            // label54
-            // 
-            this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(674, 92);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(65, 20);
-            this.label54.TabIndex = 3;
-            this.label54.Text = "Subtotal";
-            // 
-            // panel5
-            // 
-            this.tableLayoutPanel22.SetColumnSpan(this.panel5, 3);
-            this.panel5.Controls.Add(this.btnRegReceta);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(3, 389);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(843, 65);
-            this.panel5.TabIndex = 10;
-            // 
-            // btnRegReceta
-            // 
-            this.btnRegReceta.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnRegReceta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.btnRegReceta.FlatAppearance.BorderSize = 0;
-            this.btnRegReceta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegReceta.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegReceta.ForeColor = System.Drawing.Color.White;
-            this.btnRegReceta.Location = new System.Drawing.Point(722, 14);
-            this.btnRegReceta.Name = "btnRegReceta";
-            this.btnRegReceta.Size = new System.Drawing.Size(114, 37);
-            this.btnRegReceta.TabIndex = 13;
-            this.btnRegReceta.Text = "Registrar";
-            this.btnRegReceta.UseVisualStyleBackColor = false;
-            // 
-            // panel6
-            // 
-            this.tableLayoutPanel22.SetColumnSpan(this.panel6, 3);
-            this.panel6.Controls.Add(this.cmbMedicamentos);
-            this.panel6.Controls.Add(this.nCantidad);
-            this.panel6.Controls.Add(this.btnAgregarMed);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(3, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(843, 62);
-            this.panel6.TabIndex = 11;
-            // 
-            // cmbMedicamentos
-            // 
-            this.cmbMedicamentos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbMedicamentos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMedicamentos.FormattingEnabled = true;
-            this.cmbMedicamentos.Location = new System.Drawing.Point(15, 17);
-            this.cmbMedicamentos.Name = "cmbMedicamentos";
-            this.cmbMedicamentos.Size = new System.Drawing.Size(265, 28);
-            this.cmbMedicamentos.TabIndex = 9;
-            // 
-            // nCantidad
-            // 
-            this.nCantidad.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.nCantidad.Location = new System.Drawing.Point(298, 17);
-            this.nCantidad.Name = "nCantidad";
-            this.nCantidad.Size = new System.Drawing.Size(85, 27);
-            this.nCantidad.TabIndex = 10;
-            // 
-            // btnAgregarMed
-            // 
-            this.btnAgregarMed.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAgregarMed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(178)))), ((int)(((byte)(107)))));
-            this.btnAgregarMed.FlatAppearance.BorderSize = 0;
-            this.btnAgregarMed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarMed.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarMed.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarMed.Location = new System.Drawing.Point(412, 13);
-            this.btnAgregarMed.Name = "btnAgregarMed";
-            this.btnAgregarMed.Size = new System.Drawing.Size(113, 34);
-            this.btnAgregarMed.TabIndex = 9;
-            this.btnAgregarMed.Text = "Agregar";
-            this.btnAgregarMed.UseVisualStyleBackColor = false;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.lblTotal);
-            this.panel7.Controls.Add(this.label55);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(565, 318);
-            this.panel7.Margin = new System.Windows.Forms.Padding(0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(284, 68);
-            this.panel7.TabIndex = 12;
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Microsoft NeoGothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.ForeColor = System.Drawing.Color.Black;
-            this.lblTotal.Location = new System.Drawing.Point(126, 18);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(22, 26);
-            this.lblTotal.TabIndex = 15;
-            this.lblTotal.Text = "$";
-            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label55
-            // 
-            this.label55.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(74, 22);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(50, 20);
-            this.label55.TabIndex = 14;
-            this.label55.Text = "Total: ";
-            // 
             // tbExamen
             // 
             this.tbExamen.Controls.Add(this.tableLayoutPanel16);
@@ -1294,12 +1084,12 @@
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel16.Controls.Add(this.pbxCamera, 0, 0);
             this.tableLayoutPanel16.Controls.Add(this.label21, 1, 0);
             this.tableLayoutPanel16.Controls.Add(this.cmbDispositivo, 2, 0);
             this.tableLayoutPanel16.Controls.Add(this.lblResultImg, 0, 3);
             this.tableLayoutPanel16.Controls.Add(this.panel3, 1, 1);
             this.tableLayoutPanel16.Controls.Add(this.panel8, 3, 0);
+            this.tableLayoutPanel16.Controls.Add(this.panel5, 0, 0);
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel16.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 3);
@@ -1311,17 +1101,6 @@
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel16.Size = new System.Drawing.Size(849, 477);
             this.tableLayoutPanel16.TabIndex = 0;
-            // 
-            // pbxCamera
-            // 
-            this.pbxCamera.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pbxCamera.BackColor = System.Drawing.Color.Gainsboro;
-            this.pbxCamera.Location = new System.Drawing.Point(21, 28);
-            this.pbxCamera.Name = "pbxCamera";
-            this.tableLayoutPanel16.SetRowSpan(this.pbxCamera, 3);
-            this.pbxCamera.Size = new System.Drawing.Size(296, 300);
-            this.pbxCamera.TabIndex = 0;
-            this.pbxCamera.TabStop = false;
             // 
             // label21
             // 
@@ -1348,12 +1127,11 @@
             // 
             this.lblResultImg.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblResultImg.AutoSize = true;
-            this.lblResultImg.Location = new System.Drawing.Point(3, 387);
+            this.lblResultImg.Location = new System.Drawing.Point(3, 407);
             this.lblResultImg.Name = "lblResultImg";
-            this.lblResultImg.Size = new System.Drawing.Size(294, 60);
+            this.lblResultImg.Size = new System.Drawing.Size(107, 20);
             this.lblResultImg.TabIndex = 5;
-            this.lblResultImg.Text = "Lbl donde se va a poner el resultado del procesamiento de la imagen por parte del" +
-    " sistema";
+            this.lblResultImg.Text = "Procesamiento";
             // 
             // panel3
             // 
@@ -1448,6 +1226,7 @@
             this.btnGuardarS.TabIndex = 13;
             this.btnGuardarS.Text = "Guardar";
             this.btnGuardarS.UseVisualStyleBackColor = false;
+            this.btnGuardarS.Click += new System.EventHandler(this.btnGuardarS_Click);
             // 
             // panel8
             // 
@@ -1474,6 +1253,7 @@
             this.btnAnalyze.TabIndex = 5;
             this.btnAnalyze.Text = "Analizar";
             this.btnAnalyze.UseVisualStyleBackColor = false;
+            this.btnAnalyze.Click += new System.EventHandler(this.btnAnalyze_Click);
             // 
             // btnTake
             // 
@@ -1652,9 +1432,7 @@
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Controls.Add(this.lstHeredoF, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.lstNoPatologicas, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.lstPatologicas, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.lstAntecedentes, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 20);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -1665,35 +1443,16 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(330, 334);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
-            // lstHeredoF
+            // lstAntecedentes
             // 
-            this.lstHeredoF.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstHeredoF.FormattingEnabled = true;
-            this.lstHeredoF.ItemHeight = 18;
-            this.lstHeredoF.Location = new System.Drawing.Point(3, 225);
-            this.lstHeredoF.Name = "lstHeredoF";
-            this.lstHeredoF.Size = new System.Drawing.Size(324, 106);
-            this.lstHeredoF.TabIndex = 4;
-            // 
-            // lstNoPatologicas
-            // 
-            this.lstNoPatologicas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstNoPatologicas.FormattingEnabled = true;
-            this.lstNoPatologicas.ItemHeight = 18;
-            this.lstNoPatologicas.Location = new System.Drawing.Point(3, 114);
-            this.lstNoPatologicas.Name = "lstNoPatologicas";
-            this.lstNoPatologicas.Size = new System.Drawing.Size(324, 105);
-            this.lstNoPatologicas.TabIndex = 3;
-            // 
-            // lstPatologicas
-            // 
-            this.lstPatologicas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstPatologicas.FormattingEnabled = true;
-            this.lstPatologicas.ItemHeight = 18;
-            this.lstPatologicas.Location = new System.Drawing.Point(3, 3);
-            this.lstPatologicas.Name = "lstPatologicas";
-            this.lstPatologicas.Size = new System.Drawing.Size(324, 105);
-            this.lstPatologicas.TabIndex = 2;
+            this.lstAntecedentes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstAntecedentes.FormattingEnabled = true;
+            this.lstAntecedentes.ItemHeight = 18;
+            this.lstAntecedentes.Location = new System.Drawing.Point(3, 3);
+            this.lstAntecedentes.Name = "lstAntecedentes";
+            this.tableLayoutPanel3.SetRowSpan(this.lstAntecedentes, 3);
+            this.lstAntecedentes.Size = new System.Drawing.Size(324, 328);
+            this.lstAntecedentes.TabIndex = 2;
             // 
             // grpUltExploracion
             // 
@@ -1882,19 +1641,10 @@
             this.panel1.Size = new System.Drawing.Size(117, 87);
             this.panel1.TabIndex = 4;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::e_Clinica.Properties.Resources.logo3;
-            this.pictureBox2.Location = new System.Drawing.Point(18, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // panel2
             // 
             this.tbPrincipalM.SetColumnSpan(this.panel2, 2);
+            this.panel2.Controls.Add(this.idHist);
             this.panel2.Controls.Add(this.lblBienvenido);
             this.panel2.Controls.Add(this.lblUsuario);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1928,6 +1678,67 @@
             this.lblUsuario.TabIndex = 7;
             this.lblUsuario.Text = "_usuario_ ";
             this.lblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.pnlColor);
+            this.panel5.Controls.Add(this.pbxAnalizado);
+            this.panel5.Controls.Add(this.pbxCamera);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(0);
+            this.panel5.Name = "panel5";
+            this.tableLayoutPanel16.SetRowSpan(this.panel5, 3);
+            this.panel5.Size = new System.Drawing.Size(339, 357);
+            this.panel5.TabIndex = 8;
+            // 
+            // pnlColor
+            // 
+            this.pnlColor.Location = new System.Drawing.Point(201, 202);
+            this.pnlColor.Name = "pnlColor";
+            this.pnlColor.Size = new System.Drawing.Size(109, 141);
+            this.pnlColor.TabIndex = 3;
+            // 
+            // pbxAnalizado
+            // 
+            this.pbxAnalizado.Location = new System.Drawing.Point(22, 202);
+            this.pbxAnalizado.Name = "pbxAnalizado";
+            this.pbxAnalizado.Size = new System.Drawing.Size(173, 141);
+            this.pbxAnalizado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxAnalizado.TabIndex = 2;
+            this.pbxAnalizado.TabStop = false;
+            // 
+            // pbxCamera
+            // 
+            this.pbxCamera.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbxCamera.BackColor = System.Drawing.Color.Gainsboro;
+            this.pbxCamera.Image = global::e_Clinica.Properties.Resources.nevus_azul06;
+            this.pbxCamera.Location = new System.Drawing.Point(22, 19);
+            this.pbxCamera.Name = "pbxCamera";
+            this.pbxCamera.Size = new System.Drawing.Size(288, 177);
+            this.pbxCamera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxCamera.TabIndex = 1;
+            this.pbxCamera.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::e_Clinica.Properties.Resources.logo3;
+            this.pictureBox2.Location = new System.Drawing.Point(18, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // idHist
+            // 
+            this.idHist.AutoSize = true;
+            this.idHist.Location = new System.Drawing.Point(798, 38);
+            this.idHist.Name = "idHist";
+            this.idHist.Size = new System.Drawing.Size(46, 18);
+            this.idHist.TabIndex = 8;
+            this.idHist.Text = "label8";
+            this.idHist.Visible = false;
             // 
             // PpalMedicos
             // 
@@ -1963,19 +1774,9 @@
             this.groupBox4.ResumeLayout(false);
             this.tableLayoutPanel17.ResumeLayout(false);
             this.tableLayoutPanel17.PerformLayout();
-            this.tbAnt.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.tableLayoutPanel22.ResumeLayout(false);
-            this.tableLayoutPanel22.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nCantidad)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.tbExamen.ResumeLayout(false);
             this.tableLayoutPanel16.ResumeLayout(false);
             this.tableLayoutPanel16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCamera)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -1992,9 +1793,12 @@
             this.grpUltExploracion.ResumeLayout(false);
             this.grpUltExploracion.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAnalizado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCamera)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2058,7 +1862,6 @@
         private System.Windows.Forms.TabPage tbExamen;
         private System.Windows.Forms.Button btnRegExploracion;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
-        private System.Windows.Forms.PictureBox pbxCamera;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.ComboBox cmbDispositivo;
         private System.Windows.Forms.Label lblResultImg;
@@ -2072,26 +1875,10 @@
         private System.Windows.Forms.Label lblBienvenido;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TabPage tbAnt;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnRegPadecimiento;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btnRegAnt;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel22;
-        private System.Windows.Forms.ListBox lstMedReceta;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnRegReceta;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.ComboBox cmbMedicamentos;
-        private System.Windows.Forms.NumericUpDown nCantidad;
-        private System.Windows.Forms.Button btnAgregarMed;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtTratamiento;
         private System.Windows.Forms.TextBox txtIndicacion;
@@ -2119,9 +1906,7 @@
         private System.Windows.Forms.ListBox lstPadecimientos;
         private System.Windows.Forms.ListBox lstEstudios;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.ListBox lstHeredoF;
-        private System.Windows.Forms.ListBox lstNoPatologicas;
-        private System.Windows.Forms.ListBox lstPatologicas;
+        private System.Windows.Forms.ListBox lstAntecedentes;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -2140,5 +1925,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblFrecCard;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel pnlColor;
+        private System.Windows.Forms.PictureBox pbxAnalizado;
+        private System.Windows.Forms.PictureBox pbxCamera;
+        private System.Windows.Forms.Label idHist;
     }
 }
